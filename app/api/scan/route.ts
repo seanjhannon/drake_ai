@@ -1,6 +1,7 @@
 import { NextRequest } from 'next/server';
 import { mapConcurrent, runExclusive } from '@/lib/concurrent';
-import { extractFriends, mentionKey } from '@/lib/extract';
+import { extractFriends } from '@/lib/extract';
+import { mentionKey } from '@/lib/mention-key';
 import { getTracksWithLyrics, readLyrics } from '@/lib/lyrics';
 import {
   countSongsWithMentions,

@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState, useCallback, type CSSProperties } from 'react';
 import { DRAKE_DISCOGRAPHY, ALBUM_COLORS, TOTAL_SONGS } from '@/lib/discography';
 import { randomDrakeQuote } from '@/lib/drake-quotes';
 import { formatScanEvent } from '@/lib/scan-log';
+import { mentionKey } from '@/lib/mention-key';
 import { trackKey } from '@/lib/tracks';
 
 // ── Types ──────────────────────────────────────────────────────────────────────
@@ -39,6 +40,22 @@ interface LogEntry {
 
 type SortOrder = 'count' | 'alpha' | 'earliest';
 type Tab = 'overview' | 'timeline' | 'detail' | 'retrack';
+
+type ReviewStatus = 'correct' | 'incomplete' | 'false_positive';
+
+interface MentionReview {
+  mentionKey: string;
+  status: ReviewStatus;
+  friend: string;
+  bar: string;
+  song: string;
+  album: string;
+  year: number;
+  correctedFriend?: string;
+  correctedBar?: string;
+  notes?: string;
+  reviewedAt: string;
+}
 
 interface TrackSelectionBody {
   albums?: string[];
@@ -101,6 +118,231 @@ interface ExtractSession {
 }
 
 // ── Sub-components ─────────────────────────────────────────────────────────────
+
+const reviewBtnStyle: CSSProperties = {
+  background: 'transparent',
+  border: '1px solid #2A2A2A',
+  color: '#5A5A5A',
+  fontSize: 10,
+  padding: '4px 8px',
+  cursor: 'pointer',
+  borderRadius: 2,
+  letterSpacing: '0.05em',
+  textTransform: 'uppercase',
+};
+
+function MentionReviewRow({
+  mention,
+  review,
+  onSave,
+  editingKey,
+  setEditingKey,
+}: {
+  mention: Mention;
+  review?: MentionReview;
+  onSave: (payload: {
+    status: ReviewStatus;
+    correctedFriend?: string;
+    correctedBar?: string;
+    notes?: string;
+  }) => Promise<void>;
+  editingKey: string | null;
+  setEditingKey: (key: string | null) => void;
+}) {
+  const key = mentionKey(mention);
+  const isEditing = editingKey === key;
+  const [correctedFriend, setCorrectedFriend] = useState(mention.friend);
+  const [correctedBar, setCorrectedBar] = useState(mention.bar);
+  const [notes, setNotes] = useState('');
+  const [saving, setSaving] = useState(false);
+
+  const color = ALBUM_COLORS[mention.album] || '#5A5A5A';
+  const isFalsePositive = review?.status === 'false_positive';
+  const isIncomplete = review?.status === 'incomplete';
+  const isCorrect = review?.status === 'correct';
+
+  const handleSave = async (status: ReviewStatus) => {
+    setSaving(true);
+    try {
+      await onSave({
+        status,
+        ...(status === 'incomplete'
+          ? {
+              correctedFriend: correctedFriend.trim() || undefined,
+              correctedBar: correctedBar.trim() || undefined,
+              notes: notes.trim() || undefined,
+            }
+          : {}),
+      });
+      if (status !== 'incomplete') setEditingKey(null);
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  return (
+    <div
+      style={{
+        marginBottom: 16,
+        borderLeft: `3px solid ${color}`,
+        paddingLeft: 16,
+        paddingTop: 4,
+        paddingBottom: 4,
+        opacity: isFalsePositive ? 0.45 : 1,
+      }}
+    >
+      <div style={{ display: 'flex', gap: 12, marginBottom: 6, alignItems: 'center', flexWrap: 'wrap' }}>
+        <span style={{ color: color, fontSize: 12 }}>{mention.album}</span>
+        <span style={{ color: '#3A3A3A', fontSize: 11 }}>·</span>
+        <span style={{ color: '#5A5A5A', fontSize: 11 }}>{mention.year}</span>
+        <span style={{ color: '#3A3A3A', fontSize: 11 }}>·</span>
+        <span style={{ color: '#8A7A5A', fontSize: 12 }}>{mention.song}</span>
+        {isCorrect && (
+          <span style={{ color: '#6A8A6A', fontSize: 10, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+            Reviewed
+          </span>
+        )}
+        {isIncomplete && (
+          <span style={{ color: '#C9A84C', fontSize: 10, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+            Needs fix
+          </span>
+        )}
+        {isFalsePositive && (
+          <span style={{ color: '#8A5A5A', fontSize: 10, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+            False positive
+          </span>
+        )}
+      </div>
+      <div
+        style={{
+          color: '#E8D5A3',
+          fontSize: 13,
+          fontStyle: 'italic',
+          lineHeight: 1.6,
+          textDecoration: isFalsePositive ? 'line-through' : 'none',
+          marginBottom: 8,
+        }}
+      >
+        &ldquo;{mention.bar}&rdquo;
+      </div>
+      {isIncomplete && (review?.correctedFriend || review?.correctedBar) && (
+        <div style={{ color: '#C9A84C', fontSize: 11, marginBottom: 8, lineHeight: 1.5 }}>
+          {review.correctedFriend && review.correctedFriend !== mention.friend && (
+            <div>Friend: {review.correctedFriend}</div>
+          )}
+          {review.correctedBar && review.correctedBar !== mention.bar && (
+            <div>Bar: &ldquo;{review.correctedBar}&rdquo;</div>
+          )}
+          {review.notes && <div>{review.notes}</div>}
+        </div>
+      )}
+      {isEditing && (
+        <div style={{ marginBottom: 8, display: 'flex', flexDirection: 'column', gap: 6 }}>
+          <input
+            value={correctedFriend}
+            onChange={e => setCorrectedFriend(e.target.value)}
+            placeholder="Corrected friend name"
+            style={{
+              background: '#141414',
+              border: '1px solid #2A2A2A',
+              color: '#E8D5A3',
+              fontSize: 11,
+              padding: '6px 8px',
+            }}
+          />
+          <input
+            value={correctedBar}
+            onChange={e => setCorrectedBar(e.target.value)}
+            placeholder="Corrected bar"
+            style={{
+              background: '#141414',
+              border: '1px solid #2A2A2A',
+              color: '#E8D5A3',
+              fontSize: 11,
+              padding: '6px 8px',
+            }}
+          />
+          <input
+            value={notes}
+            onChange={e => setNotes(e.target.value)}
+            placeholder="Notes (optional)"
+            style={{
+              background: '#141414',
+              border: '1px solid #2A2A2A',
+              color: '#5A5A5A',
+              fontSize: 11,
+              padding: '6px 8px',
+            }}
+          />
+        </div>
+      )}
+      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+        <button
+          type="button"
+          disabled={saving}
+          onClick={() => handleSave('correct')}
+          style={{
+            ...reviewBtnStyle,
+            borderColor: isCorrect ? '#6A8A6A' : '#2A2A2A',
+            color: isCorrect ? '#6A8A6A' : '#5A5A5A',
+          }}
+        >
+          Correct
+        </button>
+        {isEditing ? (
+          <>
+            <button
+              type="button"
+              disabled={saving}
+              onClick={() => handleSave('incomplete')}
+              style={{ ...reviewBtnStyle, borderColor: '#C9A84C', color: '#C9A84C' }}
+            >
+              Save
+            </button>
+            <button
+              type="button"
+              disabled={saving}
+              onClick={() => setEditingKey(null)}
+              style={reviewBtnStyle}
+            >
+              Cancel
+            </button>
+          </>
+        ) : (
+          <button
+            type="button"
+            disabled={saving}
+            onClick={() => {
+              setCorrectedFriend(review?.correctedFriend ?? mention.friend);
+              setCorrectedBar(review?.correctedBar ?? mention.bar);
+              setNotes(review?.notes ?? '');
+              setEditingKey(key);
+            }}
+            style={{
+              ...reviewBtnStyle,
+              borderColor: isIncomplete ? '#C9A84C' : '#2A2A2A',
+              color: isIncomplete ? '#C9A84C' : '#5A5A5A',
+            }}
+          >
+            Incomplete
+          </button>
+        )}
+        <button
+          type="button"
+          disabled={saving}
+          onClick={() => handleSave('false_positive')}
+          style={{
+            ...reviewBtnStyle,
+            borderColor: isFalsePositive ? '#8A5A5A' : '#2A2A2A',
+            color: isFalsePositive ? '#8A5A5A' : '#5A5A5A',
+          }}
+        >
+          False positive
+        </button>
+      </div>
+    </div>
+  );
+}
 
 function StatCard({ label, value }: { label: string; value: number | string }) {
   return (
@@ -178,6 +420,8 @@ export default function Home() {
   const [sortOrder, setSortOrder] = useState<SortOrder>('count');
   const [tab, setTab] = useState<Tab>('overview');
   const [selectedFriend, setSelectedFriend] = useState<string | null>(null);
+  const [reviews, setReviews] = useState<Record<string, MentionReview>>({});
+  const [editingReviewKey, setEditingReviewKey] = useState<string | null>(null);
   const [selectedTracks, setSelectedTracks] = useState<Set<string>>(new Set());
   const [expandedAlbums, setExpandedAlbums] = useState<Set<string>>(new Set());
   const [apiStatus, setApiStatus] = useState<'ready' | 'busy' | 'error'>('ready');
@@ -209,10 +453,57 @@ export default function Home() {
       .catch(() => {});
   }, []);
 
+  const loadReviews = useCallback(() => {
+    return fetch('/api/reviews')
+      .then(r => r.json())
+      .then(data => {
+        if (data.data?.reviews) setReviews(data.data.reviews);
+        else setReviews({});
+      })
+      .catch(() => {});
+  }, []);
+
+  const saveReview = useCallback(
+    async (
+      mention: Mention,
+      payload: {
+        status: ReviewStatus;
+        correctedFriend?: string;
+        correctedBar?: string;
+        notes?: string;
+      },
+    ) => {
+      const key = mentionKey(mention);
+      const res = await fetch('/api/reviews', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          mentionKey: key,
+          status: payload.status,
+          friend: mention.friend,
+          bar: mention.bar,
+          song: mention.song,
+          album: mention.album,
+          year: mention.year,
+          correctedFriend: payload.correctedFriend,
+          correctedBar: payload.correctedBar,
+          notes: payload.notes,
+        }),
+      });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.review) {
+        setReviews(prev => ({ ...prev, [key]: data.review }));
+      }
+    },
+    [],
+  );
+
   useEffect(() => {
     loadLyrics();
     loadResults();
-  }, [loadLyrics, loadResults]);
+    loadReviews();
+  }, [loadLyrics, loadResults, loadReviews]);
 
   // Auto-scroll log
   useEffect(() => {
@@ -1091,35 +1382,25 @@ export default function Home() {
                       <h2 style={{ color: '#C9A84C', fontSize: 28, fontFamily: 'Georgia, serif', marginBottom: 8 }}>
                         {selectedFriend}
                       </h2>
-                      <div style={{ display: 'flex', gap: 20, marginBottom: 32, color: '#5A5A5A', fontSize: 12 }}>
+                      <div style={{ display: 'flex', gap: 20, marginBottom: 8, color: '#5A5A5A', fontSize: 12 }}>
                         <span><span style={{ color: '#C9A84C' }}>{ms.length}</span> mention{ms.length !== 1 ? 's' : ''}</span>
                         <span><span style={{ color: '#C9A84C' }}>{albums.length}</span> album{albums.length !== 1 ? 's' : ''}</span>
                         <span><span style={{ color: '#C9A84C' }}>{minYear === maxYear ? minYear : `${minYear}–${maxYear}`}</span></span>
                       </div>
+                      <div style={{ color: '#5A5A5A', fontSize: 11, marginBottom: 32 }}>
+                        {ms.filter(m => reviews[mentionKey(m)]).length} of {ms.length} reviewed
+                      </div>
 
-                      {sorted.map((mention, i) => {
-                        const color = ALBUM_COLORS[mention.album] || '#5A5A5A';
-                        return (
-                          <div key={i} style={{
-                            marginBottom: 16,
-                            borderLeft: `3px solid ${color}`,
-                            paddingLeft: 16,
-                            paddingTop: 4,
-                            paddingBottom: 4,
-                          }}>
-                            <div style={{ display: 'flex', gap: 12, marginBottom: 6, alignItems: 'center' }}>
-                              <span style={{ color: color, fontSize: 12 }}>{mention.album}</span>
-                              <span style={{ color: '#3A3A3A', fontSize: 11 }}>·</span>
-                              <span style={{ color: '#5A5A5A', fontSize: 11 }}>{mention.year}</span>
-                              <span style={{ color: '#3A3A3A', fontSize: 11 }}>·</span>
-                              <span style={{ color: '#8A7A5A', fontSize: 12 }}>{mention.song}</span>
-                            </div>
-                            <div style={{ color: '#E8D5A3', fontSize: 13, fontStyle: 'italic', lineHeight: 1.6 }}>
-                              &ldquo;{mention.bar}&rdquo;
-                            </div>
-                          </div>
-                        );
-                      })}
+                      {sorted.map((mention, i) => (
+                        <MentionReviewRow
+                          key={mentionKey(mention)}
+                          mention={mention}
+                          review={reviews[mentionKey(mention)]}
+                          onSave={payload => saveReview(mention, payload)}
+                          editingKey={editingReviewKey}
+                          setEditingKey={setEditingReviewKey}
+                        />
+                      ))}
                     </div>
                   );
                 })()}

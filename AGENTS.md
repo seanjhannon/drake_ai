@@ -6,3 +6,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 
 When parsing song lyrics, refer to `FRIENDS.md` for additional guidance.
+
+Before changing extraction logic, read `data/reviews.json` for confirmed mentions (`correct`), false positives, and corrections.

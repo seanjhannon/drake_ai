@@ -1,4 +1,5 @@
 import { completePrompt } from '@/lib/llm';
+import { formatReviewExamplesForPrompt } from '@/lib/reviews';
 import type { Mention } from '@/lib/results';
 
 /** Max lyric chars sent to the model (tune if bars are cut off). */
@@ -23,8 +24,10 @@ export function buildExtractPrompt(
   lyrics: string,
 ): string {
   const truncatedLyrics = lyrics.slice(0, LYRICS_CHAR_LIMIT);
+  const reviewBlock = formatReviewExamplesForPrompt(album, song);
+  const reviewSection = reviewBlock ? `\n\n${reviewBlock}` : '';
 
-  return `${EXTRACT_INSTRUCTIONS}
+  return `${EXTRACT_INSTRUCTIONS}${reviewSection}
 
 Song: "${song}" | Album: "${album}" | Year: ${year}
 
@@ -83,8 +86,4 @@ export async function extractFriends(
     }
     return [];
   }
-}
-
-export function mentionKey(m: Mention): string {
-  return `${m.friend}|||${m.bar}|||${m.song}`;
 }

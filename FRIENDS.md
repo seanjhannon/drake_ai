@@ -9,3 +9,6 @@ This artist uses "21" as an adlib when rapping - this does not count.
 
 # Chubbs
 "Chubbs" (Nessel Beezer) is Drake's head of security and one of his closest lifelong confidants. He is frequently mentioned.
+
+# Lil Wayne
+References to Cash Money / YMCMB are not explicitly references to Lil Wayne; references to the crew can be categorized as their own Friend

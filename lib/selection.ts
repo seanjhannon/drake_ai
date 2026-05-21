@@ -1,6 +1,6 @@
 import { DRAKE_DISCOGRAPHY } from '@/lib/discography';
 import { trackKey, type Track } from '@/lib/tracks';
-import { mentionKey } from '@/lib/extract';
+import { mentionKey } from '@/lib/mention-key';
 import type { Mention, Results } from '@/lib/results';
 
 export interface TrackRef {
