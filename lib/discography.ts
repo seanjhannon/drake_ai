@@ -20,7 +20,7 @@ export interface AlbumEntry {
 
 export const DRAKE_DISCOGRAPHY: AlbumEntry[] = [
   { album: "Thank Me Later", year: 2010, songs: ["Fireworks", "Karaoke", "The Resistance", "Find Your Love", "Show Me a Good Time", "Up All Night", "Fancy", "Shut It Down", "Unforgettable", "Light Up", "Miss Me"] },
-  { album: "Take Care", year: 2011, songs: ["Over My Dead Body", "Shot for Me", "Headlines", "Crew Love", "Take Care", "Marvins Room", "Under Ground Kings", "Make Me Proud", "Lord Knows", "Cameras", "Doing It Wrong", "Look What You've Done", "Practice", "The Ride", "Moment 4 Life", "Trust Issues"] },
+  { album: "Take Care", year: 2011, songs: ["Over My Dead Body", "Shot for Me", "Headlines", "Crew Love", "Take Care", "Marvins Room", "Under Ground Kings", "Make Me Proud", "Lord Knows", "Cameras", "Doing It Wrong", "Look What You've Done", "Practice", "The Ride", "Moment 4 Life", "Trust Issues", "The Motto"] },
   { album: "Nothing Was the Same", year: 2013, songs: ["Tuscan Leather", "Furthest Thing", "Started from the Bottom", "Wu-Tang Forever", "Own It", "Worst Behavior", "From Time", "Hold On We're Going Home", "Connect", "The Language", "Too Much", "Pound Cake", "Come Thru", "All Me"] },
   { album: "If You're Reading This It's Too Late", year: 2015, songs: ["Legend", "Energy", "10 Bands", "Know Yourself", "No Tellin", "Madonna", "No Good", "Used To", "6 God", "Star67", "Preach", "6 Man", "Now & Forever", "Company", "You & The 6", "Jungle"] },
   { album: "Views", year: 2016, songs: ["Keep the Family Close", "9", "U With Me", "Feel No Ways", "Hype", "Weston Road Flows", "Redemption", "Faithful", "Controlla", "One Dance", "Child's Play", "Pop Style", "Too Good", "Fire & Desire", "Views", "Hotline Bling"] },

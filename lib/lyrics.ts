@@ -60,6 +60,19 @@ export function createEmptyLyricsStore(): LyricsStore {
   return store;
 }
 
+/** Merge catalog changes (new songs) into an existing on-disk store. */
+export function ensureStoreTracks(store: LyricsStore): void {
+  const byKey = new Map(store.tracks.map(t => [trackKey(t.song, t.album), t]));
+  store.tracks = buildTrackList().map(t => {
+    const existing = byKey.get(trackKey(t.song, t.album));
+    return existing
+      ? { ...existing, index: t.index, album: t.album, year: t.year }
+      : { ...t, lyrics: null, lineCount: 0 };
+  });
+  store.totalSongs = TOTAL_SONGS;
+  recomputeLyricsCounts(store);
+}
+
 export function getTracksWithLyrics(store: LyricsStore): Array<Track & { lyrics: string }> {
   return store.tracks
     .filter((t): t is StoredTrack & { lyrics: string } => t.lyrics !== null && t.lyrics.length > 0)

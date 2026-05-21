@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { DRAKE_DISCOGRAPHY, ALBUM_COLORS, TOTAL_SONGS } from '@/lib/discography';
+import { randomDrakeQuote } from '@/lib/drake-quotes';
 import { formatScanEvent } from '@/lib/scan-log';
 import { trackKey } from '@/lib/tracks';
 
@@ -181,6 +182,7 @@ export default function Home() {
   const [expandedAlbums, setExpandedAlbums] = useState<Set<string>>(new Set());
   const [apiStatus, setApiStatus] = useState<'ready' | 'busy' | 'error'>('ready');
   const [extractPaused, setExtractPaused] = useState(false);
+  const [drakeQuote] = useState(randomDrakeQuote);
   const logRef = useRef<HTMLDivElement>(null);
   const abortRef = useRef<AbortController | null>(null);
   const pauseRequestedRef = useRef(false);
@@ -414,12 +416,27 @@ export default function Home() {
   }, [runStream, loadResults]);
 
   const reExtract = useCallback(async () => {
-    await fetch('/api/results', { method: 'DELETE' });
-    setResults(null);
     extractSessionRef.current = null;
     setExtractPaused(false);
+
+    const keysWithLyrics = lyrics
+      ? [...selectedTracks].filter(k => lyrics.trackLyrics?.[k])
+      : [];
+    if (keysWithLyrics.length > 0) {
+      runStream(
+        '/api/scan',
+        'POST',
+        'extract',
+        loadResults,
+        selectionFromKeys(keysWithLyrics),
+      );
+      return;
+    }
+
+    await fetch('/api/results', { method: 'DELETE' });
+    setResults(null);
     extractFigures();
-  }, [extractFigures]);
+  }, [extractFigures, runStream, loadResults, selectedTracks, lyrics]);
 
   const handleExtractClick = useCallback(() => {
     if (job === 'extract') {
@@ -536,6 +553,16 @@ export default function Home() {
         </div>
 
         <div style={{ flex: 1 }}>
+          <div style={{
+            color: '#8B7A50',
+            fontSize: 12,
+            fontStyle: 'italic',
+            fontFamily: 'Georgia, serif',
+            marginBottom: busy || extractPaused || lyrics ? 8 : 0,
+            maxWidth: 420,
+          }}>
+            &ldquo;{drakeQuote}&rdquo;
+          </div>
           {(busy || extractPaused) && (
             <div style={{ maxWidth: 400 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
@@ -627,7 +654,9 @@ export default function Home() {
               : extractPaused
                 ? 'Resume'
                 : results
-                  ? 'Re-Extract'
+                  ? selectedWithLyrics > 0
+                    ? `Re-Extract (${selectedWithLyrics})`
+                    : 'Re-Extract All'
                   : 'Extract Figures'}
           </button>
         </div>

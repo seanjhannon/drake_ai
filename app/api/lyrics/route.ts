@@ -5,6 +5,7 @@ import {
   applyLyricsToStore,
   clearLyrics,
   createEmptyLyricsStore,
+  ensureStoreTracks,
   fetchLyricsFromApi,
   readLyrics,
   writeLyrics,
@@ -24,6 +25,7 @@ export async function GET() {
   if (!store) {
     return NextResponse.json({ exists: false, totalSongs: TOTAL_SONGS });
   }
+  ensureStoreTracks(store);
   const trackLyrics: Record<string, boolean> = {};
   for (const t of store.tracks) {
     trackLyrics[trackKey(t.song, t.album)] = !!(t.lyrics && t.lyrics.length > 0);
@@ -87,6 +89,7 @@ export async function POST(request: NextRequest) {
 
       try {
         let store = readLyrics() ?? createEmptyLyricsStore();
+        ensureStoreTracks(store);
         store.syncedAt = new Date().toISOString();
         writeLyrics(store);
 
