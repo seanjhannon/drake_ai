@@ -26,6 +26,8 @@ export function formatScanEvent(event: Record<string, unknown>): string | null {
       return `  → "${event.song}": ${event.count} mention(s): ${(event.names as string[]).join(', ')}`;
     case 'no_figures':
       return `  — "${event.song}": no figures`;
+    case 'paused':
+      return `Paused — ${event.completed} / ${event.total} songs processed`;
     case 'done':
       if (event.job === 'lyrics') {
         return `Lyrics synced — ${event.parsed} found · ${event.failed} missing`;

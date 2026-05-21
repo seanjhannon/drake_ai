@@ -2,12 +2,15 @@ export async function mapConcurrent<T, R>(
   items: T[],
   concurrency: number,
   fn: (item: T) => Promise<R>,
+  opts?: { signal?: AbortSignal },
 ): Promise<R[]> {
+  const signal = opts?.signal;
   const results = new Array<R>(items.length);
   let next = 0;
 
   async function worker() {
     while (true) {
+      if (signal?.aborted) return;
       const i = next++;
       if (i >= items.length) return;
       results[i] = await fn(items[i]);

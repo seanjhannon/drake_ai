@@ -10,8 +10,9 @@ import {
   writeLyrics,
   type LyricsStore,
 } from '@/lib/lyrics';
+import { filterTracks, parseTrackSelection } from '@/lib/selection';
 import { formatScanEvent } from '@/lib/scan-log';
-import { buildTrackList } from '@/lib/tracks';
+import { buildTrackList, trackKey } from '@/lib/tracks';
 
 export const maxDuration = 300;
 export const dynamic = 'force-dynamic';
@@ -23,6 +24,11 @@ export async function GET() {
   if (!store) {
     return NextResponse.json({ exists: false, totalSongs: TOTAL_SONGS });
   }
+  const trackLyrics: Record<string, boolean> = {};
+  for (const t of store.tracks) {
+    trackLyrics[trackKey(t.song, t.album)] = !!(t.lyrics && t.lyrics.length > 0);
+  }
+
   return NextResponse.json({
     exists: true,
     data: {
@@ -31,6 +37,7 @@ export async function GET() {
       parsed: store.parsed,
       failed: store.failed,
       failedSongs: store.failedSongs,
+      trackLyrics,
     },
   });
 }
@@ -40,7 +47,23 @@ export async function DELETE() {
   return NextResponse.json({ ok: true });
 }
 
-export async function POST(_request: NextRequest) {
+export async function POST(request: NextRequest) {
+  let selection = null;
+  const contentType = request.headers.get('content-type') ?? '';
+  if (contentType.includes('application/json')) {
+    try {
+      const body = await request.json();
+      selection = parseTrackSelection(body);
+    } catch {
+      // ignore malformed body
+    }
+  }
+
+  const scoped = selection !== null;
+  const allTracks = buildTrackList();
+  const tracks = filterTracks(allTracks, selection);
+  const total = tracks.length;
+
   const encoder = new TextEncoder();
 
   const stream = new ReadableStream({
@@ -63,12 +86,11 @@ export async function POST(_request: NextRequest) {
       }
 
       try {
-        const tracks = buildTrackList();
         let store = readLyrics() ?? createEmptyLyricsStore();
         store.syncedAt = new Date().toISOString();
         writeLyrics(store);
 
-        send({ type: 'start', total: TOTAL_SONGS, job: 'lyrics' });
+        send({ type: 'start', total, job: 'lyrics', scoped });
         send({ type: 'phase', phase: 'lyrics', concurrency: LYRICS_CONCURRENCY });
 
         let done = 0;
@@ -88,7 +110,7 @@ export async function POST(_request: NextRequest) {
               type: 'progress',
               phase: 'lyrics',
               completed: done,
-              total: TOTAL_SONGS,
+              total,
             });
             maybeFlush(store);
           });
@@ -101,6 +123,7 @@ export async function POST(_request: NextRequest) {
           job: 'lyrics',
           parsed: store.parsed,
           failed: store.failed,
+          scoped,
         });
       } catch (e: unknown) {
         const message = e instanceof Error ? e.message : String(e);

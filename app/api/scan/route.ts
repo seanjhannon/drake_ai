@@ -17,7 +17,8 @@ import { formatScanEvent } from '@/lib/scan-log';
 export const maxDuration = 300;
 export const dynamic = 'force-dynamic';
 
-const EXTRACT_CONCURRENCY = 6;
+/** Parallel workers; LLM calls are serialized by rate limiter (~45 req/min). */
+const EXTRACT_CONCURRENCY = 2;
 
 async function parseSelection(request: NextRequest) {
   if (request.method === 'POST') {
@@ -115,6 +116,8 @@ async function runExtract(request: NextRequest, selection: ReturnType<typeof par
         let extractDone = 0;
 
         await mapConcurrent(withLyrics, EXTRACT_CONCURRENCY, async track => {
+          if (request.signal.aborted) return;
+
           send({ type: 'extract', song: track.song, album: track.album, index: track.index });
 
           let figures: Mention[] = [];
@@ -152,18 +155,29 @@ async function runExtract(request: NextRequest, selection: ReturnType<typeof par
               send({
                 type: 'figures',
                 song: track.song,
+                album: track.album,
                 names,
                 count: newFigures.length,
               });
             } else {
-              send({ type: 'no_figures', song: track.song });
+              send({ type: 'no_figures', song: track.song, album: track.album });
             }
             maybeFlush(results);
           });
-        });
+        }, { signal: request.signal });
 
         results.songsProcessed = countSongsWithMentions(results.mentions);
         writeResults(results);
+
+        if (request.signal.aborted) {
+          send({
+            type: 'paused',
+            completed: extractDone,
+            total: withLyrics.length,
+          });
+          return;
+        }
+
         const figureCount = Object.keys(results.mentions).length;
         send({
           type: 'done',

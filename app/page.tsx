@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { DRAKE_DISCOGRAPHY, ALBUM_COLORS, TOTAL_SONGS } from '@/lib/discography';
 import { formatScanEvent } from '@/lib/scan-log';
+import { trackKey } from '@/lib/tracks';
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -26,6 +27,7 @@ interface LyricsStatus {
   parsed: number;
   failed: number;
   failedSongs: Array<{ song: string; album: string }>;
+  trackLyrics?: Record<string, boolean>;
 }
 
 interface LogEntry {
@@ -35,7 +37,12 @@ interface LogEntry {
 }
 
 type SortOrder = 'count' | 'alpha' | 'earliest';
-type Tab = 'overview' | 'timeline' | 'detail';
+type Tab = 'overview' | 'timeline' | 'detail' | 'retrack';
+
+interface TrackSelectionBody {
+  albums?: string[];
+  tracks: Array<{ song: string; album: string }>;
+}
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -44,6 +51,7 @@ function logColor(type: string): string {
   if (type === 'lyrics_fail') return '#cc4444';
   if (type === 'figures') return '#E8D5A3';
   if (type === 'done') return '#C9A84C';
+  if (type === 'paused') return '#C9A84C';
   if (type === 'error') return '#cc4444';
   return '#5A5A5A';
 }
@@ -60,6 +68,35 @@ function sortFigures(mentions: Record<string, Mention[]>, order: SortOrder): [st
     });
   }
   return entries;
+}
+
+function selectionFromKeys(keys: Iterable<string>): TrackSelectionBody {
+  return {
+    tracks: [...keys].map(key => {
+      const sep = key.indexOf('|||');
+      return { song: key.slice(0, sep), album: key.slice(sep + 3) };
+    }),
+  };
+}
+
+function albumTrackKeys(album: string, songs: string[]): string[] {
+  return songs.map(song => trackKey(song, album));
+}
+
+function allTracksWithLyrics(lyrics: LyricsStatus): Array<{ song: string; album: string }> {
+  const out: Array<{ song: string; album: string }> = [];
+  for (const { album, songs } of DRAKE_DISCOGRAPHY) {
+    for (const song of songs) {
+      const key = trackKey(song, album);
+      if (lyrics.trackLyrics?.[key]) out.push({ song, album });
+    }
+  }
+  return out;
+}
+
+interface ExtractSession {
+  scopeTracks: Array<{ song: string; album: string }> | null;
+  processedKeys: Set<string>;
 }
 
 // ── Sub-components ─────────────────────────────────────────────────────────────
@@ -140,9 +177,15 @@ export default function Home() {
   const [sortOrder, setSortOrder] = useState<SortOrder>('count');
   const [tab, setTab] = useState<Tab>('overview');
   const [selectedFigure, setSelectedFigure] = useState<string | null>(null);
+  const [selectedTracks, setSelectedTracks] = useState<Set<string>>(new Set());
+  const [expandedAlbums, setExpandedAlbums] = useState<Set<string>>(new Set());
   const [apiStatus, setApiStatus] = useState<'ready' | 'busy' | 'error'>('ready');
+  const [extractPaused, setExtractPaused] = useState(false);
   const logRef = useRef<HTMLDivElement>(null);
   const abortRef = useRef<AbortController | null>(null);
+  const pauseRequestedRef = useRef(false);
+  const extractSessionRef = useRef<ExtractSession | null>(null);
+  const inFlightExtractRef = useRef<{ song: string; album: string } | null>(null);
 
   const loadLyrics = useCallback(() => {
     return fetch('/api/lyrics')
@@ -176,20 +219,55 @@ export default function Home() {
     }
   }, [log]);
 
+  const markExtractProcessed = useCallback((song: string, album: string) => {
+    const session = extractSessionRef.current;
+    if (!session) return;
+    session.processedKeys.add(trackKey(song, album));
+  }, []);
+
   const runStream = useCallback(
-    async (url: string, method: 'GET' | 'POST', kind: JobKind, onDone?: () => Promise<void>) => {
+    async (
+      url: string,
+      method: 'GET' | 'POST',
+      kind: JobKind,
+      onDone?: () => Promise<void>,
+      body?: TrackSelectionBody,
+      opts?: { resume?: boolean },
+    ) => {
       if (job) return;
+
+      const isResume = opts?.resume === true;
+      pauseRequestedRef.current = false;
+
+      if (kind === 'extract') {
+        if (!isResume) {
+          extractSessionRef.current = {
+            scopeTracks: body?.tracks ?? null,
+            processedKeys: new Set(),
+          };
+        }
+        setExtractPaused(false);
+      }
+
       setJob(kind);
       setApiStatus('busy');
-      setLog([]);
-      setProgress(0);
-      if (kind === 'extract') setResults(null);
+      if (!isResume) {
+        setLog([]);
+        setProgress(0);
+      }
+      if (kind === 'extract' && !body && !isResume) setResults(null);
 
       const abort = new AbortController();
       abortRef.current = abort;
 
       try {
-        const response = await fetch(url, { method, signal: abort.signal });
+        const response = await fetch(url, {
+          method,
+          signal: abort.signal,
+          ...(body
+            ? { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
+            : {}),
+        });
         if (!response.ok || !response.body) {
           const errBody = await response.text();
           throw new Error(errBody || 'Request failed');
@@ -217,12 +295,44 @@ export default function Home() {
                 setLog(prev => [...prev, { type: event.type, text, color }]);
               }
 
+              if (kind === 'extract') {
+                if (event.type === 'extract') {
+                  inFlightExtractRef.current = {
+                    song: event.song as string,
+                    album: event.album as string,
+                  };
+                }
+                if (event.type === 'figures' || event.type === 'no_figures') {
+                  const inflight = inFlightExtractRef.current;
+                  if (inflight && inflight.song === event.song) {
+                    markExtractProcessed(inflight.song, inflight.album);
+                  }
+                }
+                if (event.type === 'error' && typeof event.message === 'string') {
+                  const m = (event.message as string).match(/^AI error for (.+?):/);
+                  if (m) {
+                    const song = m[1];
+                    const track = body?.tracks.find(t => t.song === song)
+                      ?? extractSessionRef.current?.scopeTracks?.find(t => t.song === song)
+                      ?? allTracksWithLyrics(lyrics!).find(t => t.song === song);
+                    if (track) markExtractProcessed(track.song, track.album);
+                  }
+                }
+              }
+
               if (event.type === 'progress') {
                 const total = event.total as number;
                 setProgress(Math.round(((event.completed as number) / total) * 100));
               }
+              if (event.type === 'paused') {
+                setExtractPaused(true);
+                if (onDone) await onDone();
+                setApiStatus('ready');
+              }
               if (event.type === 'done') {
                 setProgress(100);
+                setExtractPaused(false);
+                extractSessionRef.current = null;
                 if (onDone) await onDone();
                 setApiStatus('ready');
               }
@@ -234,7 +344,19 @@ export default function Home() {
         }
       } catch (e: unknown) {
         const err = e as Error;
-        if (err.name !== 'AbortError') {
+        if (err.name === 'AbortError' && pauseRequestedRef.current) {
+          setExtractPaused(true);
+          if (onDone) await onDone();
+          setLog(prev => [
+            ...prev,
+            {
+              type: 'paused',
+              text: 'Paused — click Extract Figures to resume',
+              color: '#C9A84C',
+            },
+          ]);
+          setApiStatus('ready');
+        } else if (err.name !== 'AbortError') {
           setLog(prev => [
             ...prev,
             { type: 'error', text: `Connection error: ${err.message}`, color: '#cc4444' },
@@ -243,27 +365,122 @@ export default function Home() {
         }
       } finally {
         setJob(null);
+        pauseRequestedRef.current = false;
         setApiStatus(prev => (prev === 'busy' ? 'ready' : prev));
       }
     },
-    [job],
+    [job, lyrics, markExtractProcessed],
   );
+
+  const pauseExtract = useCallback(() => {
+    if (job !== 'extract') return;
+    pauseRequestedRef.current = true;
+    abortRef.current?.abort();
+  }, [job]);
+
+  const resumeExtract = useCallback(() => {
+    const session = extractSessionRef.current;
+    if (!session || !lyrics) return;
+
+    const scope = session.scopeTracks ?? allTracksWithLyrics(lyrics);
+    const remaining = scope.filter(
+      t => !session.processedKeys.has(trackKey(t.song, t.album)),
+    );
+    if (remaining.length === 0) {
+      setExtractPaused(false);
+      extractSessionRef.current = null;
+      return;
+    }
+
+    runStream(
+      '/api/scan',
+      'POST',
+      'extract',
+      loadResults,
+      { tracks: remaining },
+      { resume: true },
+    );
+  }, [runStream, loadResults, lyrics]);
 
   const syncLyrics = useCallback(
     () => runStream('/api/lyrics', 'POST', 'lyrics', loadLyrics),
     [runStream, loadLyrics],
   );
 
-  const extractFigures = useCallback(
-    () => runStream('/api/scan', 'GET', 'extract', loadResults),
-    [runStream, loadResults],
-  );
+  const extractFigures = useCallback(() => {
+    extractSessionRef.current = null;
+    setExtractPaused(false);
+    runStream('/api/scan', 'GET', 'extract', loadResults);
+  }, [runStream, loadResults]);
 
   const reExtract = useCallback(async () => {
     await fetch('/api/results', { method: 'DELETE' });
     setResults(null);
+    extractSessionRef.current = null;
+    setExtractPaused(false);
     extractFigures();
   }, [extractFigures]);
+
+  const handleExtractClick = useCallback(() => {
+    if (job === 'extract') {
+      pauseExtract();
+      return;
+    }
+    if (extractPaused) {
+      resumeExtract();
+      return;
+    }
+    if (results) reExtract();
+    else extractFigures();
+  }, [job, extractPaused, pauseExtract, resumeExtract, results, reExtract, extractFigures]);
+
+  const syncSelectedLyrics = useCallback(() => {
+    if (selectedTracks.size === 0) return;
+    runStream('/api/lyrics', 'POST', 'lyrics', loadLyrics, selectionFromKeys(selectedTracks));
+  }, [runStream, loadLyrics, selectedTracks]);
+
+  const extractSelected = useCallback(() => {
+    if (selectedTracks.size === 0) return;
+    setExtractPaused(false);
+    runStream(
+      '/api/scan',
+      'POST',
+      'extract',
+      loadResults,
+      selectionFromKeys(selectedTracks),
+    );
+  }, [runStream, loadResults, selectedTracks]);
+
+  const toggleTrack = (key: string) => {
+    setSelectedTracks(prev => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  };
+
+  const toggleAlbum = (album: string, songs: string[]) => {
+    const keys = albumTrackKeys(album, songs);
+    const allSelected = keys.every(k => selectedTracks.has(k));
+    setSelectedTracks(prev => {
+      const next = new Set(prev);
+      for (const k of keys) {
+        if (allSelected) next.delete(k);
+        else next.add(k);
+      }
+      return next;
+    });
+  };
+
+  const toggleAlbumExpanded = (album: string) => {
+    setExpandedAlbums(prev => {
+      const next = new Set(prev);
+      if (next.has(album)) next.delete(album);
+      else next.add(album);
+      return next;
+    });
+  };
 
   const selectFigure = (name: string) => {
     setSelectedFigure(name);
@@ -276,6 +493,11 @@ export default function Home() {
   const figureCount = results ? Object.keys(results.mentions).length : 0;
   const hasLyrics = lyrics !== null && lyrics.parsed > 0;
   const busy = job !== null;
+  const extractRunning = job === 'extract';
+  const selectedCount = selectedTracks.size;
+  const selectedWithLyrics = [...selectedTracks].filter(
+    k => lyrics?.trackLyrics?.[k],
+  ).length;
 
   const statusColor = apiStatus === 'ready' ? '#3A7B50' : apiStatus === 'busy' ? '#C9A84C' : '#cc4444';
 
@@ -314,11 +536,15 @@ export default function Home() {
         </div>
 
         <div style={{ flex: 1 }}>
-          {busy && (
+          {(busy || extractPaused) && (
             <div style={{ maxWidth: 400 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
                 <span style={{ color: '#5A5A5A', fontSize: 11 }}>
-                  {job === 'lyrics' ? 'Syncing lyrics…' : 'Extracting figures…'}
+                  {job === 'lyrics'
+                    ? 'Syncing lyrics…'
+                    : extractPaused
+                      ? 'Extraction paused'
+                      : 'Extracting figures…'}
                 </span>
                 <span style={{ color: '#C9A84C', fontSize: 11 }}>{progress}%</span>
               </div>
@@ -326,13 +552,13 @@ export default function Home() {
                 <div style={{
                   width: `${progress}%`,
                   height: '100%',
-                  background: '#C9A84C',
+                  background: extractPaused ? '#5A5A5A' : '#C9A84C',
                   transition: 'width 0.3s ease',
                 }} />
               </div>
             </div>
           )}
-          {!busy && lyrics && (
+          {!busy && !extractPaused && lyrics && (
             <div style={{ color: '#5A5A5A', fontSize: 11 }}>
               Lyrics on disk: <span style={{ color: '#C9A84C' }}>{lyrics.parsed}</span> / {lyrics.totalSongs}
               {lyrics.syncedAt && (
@@ -362,22 +588,47 @@ export default function Home() {
             {busy && job === 'lyrics' ? 'Syncing…' : hasLyrics ? 'Re-Sync Lyrics' : 'Sync Lyrics'}
           </button>
           <button
-            onClick={results ? reExtract : extractFigures}
-            disabled={busy || !hasLyrics}
-            title={!hasLyrics ? 'Sync lyrics first' : undefined}
+            onClick={handleExtractClick}
+            disabled={(busy && job !== 'extract') || (!hasLyrics && !extractPaused)}
+            title={
+              extractRunning
+                ? 'Pause extraction'
+                : extractPaused
+                  ? 'Resume extraction'
+                  : !hasLyrics
+                    ? 'Sync lyrics first'
+                    : undefined
+            }
             style={{
-              background: busy || !hasLyrics ? '#1A1A1A' : '#C9A84C',
-              color: busy || !hasLyrics ? '#5A5A5A' : '#0A0A0A',
+              background:
+                (busy && job !== 'extract') || (!hasLyrics && !extractPaused)
+                  ? '#1A1A1A'
+                  : extractPaused
+                    ? '#8B6830'
+                    : '#C9A84C',
+              color:
+                (busy && job !== 'extract') || (!hasLyrics && !extractPaused)
+                  ? '#5A5A5A'
+                  : '#0A0A0A',
               border: 'none',
               padding: '8px 20px',
               fontFamily: 'Georgia, serif',
               fontSize: 13,
-              cursor: busy || !hasLyrics ? 'not-allowed' : 'pointer',
+              cursor:
+                (busy && job !== 'extract') || (!hasLyrics && !extractPaused)
+                  ? 'not-allowed'
+                  : 'pointer',
               borderRadius: 3,
               letterSpacing: '0.05em',
             }}
           >
-            {busy && job === 'extract' ? 'Extracting…' : results ? 'Re-Extract' : 'Extract Figures'}
+            {extractRunning
+              ? 'Pause'
+              : extractPaused
+                ? 'Resume'
+                : results
+                  ? 'Re-Extract'
+                  : 'Extract Figures'}
           </button>
         </div>
       </header>
@@ -489,7 +740,7 @@ export default function Home() {
         <main style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           {/* Tabs */}
           <div style={{ borderBottom: '1px solid #1E1E1E', display: 'flex', gap: 0, flexShrink: 0 }}>
-            {(['overview', 'timeline', 'detail'] as Tab[]).map(t => (
+            {(['overview', 'timeline', 'detail', 'retrack'] as Tab[]).map(t => (
               <button
                 key={t}
                 onClick={() => setTab(t)}
@@ -506,7 +757,7 @@ export default function Home() {
                   fontFamily: 'Georgia, serif',
                 }}
               >
-                {t}
+                {t === 'retrack' ? 'Retrack' : t}
               </button>
             ))}
           </div>
@@ -612,6 +863,181 @@ export default function Home() {
                     </div>
                   );
                 })}
+              </div>
+            )}
+
+            {/* RETRACK */}
+            {tab === 'retrack' && (
+              <div>
+                <p style={{ color: '#5A5A5A', fontSize: 13, marginBottom: 20, maxWidth: 560, lineHeight: 1.5 }}>
+                  Select albums or individual songs to re-sync lyrics or re-extract figures.
+                  Only selected tracks use API tokens.
+                </p>
+
+                <div style={{ display: 'flex', gap: 8, marginBottom: 24, flexWrap: 'wrap', alignItems: 'center' }}>
+                  <button
+                    onClick={syncSelectedLyrics}
+                    disabled={busy || selectedCount === 0}
+                    style={{
+                      background: busy || selectedCount === 0 ? '#1A1A1A' : '#1E1E1E',
+                      color: busy || selectedCount === 0 ? '#5A5A5A' : '#E8D5A3',
+                      border: '1px solid #2A2A2A',
+                      padding: '8px 16px',
+                      fontFamily: 'Georgia, serif',
+                      fontSize: 13,
+                      cursor: busy || selectedCount === 0 ? 'not-allowed' : 'pointer',
+                      borderRadius: 3,
+                    }}
+                  >
+                    Sync lyrics ({selectedCount})
+                  </button>
+                  <button
+                    onClick={extractRunning ? pauseExtract : extractSelected}
+                    disabled={(busy && !extractRunning) || selectedWithLyrics === 0}
+                    title={
+                      selectedWithLyrics === 0 && selectedCount > 0
+                        ? 'Sync lyrics for selected songs first'
+                        : undefined
+                    }
+                    style={{
+                      background: busy || selectedWithLyrics === 0 ? '#1A1A1A' : '#C9A84C',
+                      color: busy || selectedWithLyrics === 0 ? '#5A5A5A' : '#0A0A0A',
+                      border: 'none',
+                      padding: '8px 20px',
+                      fontFamily: 'Georgia, serif',
+                      fontSize: 13,
+                      cursor: busy || selectedWithLyrics === 0 ? 'not-allowed' : 'pointer',
+                      borderRadius: 3,
+                    }}
+                  >
+                    {extractRunning
+                      ? 'Pause'
+                      : `Extract figures (${selectedWithLyrics})`}
+                  </button>
+                  {selectedCount > 0 && (
+                    <button
+                      onClick={() => setSelectedTracks(new Set())}
+                      disabled={busy}
+                      style={{
+                        background: 'transparent',
+                        color: '#5A5A5A',
+                        border: 'none',
+                        fontSize: 12,
+                        cursor: busy ? 'not-allowed' : 'pointer',
+                        fontFamily: 'Georgia, serif',
+                        textDecoration: 'underline',
+                      }}
+                    >
+                      Clear selection
+                    </button>
+                  )}
+                </div>
+
+                <div style={{ maxWidth: 720 }}>
+                  {DRAKE_DISCOGRAPHY.map(({ album, year, songs }) => {
+                    const color = ALBUM_COLORS[album] || '#5A5A5A';
+                    const keys = albumTrackKeys(album, songs);
+                    const selectedInAlbum = keys.filter(k => selectedTracks.has(k)).length;
+                    const albumChecked = selectedInAlbum === songs.length;
+                    const albumIndeterminate = selectedInAlbum > 0 && !albumChecked;
+                    const expanded = expandedAlbums.has(album);
+
+                    return (
+                      <div
+                        key={album}
+                        style={{
+                          marginBottom: 8,
+                          border: '1px solid #1E1E1E',
+                          borderRadius: 4,
+                          overflow: 'hidden',
+                        }}
+                      >
+                        <div
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            padding: '10px 14px',
+                            background: '#111',
+                            borderLeft: `3px solid ${color}`,
+                          }}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={albumChecked}
+                            ref={el => {
+                              if (el) el.indeterminate = albumIndeterminate;
+                            }}
+                            onChange={() => toggleAlbum(album, songs)}
+                            disabled={busy}
+                            style={{ accentColor: color, cursor: busy ? 'not-allowed' : 'pointer' }}
+                          />
+                          <button
+                            type="button"
+                            onClick={() => toggleAlbumExpanded(album)}
+                            style={{
+                              flex: 1,
+                              background: 'transparent',
+                              border: 'none',
+                              textAlign: 'left',
+                              cursor: 'pointer',
+                              padding: 0,
+                            }}
+                          >
+                            <span style={{ color, fontFamily: 'Georgia, serif', fontSize: 14 }}>{album}</span>
+                            <span style={{ color: '#5A5A5A', fontSize: 11, marginLeft: 10 }}>{year}</span>
+                            <span style={{ color: '#3A3A3A', fontSize: 11, marginLeft: 8 }}>
+                              {songs.length} songs
+                              {selectedInAlbum > 0 && (
+                                <span style={{ color: '#C9A84C', marginLeft: 6 }}>· {selectedInAlbum} selected</span>
+                              )}
+                            </span>
+                          </button>
+                          <span style={{ color: '#3A3A3A', fontSize: 12 }}>{expanded ? '▾' : '▸'}</span>
+                        </div>
+
+                        {expanded && (
+                          <div style={{ padding: '4px 14px 10px 36px' }}>
+                            {songs.map(song => {
+                              const key = trackKey(song, album);
+                              const hasTrackLyrics = lyrics?.trackLyrics?.[key];
+                              return (
+                                <label
+                                  key={key}
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: 8,
+                                    padding: '4px 0',
+                                    cursor: busy ? 'not-allowed' : 'pointer',
+                                    opacity: busy ? 0.6 : 1,
+                                  }}
+                                >
+                                  <input
+                                    type="checkbox"
+                                    checked={selectedTracks.has(key)}
+                                    onChange={() => toggleTrack(key)}
+                                    disabled={busy}
+                                    style={{ accentColor: color }}
+                                  />
+                                  <span style={{ color: '#E8D5A3', fontSize: 12, flex: 1 }}>{song}</span>
+                                  {lyrics && (
+                                    <span style={{
+                                      fontSize: 10,
+                                      color: hasTrackLyrics ? '#3A7B50' : '#5A5A5A',
+                                    }}>
+                                      {hasTrackLyrics ? 'lyrics' : 'no lyrics'}
+                                    </span>
+                                  )}
+                                </label>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             )}
 
