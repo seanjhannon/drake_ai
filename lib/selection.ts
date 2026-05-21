@@ -72,12 +72,12 @@ export function removeMentionsForTracks(results: Results, refs: Iterable<TrackRe
     [...refs].map(r => trackKey(r.song, r.album)),
   );
 
-  for (const figure of Object.keys(results.mentions)) {
-    const kept = results.mentions[figure].filter(
+  for (const friend of Object.keys(results.mentions)) {
+    const kept = results.mentions[friend].filter(
       m => !keys.has(trackKey(m.song, m.album)),
     );
-    if (kept.length === 0) delete results.mentions[figure];
-    else results.mentions[figure] = kept;
+    if (kept.length === 0) delete results.mentions[friend];
+    else results.mentions[friend] = kept;
   }
 }
 

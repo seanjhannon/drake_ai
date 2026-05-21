@@ -5,12 +5,12 @@ import type { Mention } from '@/lib/results';
 export const LYRICS_CHAR_LIMIT = 3500;
 
 /**
- * Extraction agent instructions — edit here to refine figure detection.
+ * Extraction agent instructions — edit here to refine friend detection.
  */
 export const EXTRACT_INSTRUCTIONS = `You are analyzing Drake lyrics to catalog every named real-world person he references.
 
 Rules:
-- "figure": use the person's full or commonly known name (e.g. "Lil Wayne" not "Wayne", "21 Savage" not "Savage", "Noah '40' Shebib" for Forty/40, "Oliver El-Khatib" for Oliver)
+- "friend": use the person's full or commonly known name (e.g. "Lil Wayne" not "Wayne", "21 Savage" not "Savage", "Noah '40' Shebib" for Forty/40, "Oliver El-Khatib" for Oliver)
 - "bar": the exact single lyric line containing the mention
 - Include: producers, collaborators, rivals, family, OVO crew (Chubbs, Niko, etc.), any real named person
 - Exclude: generic terms ("haters", "the label", "my guys", "the plug", unnamed groups)
@@ -32,14 +32,30 @@ LYRICS:
 ${truncatedLyrics}
 
 Return a JSON array. Each object:
-- "figure": string
+- "friend": string
 - "bar": string (one line)
 - "song": "${song}"
 - "album": "${album}"
 - "year": ${year}`;
 }
 
-export async function extractFigures(
+function normalizeExtracted(raw: Record<string, unknown>, song: string, album: string, year: number): Mention {
+  const friend =
+    typeof raw.friend === 'string'
+      ? raw.friend
+      : typeof raw.figure === 'string'
+        ? raw.figure
+        : '';
+  return {
+    friend,
+    bar: String(raw.bar ?? ''),
+    song: String(raw.song ?? song),
+    album: String(raw.album ?? album),
+    year: Number(raw.year ?? year),
+  };
+}
+
+export async function extractFriends(
   song: string,
   album: string,
   year: number,
@@ -50,12 +66,19 @@ export async function extractFigures(
 
   try {
     const parsed = JSON.parse(text.trim());
-    return Array.isArray(parsed) ? parsed : [];
+    if (!Array.isArray(parsed)) return [];
+    return parsed.map((item: Record<string, unknown>) =>
+      normalizeExtracted(item, song, album, year),
+    );
   } catch {
     const match = text.match(/\[[\s\S]*\]/);
     if (match) {
       try {
-        return JSON.parse(match[0]);
+        const parsed = JSON.parse(match[0]);
+        if (!Array.isArray(parsed)) return [];
+        return parsed.map((item: Record<string, unknown>) =>
+          normalizeExtracted(item, song, album, year),
+        );
       } catch {}
     }
     return [];
@@ -63,5 +86,5 @@ export async function extractFigures(
 }
 
 export function mentionKey(m: Mention): string {
-  return `${m.figure}|||${m.bar}|||${m.song}`;
+  return `${m.friend}|||${m.bar}|||${m.song}`;
 }

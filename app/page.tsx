@@ -9,7 +9,7 @@ import { trackKey } from '@/lib/tracks';
 // ── Types ──────────────────────────────────────────────────────────────────────
 
 interface Mention {
-  figure: string;
+  friend: string;
   bar: string;
   song: string;
   album: string;
@@ -50,14 +50,14 @@ interface TrackSelectionBody {
 function logColor(type: string): string {
   if (type === 'lyrics_ok') return '#C9A84C';
   if (type === 'lyrics_fail') return '#cc4444';
-  if (type === 'figures') return '#E8D5A3';
+  if (type === 'friends') return '#E8D5A3';
   if (type === 'done') return '#C9A84C';
   if (type === 'paused') return '#C9A84C';
   if (type === 'error') return '#cc4444';
   return '#5A5A5A';
 }
 
-function sortFigures(mentions: Record<string, Mention[]>, order: SortOrder): [string, Mention[]][] {
+function sortFriends(mentions: Record<string, Mention[]>, order: SortOrder): [string, Mention[]][] {
   const entries = Object.entries(mentions);
   if (order === 'count') return entries.sort((a, b) => b[1].length - a[1].length);
   if (order === 'alpha') return entries.sort((a, b) => a[0].localeCompare(b[0]));
@@ -123,18 +123,18 @@ function BarChart({ mentions, onSelect }: { mentions: Record<string, Mention[]>;
 
   return (
     <div style={{ marginTop: 24 }}>
-      <div style={{ color: '#5A5A5A', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 16 }}>Top Figures by Mentions</div>
-      {sorted.map(([figure, ms]) => {
+      <div style={{ color: '#5A5A5A', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 16 }}>Top Friends by Mentions</div>
+      {sorted.map(([friend, ms]) => {
         const albums = [...new Set(ms.map(m => m.album))];
         const pct = (ms.length / max) * 100;
         return (
           <div
-            key={figure}
-            onClick={() => onSelect(figure)}
+            key={friend}
+            onClick={() => onSelect(friend)}
             style={{ marginBottom: 10, cursor: 'pointer' }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
-              <span style={{ color: '#E8D5A3', fontSize: 13 }}>{figure}</span>
+              <span style={{ color: '#E8D5A3', fontSize: 13 }}>{friend}</span>
               <span style={{ color: '#C9A84C', fontSize: 13 }}>{ms.length}</span>
             </div>
             <div style={{ background: '#1A1A1A', height: 6, borderRadius: 3, overflow: 'hidden' }}>
@@ -177,7 +177,7 @@ export default function Home() {
   const [progress, setProgress] = useState(0);
   const [sortOrder, setSortOrder] = useState<SortOrder>('count');
   const [tab, setTab] = useState<Tab>('overview');
-  const [selectedFigure, setSelectedFigure] = useState<string | null>(null);
+  const [selectedFriend, setSelectedFriend] = useState<string | null>(null);
   const [selectedTracks, setSelectedTracks] = useState<Set<string>>(new Set());
   const [expandedAlbums, setExpandedAlbums] = useState<Set<string>>(new Set());
   const [apiStatus, setApiStatus] = useState<'ready' | 'busy' | 'error'>('ready');
@@ -304,7 +304,7 @@ export default function Home() {
                     album: event.album as string,
                   };
                 }
-                if (event.type === 'figures' || event.type === 'no_figures') {
+                if (event.type === 'friends' || event.type === 'no_friends') {
                   const inflight = inFlightExtractRef.current;
                   if (inflight && inflight.song === event.song) {
                     markExtractProcessed(inflight.song, inflight.album);
@@ -353,7 +353,7 @@ export default function Home() {
             ...prev,
             {
               type: 'paused',
-              text: 'Paused — click Extract Figures to resume',
+              text: 'Paused — click Scan Mentions to resume',
               color: '#C9A84C',
             },
           ]);
@@ -409,7 +409,7 @@ export default function Home() {
     [runStream, loadLyrics],
   );
 
-  const extractFigures = useCallback(() => {
+  const extractFriends = useCallback(() => {
     extractSessionRef.current = null;
     setExtractPaused(false);
     runStream('/api/scan', 'GET', 'extract', loadResults);
@@ -435,8 +435,8 @@ export default function Home() {
 
     await fetch('/api/results', { method: 'DELETE' });
     setResults(null);
-    extractFigures();
-  }, [extractFigures, runStream, loadResults, selectedTracks, lyrics]);
+    extractFriends();
+  }, [extractFriends, runStream, loadResults, selectedTracks, lyrics]);
 
   const handleExtractClick = useCallback(() => {
     if (job === 'extract') {
@@ -448,8 +448,8 @@ export default function Home() {
       return;
     }
     if (results) reExtract();
-    else extractFigures();
-  }, [job, extractPaused, pauseExtract, resumeExtract, results, reExtract, extractFigures]);
+    else extractFriends();
+  }, [job, extractPaused, pauseExtract, resumeExtract, results, reExtract, extractFriends]);
 
   const syncSelectedLyrics = useCallback(() => {
     if (selectedTracks.size === 0) return;
@@ -499,15 +499,15 @@ export default function Home() {
     });
   };
 
-  const selectFigure = (name: string) => {
-    setSelectedFigure(name);
+  const selectFriend = (name: string) => {
+    setSelectedFriend(name);
     setTab('detail');
   };
 
-  const sortedFigures = results ? sortFigures(results.mentions, sortOrder) : [];
+  const sortedFriends = results ? sortFriends(results.mentions, sortOrder) : [];
   const totalMentions = results ? Object.values(results.mentions).reduce((s, ms) => s + ms.length, 0) : 0;
   const lyricsRetrieved = lyrics?.parsed ?? 0;
-  const figureCount = results ? Object.keys(results.mentions).length : 0;
+  const friendCount = results ? Object.keys(results.mentions).length : 0;
   const hasLyrics = lyrics !== null && lyrics.parsed > 0;
   const busy = job !== null;
   const extractRunning = job === 'extract';
@@ -570,8 +570,8 @@ export default function Home() {
                   {job === 'lyrics'
                     ? 'Syncing lyrics…'
                     : extractPaused
-                      ? 'Extraction paused'
-                      : 'Extracting figures…'}
+                      ? 'Scan paused'
+                      : 'Scanning mentions…'}
                 </span>
                 <span style={{ color: '#C9A84C', fontSize: 11 }}>{progress}%</span>
               </div>
@@ -655,9 +655,9 @@ export default function Home() {
                 ? 'Resume'
                 : results
                   ? selectedWithLyrics > 0
-                    ? `Re-Extract (${selectedWithLyrics})`
-                    : 'Re-Extract All'
-                  : 'Extract Figures'}
+                    ? `Re-Scan (${selectedWithLyrics})`
+                    : 'Re-Scan All'
+                  : 'Scan Mentions'}
           </button>
         </div>
       </header>
@@ -722,22 +722,22 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Figure list */}
+          {/* Friend list */}
           <div style={{ flex: 1, overflowY: 'auto', padding: '4px 0' }}>
-            {sortedFigures.length === 0 && (
+            {sortedFriends.length === 0 && (
               <div style={{ color: '#3A3A3A', fontSize: 11, padding: '12px', fontStyle: 'italic' }}>
-                {results ? 'No figures extracted yet.' : 'Extract figures to populate the list.'}
+                {results ? 'No mentions found yet.' : 'Scan mentions to populate the list.'}
               </div>
             )}
-            {sortedFigures.map(([figure, ms]) => (
+            {sortedFriends.map(([friend, ms]) => (
               <button
-                key={figure}
-                onClick={() => selectFigure(figure)}
+                key={friend}
+                onClick={() => selectFriend(friend)}
                 style={{
                   width: '100%',
-                  background: selectedFigure === figure ? '#1A1A1A' : 'transparent',
+                  background: selectedFriend === friend ? '#1A1A1A' : 'transparent',
                   border: 'none',
-                  borderLeft: selectedFigure === figure ? '2px solid #C9A84C' : '2px solid transparent',
+                  borderLeft: selectedFriend === friend ? '2px solid #C9A84C' : '2px solid transparent',
                   padding: '6px 12px',
                   display: 'flex',
                   justifyContent: 'space-between',
@@ -747,7 +747,7 @@ export default function Home() {
                 }}
               >
                 <span style={{ color: '#E8D5A3', fontSize: 12, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', flex: 1 }}>
-                  {figure}
+                  {friend}
                 </span>
                 <span style={{
                   background: '#1E1E1E',
@@ -797,14 +797,14 @@ export default function Home() {
             {tab === 'overview' && (
               <div>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 24 }}>
-                  <StatCard label="Figures Found" value={figureCount} />
+                  <StatCard label="Friends Found" value={friendCount} />
                   <StatCard label="Total Mentions" value={totalMentions} />
                   <StatCard label="Songs Processed" value={results?.songsProcessed ?? 0} />
                   <StatCard label="Lyrics on Disk" value={lyricsRetrieved} />
                 </div>
 
                 {results && Object.keys(results.mentions).length > 0 && (
-                  <BarChart mentions={results.mentions} onSelect={selectFigure} />
+                  <BarChart mentions={results.mentions} onSelect={selectFriend} />
                 )}
 
                 {lyrics && lyrics.failedSongs.length > 0 && (
@@ -834,8 +834,8 @@ export default function Home() {
                     <div style={{ fontSize: 48, marginBottom: 16 }}>◉</div>
                     <div style={{ fontSize: 16, color: '#5A5A5A', fontStyle: 'italic' }}>
                       {hasLyrics
-                        ? 'Lyrics ready. Run Extract Figures to analyze mentions.'
-                        : 'Sync lyrics once, then extract figures.'}
+                        ? 'Lyrics ready. Run Scan Mentions to analyze lyrics.'
+                        : 'Sync lyrics once, then scan mentions.'}
                     </div>
                   </div>
                 )}
@@ -846,17 +846,17 @@ export default function Home() {
             {tab === 'timeline' && (
               <div>
                 {!results && (
-                  <div style={{ color: '#3A3A3A', fontStyle: 'italic' }}>No extraction data yet.</div>
+                  <div style={{ color: '#3A3A3A', fontStyle: 'italic' }}>No scan data yet.</div>
                 )}
                 {results && DRAKE_DISCOGRAPHY.map(({ album, year }) => {
                   const color = ALBUM_COLORS[album] || '#5A5A5A';
-                  // Find all figures mentioned in this album
-                  const albumFigures: Record<string, number> = {};
-                  for (const [figure, ms] of Object.entries(results.mentions)) {
+                  // Find all friends mentioned in this album
+                  const albumFriends: Record<string, number> = {};
+                  for (const [friend, ms] of Object.entries(results.mentions)) {
                     const count = ms.filter(m => m.album === album).length;
-                    if (count > 0) albumFigures[figure] = count;
+                    if (count > 0) albumFriends[friend] = count;
                   }
-                  const figureEntries = Object.entries(albumFigures).sort((a, b) => b[1] - a[1]);
+                  const friendEntries = Object.entries(albumFriends).sort((a, b) => b[1] - a[1]);
 
                   return (
                     <div key={album} style={{ marginBottom: 32, borderLeft: `3px solid ${color}`, paddingLeft: 20 }}>
@@ -864,14 +864,14 @@ export default function Home() {
                         <div style={{ color: color, fontSize: 16, fontFamily: 'Georgia, serif' }}>{album}</div>
                         <div style={{ color: '#5A5A5A', fontSize: 11, marginTop: 2 }}>{year}</div>
                       </div>
-                      {figureEntries.length === 0 ? (
-                        <div style={{ color: '#3A3A3A', fontSize: 11, fontStyle: 'italic' }}>No figures extracted</div>
+                      {friendEntries.length === 0 ? (
+                        <div style={{ color: '#3A3A3A', fontSize: 11, fontStyle: 'italic' }}>No mentions found</div>
                       ) : (
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-                          {figureEntries.map(([figure, count]) => (
+                          {friendEntries.map(([friend, count]) => (
                             <button
-                              key={figure}
-                              onClick={() => selectFigure(figure)}
+                              key={friend}
+                              onClick={() => selectFriend(friend)}
                               style={{
                                 background: color + '18',
                                 border: `1px solid ${color}44`,
@@ -883,7 +883,7 @@ export default function Home() {
                                 fontFamily: 'Georgia, serif',
                               }}
                             >
-                              {figure}
+                              {friend}
                               <span style={{ color: color, marginLeft: 6 }}>{count}</span>
                             </button>
                           ))}
@@ -899,7 +899,7 @@ export default function Home() {
             {tab === 'retrack' && (
               <div>
                 <p style={{ color: '#5A5A5A', fontSize: 13, marginBottom: 20, maxWidth: 560, lineHeight: 1.5 }}>
-                  Select albums or individual songs to re-sync lyrics or re-extract figures.
+                  Select albums or individual songs to re-sync lyrics or re-scan mentions.
                   Only selected tracks use API tokens.
                 </p>
 
@@ -941,7 +941,7 @@ export default function Home() {
                   >
                     {extractRunning
                       ? 'Pause'
-                      : `Extract figures (${selectedWithLyrics})`}
+                      : `Scan mentions (${selectedWithLyrics})`}
                   </button>
                   {selectedCount > 0 && (
                     <button
@@ -1073,13 +1073,13 @@ export default function Home() {
             {/* DETAIL */}
             {tab === 'detail' && (
               <div>
-                {!selectedFigure && (
+                {!selectedFriend && (
                   <div style={{ color: '#3A3A3A', fontStyle: 'italic' }}>
-                    Select a figure from the sidebar or click a name in the Overview/Timeline tabs.
+                    Select a friend from the sidebar or click a name in the Overview/Timeline tabs.
                   </div>
                 )}
-                {selectedFigure && results && results.mentions[selectedFigure] && (() => {
-                  const ms = results.mentions[selectedFigure];
+                {selectedFriend && results && results.mentions[selectedFriend] && (() => {
+                  const ms = results.mentions[selectedFriend];
                   const sorted = [...ms].sort((a, b) => a.year - b.year || a.album.localeCompare(b.album));
                   const albums = [...new Set(ms.map(m => m.album))];
                   const years = ms.map(m => m.year);
@@ -1089,7 +1089,7 @@ export default function Home() {
                   return (
                     <div>
                       <h2 style={{ color: '#C9A84C', fontSize: 28, fontFamily: 'Georgia, serif', marginBottom: 8 }}>
-                        {selectedFigure}
+                        {selectedFriend}
                       </h2>
                       <div style={{ display: 'flex', gap: 20, marginBottom: 32, color: '#5A5A5A', fontSize: 12 }}>
                         <span><span style={{ color: '#C9A84C' }}>{ms.length}</span> mention{ms.length !== 1 ? 's' : ''}</span>

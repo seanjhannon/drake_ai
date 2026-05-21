@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Drake Friend Tracker',
-  description: 'OVO Intelligence — Every real-world figure Drake has ever mentioned',
+  description: 'OVO Intelligence — Every real-world friend Drake has ever mentioned',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

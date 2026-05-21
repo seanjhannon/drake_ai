@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { mapConcurrent, runExclusive } from '@/lib/concurrent';
-import { extractFigures, mentionKey } from '@/lib/extract';
+import { extractFriends, mentionKey } from '@/lib/extract';
 import { getTracksWithLyrics, readLyrics } from '@/lib/lyrics';
 import {
   countSongsWithMentions,
@@ -120,9 +120,9 @@ async function runExtract(request: NextRequest, selection: ReturnType<typeof par
 
           send({ type: 'extract', song: track.song, album: track.album, index: track.index });
 
-          let figures: Mention[] = [];
+          let friends: Mention[] = [];
           try {
-            figures = await extractFigures(track.song, track.album, track.year, track.lyrics);
+            friends = await extractFriends(track.song, track.album, track.year, track.lyrics);
           } catch (e: unknown) {
             const message = e instanceof Error ? e.message : String(e);
             send({ type: 'error', message: `AI error for ${track.song}: ${message}` });
@@ -137,30 +137,30 @@ async function runExtract(request: NextRequest, selection: ReturnType<typeof par
           });
 
           await runExclusive(mergeLock, () => {
-            const newFigures = figures.filter(f => {
+            const newFriends = friends.filter(f => {
               const key = mentionKey(f);
               if (existingKeys.has(key)) return false;
               existingKeys.add(key);
               return true;
             });
 
-            if (newFigures.length > 0) {
-              for (const mention of newFigures) {
-                if (!results.mentions[mention.figure]) {
-                  results.mentions[mention.figure] = [];
+            if (newFriends.length > 0) {
+              for (const mention of newFriends) {
+                if (!results.mentions[mention.friend]) {
+                  results.mentions[mention.friend] = [];
                 }
-                results.mentions[mention.figure].push(mention);
+                results.mentions[mention.friend].push(mention);
               }
-              const names = [...new Set(newFigures.map(f => f.figure))];
+              const names = [...new Set(newFriends.map(f => f.friend))];
               send({
-                type: 'figures',
+                type: 'friends',
                 song: track.song,
                 album: track.album,
                 names,
-                count: newFigures.length,
+                count: newFriends.length,
               });
             } else {
-              send({ type: 'no_figures', song: track.song, album: track.album });
+              send({ type: 'no_friends', song: track.song, album: track.album });
             }
             maybeFlush(results);
           });
@@ -178,11 +178,11 @@ async function runExtract(request: NextRequest, selection: ReturnType<typeof par
           return;
         }
 
-        const figureCount = Object.keys(results.mentions).length;
+        const friendCount = Object.keys(results.mentions).length;
         send({
           type: 'done',
           job: 'extract',
-          figureCount,
+          friendCount,
           songsProcessed: results.songsProcessed,
           scoped,
           selected: scoped ? selectionToTrackKeys(selection!).size : undefined,
