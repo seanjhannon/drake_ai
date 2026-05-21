@@ -16,7 +16,30 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Dev tools — manual mention tagging
+
+Use the annotate workspace when the scan missed a reference (e.g. a name on a line the model skipped).
+
+**URL:** [http://localhost:3000/dev/annotate](http://localhost:3000/dev/annotate)
+
+**From the main app:**
+
+- Click **dev** in the header (under the album count), or
+- On **Retrack**, open a song’s **annotate** link (only shown when that track has synced lyrics)
+
+**Deep link to a song:**
+
+```
+http://localhost:3000/dev/annotate?song=Shabang&album=Iceman
+```
+
+**Workflow:**
+
+1. Pick a song in the left column (songs without lyrics are disabled).
+2. Click the lyric line that contains the mention.
+3. Enter the friend’s full name and click **Add mention**.
+
+Tags are written to `results.json` and `data/reviews.json` as confirmed (`correct`) reviews, so they appear in the main app and feed few-shot examples on future scans.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useRef, useState, useCallback, type CSSProperties } from 'react';
 import { DRAKE_DISCOGRAPHY, ALBUM_COLORS, TOTAL_SONGS } from '@/lib/discography';
 import { randomDrakeQuote } from '@/lib/drake-quotes';
@@ -840,6 +841,10 @@ export default function Home() {
           </h1>
           <div style={{ color: '#5A5A5A', fontSize: 11, marginTop: 2 }}>
             {TOTAL_SONGS} songs · {DRAKE_DISCOGRAPHY.length} albums
+            {' · '}
+            <Link href="/dev/annotate" style={{ color: '#3A3A3A', textDecoration: 'none' }}>
+              dev
+            </Link>
           </div>
         </div>
 
@@ -1348,6 +1353,20 @@ export default function Home() {
                                     }}>
                                       {hasTrackLyrics ? 'lyrics' : 'no lyrics'}
                                     </span>
+                                  )}
+                                  {hasTrackLyrics && (
+                                    <Link
+                                      href={`/dev/annotate?song=${encodeURIComponent(song)}&album=${encodeURIComponent(album)}`}
+                                      onClick={e => e.stopPropagation()}
+                                      style={{
+                                        fontSize: 10,
+                                        color: '#3A3A3A',
+                                        textDecoration: 'none',
+                                        marginLeft: 4,
+                                      }}
+                                    >
+                                      annotate
+                                    </Link>
                                   )}
                                 </label>
                               );

@@ -8,3 +8,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 When parsing song lyrics, refer to `FRIENDS.md` for additional guidance.
 
 Before changing extraction logic, read `data/reviews.json` for confirmed mentions (`correct`), false positives, and corrections.
+
+Missed mentions can be added manually at `/dev/annotate`; they are stored as `correct` reviews and included in extract few-shots.

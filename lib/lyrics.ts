@@ -79,6 +79,18 @@ export function getTracksWithLyrics(store: LyricsStore): Array<Track & { lyrics:
     .map(({ index, song, album, year, lyrics }) => ({ index, song, album, year, lyrics }));
 }
 
+export function getTrackLyrics(
+  song: string,
+  album: string,
+): { song: string; album: string; year: number; lyrics: string } | null {
+  const store = readLyrics();
+  if (!store) return null;
+  ensureStoreTracks(store);
+  const track = store.tracks.find(t => trackKey(t.song, t.album) === trackKey(song, album));
+  if (!track?.lyrics || track.lyrics.length === 0) return null;
+  return { song: track.song, album: track.album, year: track.year, lyrics: track.lyrics };
+}
+
 function stripTimestamps(lyrics: string): string {
   return lyrics
     .replace(/\[\d{2}:\d{2}\.\d{2,3}\]/g, '')

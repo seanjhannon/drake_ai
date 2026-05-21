@@ -1,5 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+import { mentionKey } from '@/lib/mention-key';
+import { countSongsWithMentions } from '@/lib/selection';
+import { trackKey } from '@/lib/tracks';
 
 export interface Mention {
   friend: string;
@@ -62,4 +65,47 @@ export function clearResults(): void {
   if (fs.existsSync(RESULTS_PATH)) {
     fs.unlinkSync(RESULTS_PATH);
   }
+}
+
+export function getMentionsForTrack(results: Results, song: string, album: string): Mention[] {
+  const key = trackKey(song, album);
+  const out: Mention[] = [];
+  for (const list of Object.values(results.mentions)) {
+    for (const m of list) {
+      if (trackKey(m.song, m.album) === key) out.push(m);
+    }
+  }
+  return out;
+}
+
+function emptyResults(): Results {
+  return {
+    scannedAt: new Date().toISOString(),
+    songsProcessed: 0,
+    mentions: {},
+  };
+}
+
+export function addManualMention(
+  mention: Mention,
+): { added: boolean; mention: Mention } {
+  const results = readResults() ?? emptyResults();
+  const key = mentionKey(mention);
+
+  for (const list of Object.values(results.mentions)) {
+    for (const m of list) {
+      if (mentionKey(m) === key) {
+        return { added: false, mention: m };
+      }
+    }
+  }
+
+  if (!results.mentions[mention.friend]) {
+    results.mentions[mention.friend] = [];
+  }
+  results.mentions[mention.friend].push(mention);
+  results.scannedAt = new Date().toISOString();
+  results.songsProcessed = countSongsWithMentions(results.mentions);
+  writeResults(results);
+  return { added: true, mention };
 }
