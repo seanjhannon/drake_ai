@@ -1,71 +1,252 @@
 {
-  "scannedAt": "2026-05-21T05:57:36.285Z",
-  "songsProcessed": 31,
+  "scannedAt": "2026-05-26T20:34:12.086Z",
+  "songsProcessed": 0,
   "mentions": {
-    "Michael Jordan": [
+    "Lil Wayne": [
       {
-        "friend": "Michael Jordan",
-        "bar": "Don't Michael Jordan still got his hoop earring in?",
-        "song": "Over My Dead Body",
-        "album": "Take Care",
-        "year": 2011
-      }
-    ],
-    "Kevin Hart": [
+        "friend": "Lil Wayne",
+        "bar": "Wayne put me right here, that's who I get the paper with",
+        "song": "Fireworks",
+        "album": "Thank Me Later",
+        "year": 2010
+      },
       {
-        "friend": "Kevin Hart",
-        "bar": "Don't make me break your Kevin Hart, boy",
-        "song": "Over My Dead Body",
+        "friend": "Lil Wayne",
+        "bar": "Can't get me right and not do Wayne",
+        "song": "Show Me a Good Time",
+        "album": "Thank Me Later",
+        "year": 2010
+      },
+      {
+        "friend": "Lil Wayne",
+        "bar": "Yes I am Weezy, but I ain't asthmatic",
+        "song": "Miss Me",
+        "album": "Thank Me Later",
+        "year": 2010
+      },
+      {
+        "friend": "Lil Wayne",
+        "bar": "Weezy F baby and the \"F\" is for front door",
+        "song": "Miss Me",
+        "album": "Thank Me Later",
+        "year": 2010
+      },
+      {
+        "friend": "Lil Wayne",
+        "bar": "But Weezy and Stunna my only role models",
+        "song": "Lord Knows",
         "album": "Take Care",
         "year": 2011
       },
       {
-        "friend": "Kevin Hart",
-        "bar": "Kevin Hart liquor, he shook, I'ma put you in sticky predicaments",
-        "song": "B's on the Table",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
-    "Mac Dre": [
-      {
-        "friend": "Mac Dre",
-        "bar": "My city love me like Mac Dre in the Bay",
-        "song": "Over My Dead Body",
+        "friend": "Lil Wayne",
+        "bar": "Then Wayne calls on my phone, conversation wasn't that long",
+        "song": "Look What You've Done",
         "album": "Take Care",
         "year": 2011
       },
       {
-        "friend": "Mac Dre",
-        "bar": "Rest in peace, Mac Dre, I'm-a do it for the Bay",
+        "friend": "Lil Wayne",
+        "bar": "Weezy on top, and that nigga ain't even home yet",
+        "song": "Moment 4 Life",
+        "album": "Take Care",
+        "year": 2011
+      },
+      {
+        "friend": "Lil Wayne",
+        "bar": "Tell Tune, \"Light one, pass it like a relay\"",
         "song": "The Motto",
         "album": "Take Care",
         "year": 2011
+      },
+      {
+        "friend": "Lil Wayne",
+        "bar": "Weezy had all the authority",
+        "song": "Free Smoke",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Alisha": [
+    "Alyssa": [
       {
-        "friend": "Alisha",
-        "bar": "It's a shame you didn't keep it, Alisha, Catya",
-        "song": "Shot for Me",
+        "friend": "Alyssa",
+        "bar": "I live by some advice this girl Alyssa told me",
+        "song": "The Resistance",
+        "album": "Thank Me Later",
+        "year": 2010
+      },
+      {
+        "friend": "Alyssa",
+        "bar": "The other day Alyssa told me that she missed the old me",
+        "song": "The Resistance",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Big Rich": [
+      {
+        "friend": "Big Rich",
+        "bar": "But in fact I haven't seen 'em, since they locked Big Rich up",
+        "song": "The Resistance",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Barack Hussein Obama": [
+      {
+        "friend": "Barack Hussein Obama",
+        "bar": "Presidential suite girl Barrack Hussain",
+        "song": "Show Me a Good Time",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Ali Shaheed Muhammad": [
+      {
+        "friend": "Ali Shaheed Muhammad",
+        "bar": "Tell me can we kick it like Ali Shaheed and Phife Dawg",
+        "song": "Show Me a Good Time",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Phife Dawg": [
+      {
+        "friend": "Phife Dawg",
+        "bar": "Tell me can we kick it like Ali Shaheed and Phife Dawg",
+        "song": "Show Me a Good Time",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "J Dilla": [
+      {
+        "friend": "J Dilla",
+        "bar": "So I'm a spend another ten thousand for Dilla",
+        "song": "Show Me a Good Time",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Denzel Washington": [
+      {
+        "friend": "Denzel Washington",
+        "bar": "Cap on, brim bent, Denzel, everytime",
+        "song": "Up All Night",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "B.o.B": [
+      {
+        "friend": "B.o.B",
+        "bar": "Now she play these suckers just like B.o.B play the guitar",
+        "song": "Fancy",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Killa Beatz": [
+      {
+        "friend": "Killa Beatz",
+        "bar": "Ki-Killa, Killa (hey)",
+        "song": "Shut It Down",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Fredro Starr": [
+      {
+        "friend": "Fredro Starr",
+        "bar": "This shit feel like when Fredro Starr was at Sunset Park",
+        "song": "Light Up",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Kelsey Grammer": [
+      {
+        "friend": "Kelsey Grammer",
+        "bar": "And I just say I wrote it for your girlfriends, Kelsey Grammar",
+        "song": "Light Up",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Floyd Mayweather Jr.": [
+      {
+        "friend": "Floyd Mayweather Jr.",
+        "bar": "Caught the Mayweather fight, 'cause the satellite was crispy",
+        "song": "Light Up",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Jay-Z": [
+      {
+        "friend": "Jay-Z",
+        "bar": "The smart money's on Hov, fuck what the dummies talk",
+        "song": "Light Up",
+        "album": "Thank Me Later",
+        "year": 2010
+      },
+      {
+        "friend": "Jay-Z",
+        "bar": "I didn't listen to Hov on that old song",
+        "song": "Free Smoke",
+        "album": "More Life",
+        "year": 2017
+      },
+      {
+        "friend": "Jay-Z",
+        "bar": "No I did not sign with Jay, but I still send a Tidal wave",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "Nicki Minaj": [
+      {
+        "friend": "Nicki Minaj",
+        "bar": "I love Nicki Minaj, I told her I'd admit it",
+        "song": "Miss Me",
+        "album": "Thank Me Later",
+        "year": 2010
+      },
+      {
+        "friend": "Nicki Minaj",
+        "bar": "It's Pink Friday Records and OVO",
+        "song": "Make Me Proud",
         "album": "Take Care",
         "year": 2011
-      }
-    ],
-    "Catya": [
+      },
       {
-        "friend": "Catya",
-        "bar": "It's a shame you didn't keep it, Alisha, Catya",
-        "song": "Shot for Me",
+        "friend": "Nicki Minaj",
+        "bar": "Fuck it, me and Nicki Nick gettin' married today",
+        "song": "Moment 4 Life",
         "album": "Take Care",
         "year": 2011
+      },
+      {
+        "friend": "Nicki Minaj",
+        "bar": "Not even talkin' to Nicki",
+        "song": "Tuscan Leather",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
-    "The Weeknd": [
+    "Snoop Dogg": [
       {
-        "friend": "The Weeknd",
-        "bar": "That OVO and that XO is everything you believe in, I know",
-        "song": "Crew Love",
+        "friend": "Snoop Dogg",
+        "bar": "It's Blood gang slime, but I parlay with Snoop",
+        "song": "Miss Me",
+        "album": "Thank Me Later",
+        "year": 2010
+      },
+      {
+        "friend": "Snoop Dogg",
+        "bar": "In this bitch all drinks on the house like Snoopy",
+        "song": "Lord Knows",
         "album": "Take Care",
         "year": 2011
       }
@@ -88,29 +269,6 @@
         "year": 2011
       }
     ],
-    "Nicki Minaj": [
-      {
-        "friend": "Nicki Minaj",
-        "bar": "It's Pink Friday Records and OVO",
-        "song": "Make Me Proud",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Nicki Minaj",
-        "bar": "Fuck it, me and Nicki Nick gettin' married today",
-        "song": "Moment 4 Life",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Nicki Minaj",
-        "bar": "Ref1, he so drunk, he just played Nicki then some Cardi, I'm sorry",
-        "song": "Don't Worry",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
     "Dolly Parton": [
       {
         "friend": "Dolly Parton",
@@ -118,6 +276,29 @@
         "song": "Make Me Proud",
         "album": "Take Care",
         "year": 2011
+      }
+    ],
+    "Birdman": [
+      {
+        "friend": "Birdman",
+        "bar": "But Weezy and Stunna my only role models",
+        "song": "Lord Knows",
+        "album": "Take Care",
+        "year": 2011
+      },
+      {
+        "friend": "Birdman",
+        "bar": "I'm always big timing, bitch, I came up right under Stunna",
+        "song": "The Language",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      },
+      {
+        "friend": "Birdman",
+        "bar": "And that's word to Stunna",
+        "song": "The Language",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
     "Just Blaze": [
@@ -129,96 +310,27 @@
         "year": 2011
       }
     ],
-    "Lil Wayne": [
+    "Michael Jordan": [
       {
-        "friend": "Lil Wayne",
-        "bar": "But Weezy and Stunna my only role models",
-        "song": "Lord Knows",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Lil Wayne",
-        "bar": "Before I'm on the next ting, YMCMB (ah)",
-        "song": "Cameras",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Lil Wayne",
-        "bar": "Then Wayne calls on my phone, conversation wasn't that long",
-        "song": "Look What You've Done",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Lil Wayne",
-        "bar": "Cash money shit",
-        "song": "Practice",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Lil Wayne",
-        "bar": "Young money maker, season ticket holder",
-        "song": "The Ride",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Lil Wayne",
-        "bar": "Weezy on top, and that nigga ain't even home yet",
-        "song": "Moment 4 Life",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Lil Wayne",
-        "bar": "Me, Wayne, and Mack, the Three Amigos, I'm Steve Martin",
-        "song": "Make Them Remember",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
-    "Birdman": [
-      {
-        "friend": "Birdman",
-        "bar": "But Weezy and Stunna my only role models",
-        "song": "Lord Knows",
-        "album": "Take Care",
-        "year": 2011
-      }
-    ],
-    "Chubbs": [
-      {
-        "friend": "Chubbs",
+        "friend": "Michael Jordan",
         "bar": "Haffa and Jordan my only role models",
         "song": "Lord Knows",
         "album": "Take Care",
         "year": 2011
       },
       {
-        "friend": "Chubbs",
-        "bar": "Shout goes out to Niko, J and Chubbs, shouts to Gibbo",
-        "song": "The Motto",
-        "album": "Take Care",
-        "year": 2011
+        "friend": "Michael Jordan",
+        "bar": "MJ in every way, I just don't fade away",
+        "song": "9",
+        "album": "Views",
+        "year": 2016
       },
       {
-        "friend": "Chubbs",
-        "bar": "Poppin' out on Chubbs side, it's gonna be a party (yeah)",
-        "song": "Don't Worry",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
-    "Jordan What's Good": [
-      {
-        "friend": "Jordan What's Good",
-        "bar": "Haffa and Jordan my only role models",
-        "song": "Lord Knows",
-        "album": "Take Care",
-        "year": 2011
+        "friend": "Michael Jordan",
+        "bar": "Michael Jordan with the tennis shoes (Skrrt, Skrrt)",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
       }
     ],
     "Bob Marley": [
@@ -239,20 +351,11 @@
         "year": 2011
       }
     ],
-    "Snoop Dogg": [
+    "Young Money": [
       {
-        "friend": "Snoop Dogg",
-        "bar": "In this bitch all drinks on the house like Snoopy",
-        "song": "Lord Knows",
-        "album": "Take Care",
-        "year": 2011
-      }
-    ],
-    "Prince": [
-      {
-        "friend": "Prince",
-        "bar": "Girl, they love me like I'm Prince, like the new king with the crown",
-        "song": "Cameras",
+        "friend": "Young Money",
+        "bar": "Young money maker, season ticket holder",
+        "song": "The Ride",
         "album": "Take Care",
         "year": 2011
       }
@@ -267,24 +370,38 @@
       },
       {
         "friend": "Noah '40' Shebib",
-        "bar": "Feel like 40 won't even listen to my words when he knows I'm in a load of trouble",
-        "song": "Make Them Cry",
-        "album": "Iceman",
-        "year": 2026
+        "bar": "(Zombie on the track)",
+        "song": "Started from the Bottom",
+        "album": "Nothing Was the Same",
+        "year": 2013
       },
       {
         "friend": "Noah '40' Shebib",
-        "bar": "40, what's up? Shabang (Uh)",
-        "song": "Shabang",
-        "album": "Iceman",
-        "year": 2026
+        "bar": "Yeah, this that Oliver, 40, Niko shit man",
+        "song": "Know Yourself",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
       },
       {
         "friend": "Noah '40' Shebib",
-        "bar": "Fuck That, I'm In The Stew With Noah",
-        "song": "Firm Friends",
-        "album": "Iceman",
-        "year": 2026
+        "bar": "You know 40 wants peace but I'm down to cut ties for it",
+        "song": "9",
+        "album": "Views",
+        "year": 2016
+      },
+      {
+        "friend": "Noah '40' Shebib",
+        "bar": "40 the only one that know how I deal with the pressure",
+        "song": "Weston Road Flows",
+        "album": "Views",
+        "year": 2016
+      },
+      {
+        "friend": "Noah '40' Shebib",
+        "bar": "40 got house on the lake, I ain't know we had a lake",
+        "song": "Sacrifices",
+        "album": "More Life",
+        "year": 2017
       }
     ],
     "Lil Cease": [
@@ -305,28 +422,19 @@
         "year": 2011
       }
     ],
-    "Drizzy Drake": [
+    "Mac Dre": [
       {
-        "friend": "Drizzy Drake",
-        "bar": "Uh, Drizzy Drake, check me out",
-        "song": "Trust Issues",
-        "album": "Take Care",
-        "year": 2011
-      }
-    ],
-    "Luke (Uncle Luke)": [
-      {
-        "friend": "Luke (Uncle Luke)",
-        "bar": "Tell Uncle Luke I'm out in Miami, too",
+        "friend": "Mac Dre",
+        "bar": "Rest in peace, Mac Dre, I'm-a do it for the Bay",
         "song": "The Motto",
         "album": "Take Care",
         "year": 2011
       }
     ],
-    "Lil Tune": [
+    "Uncle Luke": [
       {
-        "friend": "Lil Tune",
-        "bar": "Tell Tune, \"Light one, pass it like a relay\"",
+        "friend": "Uncle Luke",
+        "bar": "Tell Uncle Luke I'm out in Miami, too",
         "song": "The Motto",
         "album": "Take Care",
         "year": 2011
@@ -350,336 +458,803 @@
         "year": 2011
       }
     ],
-    "Lionel Richie": [
+    "Chubbs": [
       {
-        "friend": "Lionel Richie",
-        "bar": "Y'all 'bout to make me richie like Lionel, for real",
-        "song": "Dust",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
-    "Samuel Bankman-Fried": [
-      {
-        "friend": "Samuel Bankman-Fried",
-        "bar": "Samuel Bankman, free all my guys up, yeah",
-        "song": "Dust",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
-    "Future": [
-      {
-        "friend": "Future",
-        "bar": "Future the Prince is my trusted advisor",
-        "song": "Dust",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Chubbs",
+        "bar": "Shout goes out to Niko, J and Chubbs, shouts to Gibbo",
+        "song": "The Motto",
+        "album": "Take Care",
+        "year": 2011
       },
       {
-        "friend": "Future",
-        "bar": "Me and Hendrix back by popular demand (Yeah)",
-        "song": "Ran to Atlanta",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Chubbs",
+        "bar": "Reps up in here got P Reign and Chubby and TJ and Winnie and whoa",
+        "song": "Know Yourself",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
       }
     ],
-    "Louis Farrakhan": [
+    "Dwight Howard": [
       {
-        "friend": "Louis Farrakhan",
-        "bar": "This ain't fixable smoke when you see us, stop sittin' with Farrakhan, nigga",
-        "song": "Whisper My Name",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Dwight Howard",
+        "bar": "I reached heights that Dwight Howard couldn't reach, nigga",
+        "song": "Tuscan Leather",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
-    "Wilt Chamberlain": [
+    "Prince Akeem": [
       {
-        "friend": "Wilt Chamberlain",
-        "bar": "Kept it a hundred on paper like Wilt",
-        "song": "Janice STFU",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Prince Akeem",
+        "bar": "Prince Akeem, they throw flowers at my feet, nigga",
+        "song": "Tuscan Leather",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
-    "Gucci Mane": [
+    "Ellen DeGeneres": [
       {
-        "friend": "Gucci Mane",
-        "bar": "Ask Pluto, Bank, or 21, you know what I'm sayin'?",
-        "song": "Ran to Atlanta",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Ellen DeGeneres",
+        "bar": "Degenerates, but even Ellen love our shit",
+        "song": "Tuscan Leather",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      }
+    ],
+    "Guy Pearce": [
+      {
+        "friend": "Guy Pearce",
+        "bar": "Lately I've been feelin' like Guy Pearce in Memento",
+        "song": "Tuscan Leather",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      }
+    ],
+    "Cappadonna": [
+      {
+        "friend": "Cappadonna",
+        "bar": "I sip the Pora and listen to Cappadonna",
+        "song": "Tuscan Leather",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      }
+    ],
+    "Will Smith": [
+      {
+        "friend": "Will Smith",
+        "bar": "The Fresh Prince just had dinner with Tatyana, no lie",
+        "song": "Tuscan Leather",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      }
+    ],
+    "Tatyana Ali": [
+      {
+        "friend": "Tatyana Ali",
+        "bar": "The Fresh Prince just had dinner with Tatyana, no lie",
+        "song": "Tuscan Leather",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      }
+    ],
+    "Derrick Rose": [
+      {
+        "friend": "Derrick Rose",
+        "bar": "I had to Derrick Rose the knee up 'fore I got the re-up",
+        "song": "Furthest Thing",
+        "album": "Nothing Was the Same",
+        "year": 2013
       },
       {
-        "friend": "Gucci Mane",
-        "bar": "Ayo, Gucci get back in the ride 'cause that's definitely not the guy",
-        "song": "Make Them Know",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Derrick Rose",
+        "bar": "I'm talkin' Rose like Derrick",
+        "song": "Sacrifices",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "21 Savage": [
+    "Mazin": [
       {
-        "friend": "21 Savage",
-        "bar": "Ask Pluto, Bank, or 21, you know what I'm sayin'?",
-        "song": "Ran to Atlanta",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Mazin",
+        "bar": "People like Mazin who was, a best friend to me",
+        "song": "Wu-Tang Forever",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
-    "Maneesh": [
+    "Serena Williams": [
       {
-        "friend": "Maneesh",
-        "bar": "Maneesh on the beat, shabang (Woo)",
-        "song": "Shabang",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Serena Williams",
+        "bar": "I swear I could beat Serena when she playin' with her left",
+        "song": "Worst Behavior",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
-    "Gilbert Arenas": [
+    "O.D.B.": [
       {
-        "friend": "Gilbert Arenas",
-        "bar": "I done got my shit inside arenas like Gilbert Arenas",
-        "song": "Make Them Pay",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "O.D.B.",
+        "bar": "When I come for that shit like O.D.B",
+        "song": "Worst Behavior",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
-    "DJ Khaled": [
+    "Trey Songz": [
       {
-        "friend": "DJ Khaled",
-        "bar": "And, Khaled, you know what I mean",
-        "song": "Make Them Pay",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Trey Songz",
+        "bar": "Then she start telling me how I'll never be as big as Trey Songz",
+        "song": "From Time",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
-    "Adin Ross": [
+    "Malcolm X": [
       {
-        "friend": "Adin Ross",
-        "bar": "Dog, I was aidin' Ross with streams before Adin Ross had ever streamed",
-        "song": "Make Them Pay",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Malcolm X",
+        "bar": "Exit at Malcom road and the East end",
+        "song": "Connect",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
-    "Rick Ross": [
+    "Paul Wall": [
       {
-        "friend": "Rick Ross",
-        "bar": "Dog, I was aidin' Ross with streams before Adin Ross had ever streamed",
-        "song": "Make Them Pay",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Paul Wall",
+        "bar": "Met a lot of girls in my times there, word to Paul Wall, not one fronted",
+        "song": "Too Much",
+        "album": "Nothing Was the Same",
+        "year": 2013
       }
     ],
-    "Cherokee D": [
+    "Bun B": [
       {
-        "friend": "Cherokee D",
-        "bar": "Shout out to Cherokee D and Skyy Black",
-        "song": "Make Them Pay",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
-    "Skyy Black": [
-      {
-        "friend": "Skyy Black",
-        "bar": "Shout out to Cherokee D and Skyy Black",
-        "song": "Make Them Pay",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
-    "Noel": [
-      {
-        "friend": "Noel",
-        "bar": "I'm with Noel like I'm Kris Kringle, yeah",
-        "song": "Burning Bridges",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
-    "Capo": [
-      {
-        "friend": "Capo",
-        "bar": "So I told Capo we can't burn them bridges, yeah",
-        "song": "Burning Bridges",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Bun B",
+        "bar": "Backstage at Warehouse in '09 like \"Is Bun comin'?\"",
+        "song": "Too Much",
+        "album": "Nothing Was the Same",
+        "year": 2013
       },
       {
-        "friend": "Capo",
-        "bar": "Capo got so many watches, he might clock a nigga",
-        "song": "Burning Bridges",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Bun B",
+        "bar": "I don't fuck with nobody in this shit but Bun",
+        "song": "Faithful",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "DOA": [
+      {
+        "friend": "DOA",
+        "bar": "Last night I brought DOA to the studio",
+        "song": "Come Thru",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      }
+    ],
+    "2 Chainz": [
+      {
+        "friend": "2 Chainz",
+        "bar": "Stay true, that's all me (2 Chainz)",
+        "song": "All Me",
+        "album": "Nothing Was the Same",
+        "year": 2013
       },
       {
-        "friend": "Capo",
-        "bar": "Capo got so many watches, he need supervision",
-        "song": "Burning Bridges",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "2 Chainz",
+        "bar": "2 Chainz, I'm a real one",
+        "song": "Sacrifices",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "Damon Wayans": [
+      {
+        "friend": "Damon Wayans",
+        "bar": "Damon Wayans, homie don't play that shit",
+        "song": "All Me",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      }
+    ],
+    "Keith Sweat": [
+      {
+        "friend": "Keith Sweat",
+        "bar": "I'm the light skinned Keith Sweat",
+        "song": "All Me",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      }
+    ],
+    "50 Cent": [
+      {
+        "friend": "50 Cent",
+        "bar": "Y'all don't wanna see Win Win, 50 or Whoa",
+        "song": "Energy",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Diana": [
+      {
+        "friend": "Diana",
+        "bar": "Sold it dirty like Diana never clean",
+        "song": "10 Bands",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Oliver El-Khatib": [
+      {
+        "friend": "Oliver El-Khatib",
+        "bar": "Yeah, this that Oliver, 40, Niko shit man",
+        "song": "Know Yourself",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      },
+      {
+        "friend": "Oliver El-Khatib",
+        "bar": "Me and Niko used to plot on how to make a change",
+        "song": "Views",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Niko Ioannides": [
+      {
+        "friend": "Niko Ioannides",
+        "bar": "Yeah, this that Oliver, 40, Niko shit man",
+        "song": "Know Yourself",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Boi-1da": [
+      {
+        "friend": "Boi-1da",
+        "bar": "Boi-1da, what's poppin'?",
+        "song": "Know Yourself",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      },
+      {
+        "friend": "Boi-1da",
+        "bar": "Boi-1da got the bounce back",
+        "song": "Free Smoke",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "Kanye West": [
+      {
+        "friend": "Kanye West",
+        "bar": "Then Kanye dropped, it was polos and backpacks, damn",
+        "song": "Know Yourself",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      },
+      {
+        "friend": "Kanye West",
+        "bar": "'Ye already know, yeah",
+        "song": "Free Smoke",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "P Reign": [
+      {
+        "friend": "P Reign",
+        "bar": "Reps up in here got P Reign and Chubby and TJ and Winnie and whoa",
+        "song": "Know Yourself",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Ricky Ross": [
+      {
+        "friend": "Ricky Ross",
+        "bar": "I mean besides Ricky Ross, Aubrey the biggest boss here",
+        "song": "No Tellin",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Madonna": [
+      {
+        "friend": "Madonna",
+        "bar": "You could be big as Madonna",
+        "song": "Madonna",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      },
+      {
+        "friend": "Madonna",
+        "bar": "Big as Madonna, I'll say it again",
+        "song": "Madonna",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Nick Cannon": [
+      {
+        "friend": "Nick Cannon",
+        "bar": "Young Nick Cannon with the snare drum, dancin'",
+        "song": "Used To",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Shaquille O'Neal": [
+      {
+        "friend": "Shaquille O'Neal",
+        "bar": "Shaq postin' up on niggas that I used to have posters of",
+        "song": "Used To",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Katy Perry": [
+      {
+        "friend": "Katy Perry",
+        "bar": "You can get buried for a ounce of Katy Perry",
+        "song": "Used To",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Usher": [
+      {
+        "friend": "Usher",
+        "bar": "You was poppin' back when Usher wore a U-chain",
+        "song": "6 God",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Cam'ron": [
+      {
+        "friend": "Cam'ron",
+        "bar": "That's what they doin' Cam'ron",
+        "song": "Star67",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Biz": [
+      {
+        "friend": "Biz",
+        "bar": "My nigga Biz said, \"The first mill' gonna change you\"",
+        "song": "Star67",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Cassidy": [
+      {
+        "friend": "Cassidy",
+        "bar": "I need to call up Miss Cassidy",
+        "song": "Preach",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Jay Ray": [
+      {
+        "friend": "Jay Ray",
+        "bar": "PND ain't with the ray-tay, you know Jay Ray",
+        "song": "Preach",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Lou Williams": [
+      {
+        "friend": "Lou Williams",
+        "bar": "Boomin' out in South Gwinnett like Lou Will",
+        "song": "6 Man",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      },
+      {
+        "friend": "Lou Williams",
+        "bar": "6 man like Lou Will, 2 girls and they get along like I'm...",
+        "song": "6 Man",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      },
+      {
+        "friend": "Lou Williams",
+        "bar": "Like I'm Lou Will, I just got the new deal",
+        "song": "6 Man",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Guy Fieri": [
+      {
+        "friend": "Guy Fieri",
+        "bar": "Fieri, I'm in the kitchen, I'm a magician",
+        "song": "6 Man",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Michael Myers": [
+      {
+        "friend": "Michael Myers",
+        "bar": "I'm like Macgyver, I'm Michael Meyers",
+        "song": "6 Man",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "DeMarcus Cousins": [
+      {
+        "friend": "DeMarcus Cousins",
+        "bar": "I might go DeMarcus Cousins out in public",
+        "song": "6 Man",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Dennis Graham": [
+      {
+        "friend": "Dennis Graham",
+        "bar": "Call him after we get off the phone and show him some love",
+        "song": "You & The 6",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      }
+    ],
+    "Chrysler": [
+      {
+        "friend": "Chrysler",
+        "bar": "Like when Chrysler made that one car",
+        "song": "Keep the Family Close",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "DMX": [
+      {
+        "friend": "DMX",
+        "bar": "On some DMX shit",
+        "song": "U With Me",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Marcus Houston": [
+      {
+        "friend": "Marcus Houston",
+        "bar": "More immature than Marcus Houston",
+        "song": "U With Me",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Rihanna": [
+      {
+        "friend": "Rihanna",
+        "bar": "Don't you see Riri right next to me?",
+        "song": "Hype",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Juelz Santana": [
+      {
+        "friend": "Juelz Santana",
+        "bar": "I feel like Juelz Santana",
+        "song": "Hype",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Renny": [
+      {
+        "friend": "Renny",
+        "bar": "Weston Road Flows, I did this shit for my nigga Renny",
+        "song": "Weston Road Flows",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Kevin Durant": [
+      {
+        "friend": "Kevin Durant",
+        "bar": "Shout out to KD, we relate, we get the same attention",
+        "song": "Weston Road Flows",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Monique": [
+      {
+        "friend": "Monique",
+        "bar": "You wouldn't tell me you loved me, started seein' Monique",
+        "song": "Weston Road Flows",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "T-Minus": [
+      {
+        "friend": "T-Minus",
+        "bar": "Last time I heard from Monique, T-Minus was makin' beats",
+        "song": "Weston Road Flows",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Vince Carter": [
+      {
+        "friend": "Vince Carter",
+        "bar": "Been flowin' stupid since Vince Carter",
+        "song": "Weston Road Flows",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Glenn Lewis": [
+      {
+        "friend": "Glenn Lewis",
+        "bar": "Drinkin' Hpnotiq with Glenn Lewis, I been through it",
+        "song": "Weston Road Flows",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Jessica": [
+      {
+        "friend": "Jessica",
+        "bar": "Took up with Jessica, Kim, you know that I'm bound to see you",
+        "song": "Redemption",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Kim": [
+      {
+        "friend": "Kim",
+        "bar": "Took up with Jessica, Kim, you know that I'm bound to see you",
+        "song": "Redemption",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Sydney": [
+      {
+        "friend": "Sydney",
+        "bar": "Sydney gave up on me when I went missin'",
+        "song": "Redemption",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Syd": [
+      {
+        "friend": "Syd",
+        "bar": "Syd had a baby and treated me different",
+        "song": "Redemption",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Erica": [
+      {
+        "friend": "Erica",
+        "bar": "Erica sued me and opened a business",
+        "song": "Redemption",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Jodeci": [
+      {
+        "friend": "Jodeci",
+        "bar": "Jodeci \"Cry for You\"",
+        "song": "Controlla",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Beenie Man": [
+      {
+        "friend": "Beenie Man",
+        "bar": "Drake from Canada, Beenie Man from Jamaica",
+        "song": "Controlla",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Teddy Pendergrass": [
+      {
+        "friend": "Teddy Pendergrass",
+        "bar": "All the Cadillac, like I'm Teddy Pendergrass",
+        "song": "Child's Play",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Justin Timberlake": [
+      {
+        "friend": "Justin Timberlake",
+        "bar": "Girl, let me rock, rock, rock, rock, rock your body\nJustin Timberlake and then I hit the highway",
+        "song": "Pop Style",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "David Beckham": [
+      {
+        "friend": "David Beckham",
+        "bar": "And my wifey is a spice like I'm David Beckham",
+        "song": "Views",
+        "album": "Views",
+        "year": 2016
       }
     ],
     "Kobe Bryant": [
       {
         "friend": "Kobe Bryant",
-        "bar": "R.I.P. Kobe, but y'all niggas brokie",
-        "song": "National Treasures",
-        "album": "Iceman",
-        "year": 2026
+        "bar": "Now me and Kobe doin' shots the night before the game",
+        "song": "Views",
+        "album": "Views",
+        "year": 2016
       }
     ],
-    "Alex Moss": [
+    "Christian Bale": [
       {
-        "friend": "Alex Moss",
-        "bar": "Alex Moss tryna bring me back a hundred years from now, he got my body froze (okay)",
-        "song": "National Treasures",
-        "album": "Iceman",
-        "year": 2026
-      },
-      {
-        "friend": "Alex Moss",
-        "bar": "I be tellin' Alex Moss, \"Fuck it, \"his-and-hers\" it\"",
-        "song": "Little Birdie",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Christian Bale",
+        "bar": "Lamborghini got me feelin' like I'm Christian Bale",
+        "song": "Views",
+        "album": "Views",
+        "year": 2016
       }
     ],
-    "Shane Coppin": [
+    "J-Lo": [
       {
-        "friend": "Shane Coppin",
-        "bar": "Better treat me like Shane Coppin'",
-        "song": "B's on the Table",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "J-Lo",
+        "bar": "I drunk text J-Lo",
+        "song": "Free Smoke",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "TLC": [
+    "Chef KD": [
       {
-        "friend": "TLC",
-        "bar": "Niggas get punched in the face on some TLC shit, on the dead guys",
-        "song": "What Did I Miss?",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Chef KD",
+        "bar": "Used to chef KD",
+        "song": "Free Smoke",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Styles P": [
+    "Virginia Black": [
       {
-        "friend": "Styles P",
-        "bar": "Twistin' that R in his face like Styles and P",
-        "song": "Plot Twist",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Virginia Black",
+        "bar": "Virginia Black (doo-doo)",
+        "song": "Gyalchester",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "YG": [
+    "Quavo": [
       {
-        "friend": "YG",
-        "bar": "You ain't had one since me and YG rapped",
-        "song": "2 Hard 4 the Radio",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Quavo",
+        "bar": "(Quavo)",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Mustard": [
+    "Michael Phelps": [
       {
-        "friend": "Mustard",
-        "bar": "Mustard heard about us, gotta catch up to the slaps",
-        "song": "2 Hard 4 the Radio",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Michael Phelps",
+        "bar": "Michael Phelps with the swim moves (Skrrt, skrrt, oh)",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Dean Martin": [
+    "Ike Turner": [
       {
-        "friend": "Dean Martin",
-        "bar": "You belong in the pack with some rats like Dean Martin",
-        "song": "Make Them Remember",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Ike Turner",
+        "bar": "Ike Turner with the left hand",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Steve Martin": [
+    "Griselda Blanco": [
       {
-        "friend": "Steve Martin",
-        "bar": "Me, Wayne, and Mack, the Three Amigos, I'm Steve Martin",
-        "song": "Make Them Remember",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Griselda Blanco",
+        "bar": "Griselda Blanco with the trap moves",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Virgil Abloh": [
+    "The Undertaker": [
       {
-        "friend": "Virgil Abloh",
-        "bar": "I don't like goin' to Vegas, I start missin' Virgil",
-        "song": "Little Birdie",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "The Undertaker",
+        "bar": "Undertaker with the tattoos",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Lauryn Hill": [
+    "Kid 'n Play": [
       {
-        "friend": "Lauryn Hill",
-        "bar": "Lauryn, why you actin' like I'm not important to you?",
-        "song": "Little Birdie",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Kid 'n Play",
+        "bar": "me and Drake kick like Kid N' Play",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "DJ Frisco954": [
+    "Mason Betha": [
       {
-        "friend": "DJ Frisco954",
-        "bar": "D-D-DJ Frisco954, yeah",
-        "song": "Little Birdie",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Mason Betha",
+        "bar": "Free Mase' me about the bracelets",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Cardi B": [
+    "Kendall Jenner": [
       {
-        "friend": "Cardi B",
-        "bar": "Ref1, he so drunk, he just played Nicki then some Cardi, I'm sorry",
-        "song": "Don't Worry",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Kendall Jenner",
+        "bar": "Kendall turned 21, was up the street with 21",
+        "song": "Sacrifices",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Jackie Onassis": [
+    "21 Savage": [
       {
-        "friend": "Jackie Onassis",
-        "bar": "Layin' In My Girl's Lap Like She Jackie Onassis",
-        "song": "Firm Friends",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "21 Savage",
+        "bar": "Kendall turned 21, was up the street with 21",
+        "song": "Sacrifices",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "John F. Kennedy": [
+    "Lil Baby": [
       {
-        "friend": "John F. Kennedy",
-        "bar": "And I'm John Kennedy",
-        "song": "Firm Friends",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Lil Baby",
+        "bar": "I'm talkin' Baby like Stunna, I'm talkin' Baby like Face",
+        "song": "Sacrifices",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Luis Enrique": [
+    "Nate Dogg": [
       {
-        "friend": "Luis Enrique",
-        "bar": "My Son Is Taking Corner Kicks In Front Of Luis Enrique At Psg",
-        "song": "Firm Friends",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Nate Dogg",
+        "bar": "Big dog from the 6, I'm talkin' Dogg like Nate",
+        "song": "Sacrifices",
+        "album": "More Life",
+        "year": 2017
       }
     ],
-    "Bryson Tiller": [
+    "Ness": [
       {
-        "friend": "Bryson Tiller",
-        "bar": "Thinkin' of tryin' me, do like Bryson",
-        "song": "Shabang",
-        "album": "Iceman",
-        "year": 2026
+        "friend": "Ness",
+        "bar": "Ness on the beat",
+        "song": "KMT",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "Gustavo": [
+      {
+        "friend": "Gustavo",
+        "bar": "Now this is that big bad, this is Gustavo",
+        "song": "KMT",
+        "album": "More Life",
+        "year": 2017
       }
     ]
   }

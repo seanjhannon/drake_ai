@@ -1,18 +1,20 @@
-/** Client-side scan replay (Vercel demo — no live LLM). */
+/** Client-side stream replay (Vercel demo — no live LLM). */
+export const DEMO_LYRICS_URL = '/data/demo-lyrics.jsonl';
 export const DEMO_SCAN_URL = '/data/demo-scan.jsonl';
 
 export const isClientDemoMode =
   process.env.NEXT_PUBLIC_DEMO_MODE === 'true';
 
-/** Delay between replay events (ms). */
-export const DEMO_REPLAY_EVENT_MS = 55;
+/** Per-event delay — keep full-catalog replays under ~10s each. */
+export const DEMO_LYRICS_REPLAY_MS = 14;
+export const DEMO_SCAN_REPLAY_MS = 22;
 
 export type ScanStreamEvent = Record<string, unknown>;
 
-export async function fetchDemoScanEvents(): Promise<ScanStreamEvent[]> {
-  const res = await fetch(DEMO_SCAN_URL);
+export async function fetchDemoReplayEvents(url: string): Promise<ScanStreamEvent[]> {
+  const res = await fetch(url);
   if (!res.ok) {
-    throw new Error(`Could not load demo scan (${res.status})`);
+    throw new Error(`Could not load demo replay (${res.status})`);
   }
   const text = await res.text();
   const events: ScanStreamEvent[] = [];
@@ -22,6 +24,14 @@ export async function fetchDemoScanEvents(): Promise<ScanStreamEvent[]> {
     events.push(JSON.parse(trimmed) as ScanStreamEvent);
   }
   return events;
+}
+
+export function fetchDemoLyricsEvents(): Promise<ScanStreamEvent[]> {
+  return fetchDemoReplayEvents(DEMO_LYRICS_URL);
+}
+
+export function fetchDemoScanEvents(): Promise<ScanStreamEvent[]> {
+  return fetchDemoReplayEvents(DEMO_SCAN_URL);
 }
 
 export function sleep(ms: number, signal?: AbortSignal): Promise<void> {

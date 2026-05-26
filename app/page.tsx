@@ -5,10 +5,13 @@ import { useEffect, useRef, useState, useCallback, type CSSProperties } from 're
 import { DRAKE_DISCOGRAPHY, ALBUM_COLORS, TOTAL_SONGS } from '@/lib/discography';
 import { randomDrakeQuote } from '@/lib/drake-quotes';
 import {
-  DEMO_REPLAY_EVENT_MS,
+  DEMO_LYRICS_REPLAY_MS,
+  DEMO_SCAN_REPLAY_MS,
+  fetchDemoLyricsEvents,
   fetchDemoScanEvents,
   isClientDemoMode,
   sleep,
+  type ScanStreamEvent,
 } from '@/lib/demo-replay';
 import { formatScanEvent } from '@/lib/scan-log';
 import { mentionKey } from '@/lib/mention-key';
@@ -672,22 +675,35 @@ export default function Home() {
     [job, lyrics, markExtractProcessed],
   );
 
-  const runDemoReplay = useCallback(
-    async (onDone?: () => Promise<void>) => {
+  const runDemoStreamReplay = useCallback(
+    async (
+      kind: JobKind,
+      loadEvents: () => Promise<ScanStreamEvent[]>,
+      eventMs: number,
+      onDone?: () => Promise<void>,
+      opts?: { appendLog?: boolean },
+    ) => {
       if (job) return;
 
-      setJob('extract');
+      const appendLog = opts?.appendLog === true;
+      setJob(kind);
       setApiStatus('busy');
-      setExtractPaused(false);
-      setLog([]);
-      setProgress(0);
-      extractSessionRef.current = { scopeTracks: null, processedKeys: new Set() };
+      if (kind === 'extract') {
+        setExtractPaused(false);
+        extractSessionRef.current = { scopeTracks: null, processedKeys: new Set() };
+      }
+      if (!appendLog) {
+        setLog([]);
+      }
+      if (!appendLog || kind === 'extract') {
+        setProgress(0);
+      }
 
       const abort = new AbortController();
       abortRef.current = abort;
 
       try {
-        const events = await fetchDemoScanEvents();
+        const events = await loadEvents();
         for (const event of events) {
           if (abort.signal.aborted) break;
 
@@ -697,16 +713,18 @@ export default function Home() {
             setLog(prev => [...prev, { type: event.type as string, text, color }]);
           }
 
-          if (event.type === 'extract') {
-            inFlightExtractRef.current = {
-              song: event.song as string,
-              album: event.album as string,
-            };
-          }
-          if (event.type === 'friends' || event.type === 'no_friends') {
-            const inflight = inFlightExtractRef.current;
-            if (inflight && inflight.song === event.song) {
-              markExtractProcessed(inflight.song, inflight.album);
+          if (kind === 'extract') {
+            if (event.type === 'extract') {
+              inFlightExtractRef.current = {
+                song: event.song as string,
+                album: event.album as string,
+              };
+            }
+            if (event.type === 'friends' || event.type === 'no_friends') {
+              const inflight = inFlightExtractRef.current;
+              if (inflight && inflight.song === event.song) {
+                markExtractProcessed(inflight.song, inflight.album);
+              }
             }
           }
 
@@ -716,7 +734,7 @@ export default function Home() {
           }
           if (event.type === 'done') {
             setProgress(100);
-            extractSessionRef.current = null;
+            if (kind === 'extract') extractSessionRef.current = null;
             if (onDone) await onDone();
             setApiStatus('ready');
           }
@@ -724,7 +742,7 @@ export default function Home() {
             setApiStatus('error');
           }
 
-          await sleep(DEMO_REPLAY_EVENT_MS, abort.signal);
+          await sleep(eventMs, abort.signal);
         }
       } catch (e: unknown) {
         const err = e as Error;
@@ -743,6 +761,23 @@ export default function Home() {
     [job, markExtractProcessed],
   );
 
+  const runDemoLyricsReplay = useCallback(
+    (onDone?: () => Promise<void>, opts?: { appendLog?: boolean }) =>
+      runDemoStreamReplay('lyrics', fetchDemoLyricsEvents, DEMO_LYRICS_REPLAY_MS, onDone, opts),
+    [runDemoStreamReplay],
+  );
+
+  const runDemoScanReplay = useCallback(
+    (onDone?: () => Promise<void>, opts?: { appendLog?: boolean }) =>
+      runDemoStreamReplay('extract', fetchDemoScanEvents, DEMO_SCAN_REPLAY_MS, onDone, opts),
+    [runDemoStreamReplay],
+  );
+
+  const runFullDemoReplay = useCallback(async () => {
+    await runDemoLyricsReplay(loadLyrics);
+    await runDemoScanReplay(loadResults, { appendLog: true });
+  }, [runDemoLyricsReplay, runDemoScanReplay, loadLyrics, loadResults]);
+
   const pauseExtract = useCallback(() => {
     if (job !== 'extract') return;
     pauseRequestedRef.current = true;
@@ -751,7 +786,7 @@ export default function Home() {
 
   const resumeExtract = useCallback(() => {
     if (isClientDemoMode) {
-      runDemoReplay(loadResults);
+      runDemoScanReplay(loadResults);
       return;
     }
 
@@ -776,29 +811,32 @@ export default function Home() {
       { tracks: remaining },
       { resume: true },
     );
-  }, [runStream, runDemoReplay, loadResults, lyrics]);
+  }, [runStream, runDemoScanReplay, loadResults, lyrics]);
 
-  const syncLyrics = useCallback(
-    () => runStream('/api/lyrics', 'POST', 'lyrics', loadLyrics),
-    [runStream, loadLyrics],
-  );
+  const syncLyrics = useCallback(() => {
+    if (isClientDemoMode) {
+      runDemoLyricsReplay(loadLyrics);
+      return;
+    }
+    runStream('/api/lyrics', 'POST', 'lyrics', loadLyrics);
+  }, [runStream, runDemoLyricsReplay, loadLyrics]);
 
   const extractFriends = useCallback(() => {
     extractSessionRef.current = null;
     setExtractPaused(false);
     if (isClientDemoMode) {
-      runDemoReplay(loadResults);
+      runFullDemoReplay();
       return;
     }
     runStream('/api/scan', 'GET', 'extract', loadResults);
-  }, [runStream, runDemoReplay, loadResults]);
+  }, [runStream, runFullDemoReplay, loadResults]);
 
   const reExtract = useCallback(async () => {
     extractSessionRef.current = null;
     setExtractPaused(false);
 
     if (isClientDemoMode) {
-      runDemoReplay(loadResults);
+      runDemoScanReplay(loadResults);
       return;
     }
 
@@ -819,7 +857,7 @@ export default function Home() {
     await fetch('/api/results', { method: 'DELETE' });
     setResults(null);
     extractFriends();
-  }, [extractFriends, runStream, runDemoReplay, loadResults, selectedTracks, lyrics]);
+  }, [extractFriends, runStream, runDemoScanReplay, loadResults, selectedTracks, lyrics]);
 
   const handleExtractClick = useCallback(() => {
     if (job === 'extract') {
@@ -843,7 +881,7 @@ export default function Home() {
     if (selectedTracks.size === 0) return;
     setExtractPaused(false);
     if (isClientDemoMode) {
-      runDemoReplay(loadResults);
+      runDemoScanReplay(loadResults);
       return;
     }
     runStream(
@@ -853,7 +891,7 @@ export default function Home() {
       loadResults,
       selectionFromKeys(selectedTracks),
     );
-  }, [runStream, runDemoReplay, loadResults, selectedTracks]);
+  }, [runStream, runDemoScanReplay, loadResults, selectedTracks]);
 
   const toggleTrack = (key: string) => {
     setSelectedTracks(prev => {
@@ -991,8 +1029,8 @@ export default function Home() {
         <div style={{ display: 'flex', gap: 8 }}>
           <button
             onClick={syncLyrics}
-            disabled={busy || isClientDemoMode}
-            title={isClientDemoMode ? 'Lyrics are pre-loaded in the demo' : undefined}
+            disabled={busy}
+            title={isClientDemoMode ? 'Replay full discography lyrics sync' : undefined}
             style={{
               background: busy && job !== 'lyrics' ? '#1A1A1A' : '#1E1E1E',
               color: busy && job !== 'lyrics' ? '#5A5A5A' : '#E8D5A3',
@@ -1000,15 +1038,16 @@ export default function Home() {
               padding: '8px 16px',
               fontFamily: 'Georgia, serif',
               fontSize: 13,
-              cursor: busy || isClientDemoMode ? 'not-allowed' : 'pointer',
+              cursor: busy ? 'not-allowed' : 'pointer',
               borderRadius: 3,
-              opacity: isClientDemoMode ? 0.45 : 1,
             }}
           >
-            {isClientDemoMode
-              ? 'Lyrics loaded'
-              : busy && job === 'lyrics'
-                ? 'Syncing…'
+            {busy && job === 'lyrics'
+              ? 'Syncing…'
+              : isClientDemoMode
+                ? hasLyrics
+                  ? 'Replay lyrics sync'
+                  : 'Sync Lyrics (demo)'
                 : hasLyrics
                   ? 'Re-Sync Lyrics'
                   : 'Sync Lyrics'}
@@ -1055,7 +1094,7 @@ export default function Home() {
                 : isClientDemoMode
                   ? results
                     ? 'Replay scan'
-                    : 'Play demo scan'
+                    : 'Run full demo'
                   : results
                     ? selectedWithLyrics > 0
                       ? `Re-Scan (${selectedWithLyrics})`

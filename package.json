@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "demo:scan": "node scripts/generate-demo-scan.mjs"
+    "demo:replay": "node scripts/generate-demo-replay.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.97.1",

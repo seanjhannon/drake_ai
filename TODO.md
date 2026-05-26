@@ -1,5 +1,5 @@
 # Deploy to Vercel (free demo for friends)
-See [DEPLOY.md](./DEPLOY.md). **Hobby only, $0 API:** commit `data/lyrics.json` + `results.json`, record `data/demo-scan.jsonl`, replay scan in the browser (`NEXT_PUBLIC_DEMO_MODE`), block live `POST /api/scan` in prod. Real scans stay local.
+See [DEPLOY.md](./DEPLOY.md). **Hobby only, $0 API:** commit `data/lyrics.json` + `results.json`, `npm run demo:replay` for full-catalog lyrics + scan replay in the browser (`NEXT_PUBLIC_DEMO_MODE`), block live POST routes in prod. Real scans stay local.
 
 # Visual timeline
 How has shoutout volume changed over time? Add a chart so we can see, per project, who the top n referenced Friends were

@@ -85,7 +85,7 @@ See [DEPLOY.md](./DEPLOY.md) for architecture and maintenance.
 
 ```bash
 # Re-scan locally, then refresh committed artifacts:
-npm run demo:scan   # regenerates public/data/demo-scan.jsonl
-git add results.json data/lyrics.json public/data/demo-scan.jsonl
+npm run demo:replay   # regenerates public/data/demo-lyrics.jsonl + demo-scan.jsonl
+git add results.json data/lyrics.json public/data/demo-lyrics.jsonl public/data/demo-scan.jsonl
 git commit && git push   # Vercel redeploys automatically
 ```

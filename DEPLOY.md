@@ -8,8 +8,8 @@ Plan to host a **free, demo-only** build for friends. Watching the scan stream i
 |------|----------|
 | **$0 hosting** | Vercel **Hobby** only — no Pro |
 | **$0 API in prod** | No `ANTHROPIC_API_KEY` / `OPENROUTER_API_KEY` on Vercel |
-| **Demo data** | Commit `data/lyrics.json` + `results.json` (final mentions everyone browses) |
-| **Scan as theater** | Replay a **recorded** NDJSON event log locally captured once — same UI log/progress as a real run |
+| **Demo data** | Commit `data/lyrics.json` + `results.json` (full lyrics on disk; browse mentions from results) |
+| **Lyrics + scan theater** | Replay **full catalog** NDJSON logs (`demo-lyrics.jsonl` 179 songs, `demo-scan.jsonl` 175 with lyrics) — same UI as live runs |
 
 Real scans and lyrics sync stay on your machine (`npm run dev` + `.env.local`).
 
@@ -42,7 +42,8 @@ flowchart LR
   subgraph git [Committed to repo]
     Lyrics[data/lyrics.json]
     Results[results.json]
-    Replay[data/demo-scan.jsonl]
+    ReplayLyrics[data/demo-lyrics.jsonl]
+    ReplayScan[data/demo-scan.jsonl]
   end
 
   subgraph vercel [Vercel Hobby]
@@ -64,25 +65,23 @@ flowchart LR
 
 ### 1. Ship seed data
 
-- Remove `data/lyrics.json` and `results.json` from `.gitignore` (or force-add).
-- Commit both; `results.json` is the **canonical** end state after the recorded scan.
+- Commit `data/lyrics.json` and `results.json`; lyrics should be a **full** discography sync (`parsed` ≈ 175/179).
 
-### 2. Record a scan replay file
+### 2. Generate replay files
 
-Once locally (same selection you want friends to “watch” — e.g. Take Care subset you already scanned):
+After lyrics + scan data are committed:
 
-1. Run a real extract with logging, **or** tee the stream to a file.
-2. Save **one JSON object per line** (same format `/api/scan` already streams): `start`, `extract`, `friends`, `no_friends`, `progress`, `done`, etc.
-3. Commit as e.g. `data/demo-scan.jsonl`.
+```bash
+npm run demo:replay
+```
 
-Optional: add a small script that runs scan locally and writes `data/demo-scan.jsonl` for re-recording after catalog changes.
+This writes `public/data/demo-lyrics.jsonl` (all 179 songs) and `public/data/demo-scan.jsonl` (every song with lyrics). Re-run whenever lyrics or results change.
 
 ### 3. Demo mode in the UI
 
 When `NEXT_PUBLIC_DEMO_MODE=true` (or no API keys detected):
 
-- **Scan Mentions** (and any “sync lyrics” affordance) triggers **replay** instead of `fetch('/api/scan')`.
-- Replay implementation (preferred): `fetch('/data/demo-scan.jsonl')` → parse lines → `setLog` / `setProgress` with `setTimeout` or `requestAnimationFrame` between events (match pacing of a real run, or slightly faster).
+- **Sync Lyrics** replays `demo-lyrics.jsonl`; **Run full demo** (no results yet) chains lyrics then scan; **Replay scan** plays `demo-scan.jsonl` only.
 - On `done`, call existing `loadResults()` so the table matches committed `results.json` (don’t depend on prod writing disk).
 - Label in UI: e.g. “Demo replay” so friends know it’s not live AI.
 
@@ -104,8 +103,7 @@ No API keys in Vercel env vars.
 ### Phase 1 — Repo
 
 - [ ] Implement demo replay + prod guards (above)
-- [ ] Record `data/demo-scan.jsonl` from local scan
-- [ ] Commit `data/lyrics.json`, `results.json`, `data/demo-scan.jsonl`
+- [ ] `npm run demo:replay` and commit `data/lyrics.json`, `results.json`, `public/data/demo-*.jsonl`
 - [ ] `npm run build`
 - [ ] Push `main`
 
