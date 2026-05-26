@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { demoModeResponse, isDemoMode } from '@/lib/demo-mode';
 import { TOTAL_SONGS } from '@/lib/discography';
 import { mapConcurrent, runExclusive } from '@/lib/concurrent';
 import {
@@ -45,11 +46,15 @@ export async function GET() {
 }
 
 export async function DELETE() {
+  if (isDemoMode()) {
+    return NextResponse.json({ error: 'Disabled in demo mode' }, { status: 403 });
+  }
   clearLyrics();
   return NextResponse.json({ ok: true });
 }
 
 export async function POST(request: NextRequest) {
+  if (isDemoMode()) return demoModeResponse();
   let selection = null;
   const contentType = request.headers.get('content-type') ?? '';
   if (contentType.includes('application/json')) {

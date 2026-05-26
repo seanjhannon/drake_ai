@@ -4,6 +4,12 @@ import Link from 'next/link';
 import { useEffect, useRef, useState, useCallback, type CSSProperties } from 'react';
 import { DRAKE_DISCOGRAPHY, ALBUM_COLORS, TOTAL_SONGS } from '@/lib/discography';
 import { randomDrakeQuote } from '@/lib/drake-quotes';
+import {
+  DEMO_REPLAY_EVENT_MS,
+  fetchDemoScanEvents,
+  isClientDemoMode,
+  sleep,
+} from '@/lib/demo-replay';
 import { formatScanEvent } from '@/lib/scan-log';
 import { mentionKey } from '@/lib/mention-key';
 import { trackKey } from '@/lib/tracks';
@@ -666,6 +672,77 @@ export default function Home() {
     [job, lyrics, markExtractProcessed],
   );
 
+  const runDemoReplay = useCallback(
+    async (onDone?: () => Promise<void>) => {
+      if (job) return;
+
+      setJob('extract');
+      setApiStatus('busy');
+      setExtractPaused(false);
+      setLog([]);
+      setProgress(0);
+      extractSessionRef.current = { scopeTracks: null, processedKeys: new Set() };
+
+      const abort = new AbortController();
+      abortRef.current = abort;
+
+      try {
+        const events = await fetchDemoScanEvents();
+        for (const event of events) {
+          if (abort.signal.aborted) break;
+
+          const text = formatScanEvent(event);
+          if (text) {
+            const color = logColor(event.type as string);
+            setLog(prev => [...prev, { type: event.type as string, text, color }]);
+          }
+
+          if (event.type === 'extract') {
+            inFlightExtractRef.current = {
+              song: event.song as string,
+              album: event.album as string,
+            };
+          }
+          if (event.type === 'friends' || event.type === 'no_friends') {
+            const inflight = inFlightExtractRef.current;
+            if (inflight && inflight.song === event.song) {
+              markExtractProcessed(inflight.song, inflight.album);
+            }
+          }
+
+          if (event.type === 'progress') {
+            const total = event.total as number;
+            setProgress(Math.round(((event.completed as number) / total) * 100));
+          }
+          if (event.type === 'done') {
+            setProgress(100);
+            extractSessionRef.current = null;
+            if (onDone) await onDone();
+            setApiStatus('ready');
+          }
+          if (event.type === 'error') {
+            setApiStatus('error');
+          }
+
+          await sleep(DEMO_REPLAY_EVENT_MS, abort.signal);
+        }
+      } catch (e: unknown) {
+        const err = e as Error;
+        if (err.name !== 'AbortError') {
+          setLog(prev => [
+            ...prev,
+            { type: 'error', text: `Demo replay failed: ${err.message}`, color: '#cc4444' },
+          ]);
+          setApiStatus('error');
+        }
+      } finally {
+        setJob(null);
+        setApiStatus(prev => (prev === 'busy' ? 'ready' : prev));
+      }
+    },
+    [job, markExtractProcessed],
+  );
+
   const pauseExtract = useCallback(() => {
     if (job !== 'extract') return;
     pauseRequestedRef.current = true;
@@ -673,6 +750,11 @@ export default function Home() {
   }, [job]);
 
   const resumeExtract = useCallback(() => {
+    if (isClientDemoMode) {
+      runDemoReplay(loadResults);
+      return;
+    }
+
     const session = extractSessionRef.current;
     if (!session || !lyrics) return;
 
@@ -694,7 +776,7 @@ export default function Home() {
       { tracks: remaining },
       { resume: true },
     );
-  }, [runStream, loadResults, lyrics]);
+  }, [runStream, runDemoReplay, loadResults, lyrics]);
 
   const syncLyrics = useCallback(
     () => runStream('/api/lyrics', 'POST', 'lyrics', loadLyrics),
@@ -704,12 +786,21 @@ export default function Home() {
   const extractFriends = useCallback(() => {
     extractSessionRef.current = null;
     setExtractPaused(false);
+    if (isClientDemoMode) {
+      runDemoReplay(loadResults);
+      return;
+    }
     runStream('/api/scan', 'GET', 'extract', loadResults);
-  }, [runStream, loadResults]);
+  }, [runStream, runDemoReplay, loadResults]);
 
   const reExtract = useCallback(async () => {
     extractSessionRef.current = null;
     setExtractPaused(false);
+
+    if (isClientDemoMode) {
+      runDemoReplay(loadResults);
+      return;
+    }
 
     const keysWithLyrics = lyrics
       ? [...selectedTracks].filter(k => lyrics.trackLyrics?.[k])
@@ -728,7 +819,7 @@ export default function Home() {
     await fetch('/api/results', { method: 'DELETE' });
     setResults(null);
     extractFriends();
-  }, [extractFriends, runStream, loadResults, selectedTracks, lyrics]);
+  }, [extractFriends, runStream, runDemoReplay, loadResults, selectedTracks, lyrics]);
 
   const handleExtractClick = useCallback(() => {
     if (job === 'extract') {
@@ -751,6 +842,10 @@ export default function Home() {
   const extractSelected = useCallback(() => {
     if (selectedTracks.size === 0) return;
     setExtractPaused(false);
+    if (isClientDemoMode) {
+      runDemoReplay(loadResults);
+      return;
+    }
     runStream(
       '/api/scan',
       'POST',
@@ -758,7 +853,7 @@ export default function Home() {
       loadResults,
       selectionFromKeys(selectedTracks),
     );
-  }, [runStream, loadResults, selectedTracks]);
+  }, [runStream, runDemoReplay, loadResults, selectedTracks]);
 
   const toggleTrack = (key: string) => {
     setSelectedTracks(prev => {
@@ -833,7 +928,7 @@ export default function Home() {
               boxShadow: `0 0 6px ${statusColor}`,
             }} />
             <span style={{ color: '#5A5A5A', fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-              OVO Intelligence
+              OVO Intelligence{isClientDemoMode ? ' · Demo' : ''}
             </span>
           </div>
           <h1 style={{ color: '#C9A84C', fontSize: 20, fontFamily: 'Georgia, serif', marginTop: 2 }}>
@@ -896,7 +991,8 @@ export default function Home() {
         <div style={{ display: 'flex', gap: 8 }}>
           <button
             onClick={syncLyrics}
-            disabled={busy}
+            disabled={busy || isClientDemoMode}
+            title={isClientDemoMode ? 'Lyrics are pre-loaded in the demo' : undefined}
             style={{
               background: busy && job !== 'lyrics' ? '#1A1A1A' : '#1E1E1E',
               color: busy && job !== 'lyrics' ? '#5A5A5A' : '#E8D5A3',
@@ -904,11 +1000,18 @@ export default function Home() {
               padding: '8px 16px',
               fontFamily: 'Georgia, serif',
               fontSize: 13,
-              cursor: busy ? 'not-allowed' : 'pointer',
+              cursor: busy || isClientDemoMode ? 'not-allowed' : 'pointer',
               borderRadius: 3,
+              opacity: isClientDemoMode ? 0.45 : 1,
             }}
           >
-            {busy && job === 'lyrics' ? 'Syncing…' : hasLyrics ? 'Re-Sync Lyrics' : 'Sync Lyrics'}
+            {isClientDemoMode
+              ? 'Lyrics loaded'
+              : busy && job === 'lyrics'
+                ? 'Syncing…'
+                : hasLyrics
+                  ? 'Re-Sync Lyrics'
+                  : 'Sync Lyrics'}
           </button>
           <button
             onClick={handleExtractClick}
@@ -949,11 +1052,15 @@ export default function Home() {
               ? 'Pause'
               : extractPaused
                 ? 'Resume'
-                : results
-                  ? selectedWithLyrics > 0
-                    ? `Re-Scan (${selectedWithLyrics})`
-                    : 'Re-Scan All'
-                  : 'Scan Mentions'}
+                : isClientDemoMode
+                  ? results
+                    ? 'Replay scan'
+                    : 'Play demo scan'
+                  : results
+                    ? selectedWithLyrics > 0
+                      ? `Re-Scan (${selectedWithLyrics})`
+                      : 'Re-Scan All'
+                    : 'Scan Mentions'}
           </button>
         </div>
       </header>

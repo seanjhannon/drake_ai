@@ -1,4 +1,5 @@
 import { NextRequest } from 'next/server';
+import { demoModeResponse, isDemoMode } from '@/lib/demo-mode';
 import { mapConcurrent, runExclusive } from '@/lib/concurrent';
 import { extractFriends } from '@/lib/extract';
 import { mentionKey } from '@/lib/mention-key';
@@ -34,10 +35,12 @@ async function parseSelection(request: NextRequest) {
 }
 
 export async function GET(request: NextRequest) {
+  if (isDemoMode()) return demoModeResponse();
   return runExtract(request, null);
 }
 
 export async function POST(request: NextRequest) {
+  if (isDemoMode()) return demoModeResponse();
   const selection = await parseSelection(request);
   return runExtract(request, selection);
 }

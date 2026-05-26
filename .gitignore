@@ -41,6 +41,4 @@ yarn-error.log*
 next-env.d.ts
 
 # drake tracker
-results.json
-data/lyrics.json
 .env.local

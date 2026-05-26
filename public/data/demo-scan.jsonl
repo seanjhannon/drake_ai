@@ -1,0 +1,108 @@
+{"type":"start","total":35,"job":"extract","scoped":false}
+{"type":"phase","phase":"extract","concurrency":2,"withLyrics":35}
+{"type":"extract","song":"Over My Dead Body","album":"Take Care","index":1}
+{"type":"friends","song":"Over My Dead Body","album":"Take Care","names":["Michael Jordan","Kevin Hart","Mac Dre"],"count":3}
+{"type":"progress","phase":"extract","completed":1,"total":35}
+{"type":"extract","song":"Shot for Me","album":"Take Care","index":2}
+{"type":"friends","song":"Shot for Me","album":"Take Care","names":["Alisha","Catya"],"count":2}
+{"type":"progress","phase":"extract","completed":2,"total":35}
+{"type":"extract","song":"Headlines","album":"Take Care","index":3}
+{"type":"no_friends","song":"Headlines","album":"Take Care"}
+{"type":"progress","phase":"extract","completed":3,"total":35}
+{"type":"extract","song":"Crew Love","album":"Take Care","index":4}
+{"type":"friends","song":"Crew Love","album":"Take Care","names":["The Weeknd"],"count":1}
+{"type":"progress","phase":"extract","completed":4,"total":35}
+{"type":"extract","song":"Take Care","album":"Take Care","index":5}
+{"type":"no_friends","song":"Take Care","album":"Take Care"}
+{"type":"progress","phase":"extract","completed":5,"total":35}
+{"type":"extract","song":"Marvins Room","album":"Take Care","index":6}
+{"type":"no_friends","song":"Marvins Room","album":"Take Care"}
+{"type":"progress","phase":"extract","completed":6,"total":35}
+{"type":"extract","song":"Under Ground Kings","album":"Take Care","index":7}
+{"type":"friends","song":"Under Ground Kings","album":"Take Care","names":["Yo Gotti","E-Mack"],"count":2}
+{"type":"progress","phase":"extract","completed":7,"total":35}
+{"type":"extract","song":"Make Me Proud","album":"Take Care","index":8}
+{"type":"friends","song":"Make Me Proud","album":"Take Care","names":["Nicki Minaj","Dolly Parton"],"count":2}
+{"type":"progress","phase":"extract","completed":8,"total":35}
+{"type":"extract","song":"Lord Knows","album":"Take Care","index":9}
+{"type":"friends","song":"Lord Knows","album":"Take Care","names":["Just Blaze","Lil Wayne","Birdman","Chubbs","Jordan What's Good","Bob Marley","Jimi Hendrix","Snoop Dogg"],"count":8}
+{"type":"progress","phase":"extract","completed":9,"total":35}
+{"type":"extract","song":"Cameras","album":"Take Care","index":10}
+{"type":"friends","song":"Cameras","album":"Take Care","names":["Lil Wayne","Prince"],"count":2}
+{"type":"progress","phase":"extract","completed":10,"total":35}
+{"type":"extract","song":"Doing It Wrong","album":"Take Care","index":11}
+{"type":"no_friends","song":"Doing It Wrong","album":"Take Care"}
+{"type":"progress","phase":"extract","completed":11,"total":35}
+{"type":"extract","song":"Look What You've Done","album":"Take Care","index":12}
+{"type":"friends","song":"Look What You've Done","album":"Take Care","names":["Lil Wayne"],"count":1}
+{"type":"progress","phase":"extract","completed":12,"total":35}
+{"type":"extract","song":"Practice","album":"Take Care","index":13}
+{"type":"friends","song":"Practice","album":"Take Care","names":["Lil Wayne"],"count":1}
+{"type":"progress","phase":"extract","completed":13,"total":35}
+{"type":"extract","song":"The Ride","album":"Take Care","index":14}
+{"type":"friends","song":"The Ride","album":"Take Care","names":["Lil Wayne"],"count":1}
+{"type":"progress","phase":"extract","completed":14,"total":35}
+{"type":"extract","song":"Moment 4 Life","album":"Take Care","index":15}
+{"type":"friends","song":"Moment 4 Life","album":"Take Care","names":["Nicki Minaj","Lil Wayne","Noah '40' Shebib","Lil Cease","David Ortiz"],"count":5}
+{"type":"progress","phase":"extract","completed":15,"total":35}
+{"type":"extract","song":"Trust Issues","album":"Take Care","index":16}
+{"type":"friends","song":"Trust Issues","album":"Take Care","names":["Drizzy Drake"],"count":1}
+{"type":"progress","phase":"extract","completed":16,"total":35}
+{"type":"extract","song":"The Motto","album":"Take Care","index":17}
+{"type":"friends","song":"The Motto","album":"Take Care","names":["Mac Dre","Chubbs","Luke (Uncle Luke)","Lil Tune","Mally Mall","Niko"],"count":6}
+{"type":"progress","phase":"extract","completed":17,"total":35}
+{"type":"extract","song":"Make Them Cry","album":"Iceman","index":18}
+{"type":"friends","song":"Make Them Cry","album":"Iceman","names":["Noah '40' Shebib"],"count":1}
+{"type":"progress","phase":"extract","completed":18,"total":35}
+{"type":"extract","song":"Dust","album":"Iceman","index":19}
+{"type":"friends","song":"Dust","album":"Iceman","names":["Lionel Richie","Samuel Bankman-Fried","Future"],"count":3}
+{"type":"progress","phase":"extract","completed":19,"total":35}
+{"type":"extract","song":"Whisper My Name","album":"Iceman","index":20}
+{"type":"friends","song":"Whisper My Name","album":"Iceman","names":["Louis Farrakhan"],"count":1}
+{"type":"progress","phase":"extract","completed":20,"total":35}
+{"type":"extract","song":"Janice STFU","album":"Iceman","index":21}
+{"type":"friends","song":"Janice STFU","album":"Iceman","names":["Wilt Chamberlain"],"count":1}
+{"type":"progress","phase":"extract","completed":21,"total":35}
+{"type":"extract","song":"Ran to Atlanta","album":"Iceman","index":22}
+{"type":"friends","song":"Ran to Atlanta","album":"Iceman","names":["Future","Gucci Mane","21 Savage"],"count":3}
+{"type":"progress","phase":"extract","completed":22,"total":35}
+{"type":"extract","song":"Shabang","album":"Iceman","index":23}
+{"type":"friends","song":"Shabang","album":"Iceman","names":["Noah '40' Shebib","Maneesh","Bryson Tiller"],"count":3}
+{"type":"progress","phase":"extract","completed":23,"total":35}
+{"type":"extract","song":"Make Them Pay","album":"Iceman","index":24}
+{"type":"friends","song":"Make Them Pay","album":"Iceman","names":["Gilbert Arenas","DJ Khaled","Adin Ross","Rick Ross","Cherokee D","Skyy Black"],"count":6}
+{"type":"progress","phase":"extract","completed":24,"total":35}
+{"type":"extract","song":"Burning Bridges","album":"Iceman","index":25}
+{"type":"friends","song":"Burning Bridges","album":"Iceman","names":["Noel","Capo"],"count":4}
+{"type":"progress","phase":"extract","completed":25,"total":35}
+{"type":"extract","song":"National Treasures","album":"Iceman","index":26}
+{"type":"friends","song":"National Treasures","album":"Iceman","names":["Kobe Bryant","Alex Moss"],"count":2}
+{"type":"progress","phase":"extract","completed":26,"total":35}
+{"type":"extract","song":"B's on the Table","album":"Iceman","index":27}
+{"type":"friends","song":"B's on the Table","album":"Iceman","names":["Kevin Hart","Shane Coppin"],"count":2}
+{"type":"progress","phase":"extract","completed":27,"total":35}
+{"type":"extract","song":"What Did I Miss?","album":"Iceman","index":28}
+{"type":"friends","song":"What Did I Miss?","album":"Iceman","names":["TLC"],"count":1}
+{"type":"progress","phase":"extract","completed":28,"total":35}
+{"type":"extract","song":"Plot Twist","album":"Iceman","index":29}
+{"type":"friends","song":"Plot Twist","album":"Iceman","names":["Styles P"],"count":1}
+{"type":"progress","phase":"extract","completed":29,"total":35}
+{"type":"extract","song":"2 Hard 4 the Radio","album":"Iceman","index":30}
+{"type":"friends","song":"2 Hard 4 the Radio","album":"Iceman","names":["YG","Mustard"],"count":2}
+{"type":"progress","phase":"extract","completed":30,"total":35}
+{"type":"extract","song":"Make Them Remember","album":"Iceman","index":31}
+{"type":"friends","song":"Make Them Remember","album":"Iceman","names":["Lil Wayne","Dean Martin","Steve Martin"],"count":3}
+{"type":"progress","phase":"extract","completed":31,"total":35}
+{"type":"extract","song":"Little Birdie","album":"Iceman","index":32}
+{"type":"friends","song":"Little Birdie","album":"Iceman","names":["Alex Moss","Virgil Abloh","Lauryn Hill","DJ Frisco954"],"count":4}
+{"type":"progress","phase":"extract","completed":32,"total":35}
+{"type":"extract","song":"Don't Worry","album":"Iceman","index":33}
+{"type":"friends","song":"Don't Worry","album":"Iceman","names":["Nicki Minaj","Chubbs","Cardi B"],"count":3}
+{"type":"progress","phase":"extract","completed":33,"total":35}
+{"type":"extract","song":"Firm Friends","album":"Iceman","index":34}
+{"type":"friends","song":"Firm Friends","album":"Iceman","names":["Noah '40' Shebib","Jackie Onassis","John F. Kennedy","Luis Enrique"],"count":4}
+{"type":"progress","phase":"extract","completed":34,"total":35}
+{"type":"extract","song":"Make Them Know","album":"Iceman","index":35}
+{"type":"friends","song":"Make Them Know","album":"Iceman","names":["Gucci Mane"],"count":1}
+{"type":"progress","phase":"extract","completed":35,"total":35}
+{"type":"done","job":"extract","friendCount":60,"songsProcessed":31,"scoped":false}

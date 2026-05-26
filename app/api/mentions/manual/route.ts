@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { demoModeJson, isDemoMode } from '@/lib/demo-mode';
 import { mentionKey } from '@/lib/mention-key';
 import { getTrackLyrics } from '@/lib/lyrics';
 import { addManualMention } from '@/lib/results';
@@ -14,6 +15,7 @@ function resolveYear(song: string, album: string, yearFromBody: number): number 
 }
 
 export async function POST(request: NextRequest) {
+  if (isDemoMode()) return demoModeJson();
   let body: Record<string, unknown>;
   try {
     body = await request.json();

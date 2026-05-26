@@ -52,8 +52,40 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on Vercel (friends demo)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Production runs in **demo mode**: pre-loaded lyrics and scan results, with a **recorded scan replay** in the browser (no API keys or LLM cost on Vercel). Full scans stay local with `.env.local`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See [DEPLOY.md](./DEPLOY.md) for architecture and maintenance.
+
+### One-time setup
+
+1. Commit demo assets (if not already on `main`):
+
+   ```bash
+   git add data/lyrics.json results.json public/data/demo-scan.jsonl
+   git commit -m "Add demo data for Vercel"
+   git push
+   ```
+
+2. [Import the repo](https://vercel.com/new) on Vercel (GitHub: `seanjhannon/drake_ai`).
+
+3. **Environment variables** (Production only):
+
+   | Name | Value |
+   |------|--------|
+   | `NEXT_PUBLIC_DEMO_MODE` | `true` |
+   | `DEMO_MODE` | `true` |
+
+   Do **not** add `ANTHROPIC_API_KEY` or `OPENROUTER_API_KEY`.
+
+4. Deploy. Share the `*.vercel.app` URL.
+
+### After changing the demo catalog
+
+```bash
+# Re-scan locally, then refresh committed artifacts:
+npm run demo:scan   # regenerates public/data/demo-scan.jsonl
+git add results.json data/lyrics.json public/data/demo-scan.jsonl
+git commit && git push   # Vercel redeploys automatically
+```

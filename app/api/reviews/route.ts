@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { demoModeJson, isDemoMode } from '@/lib/demo-mode';
 import { mentionKey } from '@/lib/mention-key';
 import {
   isValidReviewStatus,
@@ -15,6 +16,7 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
+  if (isDemoMode()) return demoModeJson();
   let body: Record<string, unknown>;
   try {
     body = await request.json();
