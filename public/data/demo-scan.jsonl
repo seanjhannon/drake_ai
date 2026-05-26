@@ -1,528 +1,516 @@
-{"type":"start","total":175,"job":"extract","scoped":false}
-{"type":"phase","phase":"extract","concurrency":2,"withLyrics":175}
+{"type":"start","total":171,"job":"extract","scoped":false}
+{"type":"phase","phase":"extract","concurrency":2,"withLyrics":171}
 {"type":"extract","song":"Fireworks","album":"Thank Me Later","index":1}
-{"type":"no_friends","song":"Fireworks","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":1,"total":175}
+{"type":"friends","song":"Fireworks","album":"Thank Me Later","names":["Lil Wayne"],"count":1}
+{"type":"progress","phase":"extract","completed":1,"total":171}
 {"type":"extract","song":"Karaoke","album":"Thank Me Later","index":2}
 {"type":"no_friends","song":"Karaoke","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":2,"total":175}
+{"type":"progress","phase":"extract","completed":2,"total":171}
 {"type":"extract","song":"The Resistance","album":"Thank Me Later","index":3}
-{"type":"no_friends","song":"The Resistance","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":3,"total":175}
+{"type":"friends","song":"The Resistance","album":"Thank Me Later","names":["Alyssa","Big Rich"],"count":3}
+{"type":"progress","phase":"extract","completed":3,"total":171}
 {"type":"extract","song":"Find Your Love","album":"Thank Me Later","index":4}
 {"type":"no_friends","song":"Find Your Love","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":4,"total":175}
+{"type":"progress","phase":"extract","completed":4,"total":171}
 {"type":"extract","song":"Show Me a Good Time","album":"Thank Me Later","index":5}
-{"type":"no_friends","song":"Show Me a Good Time","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":5,"total":175}
+{"type":"friends","song":"Show Me a Good Time","album":"Thank Me Later","names":["Lil Wayne","Barack Hussein Obama","Ali Shaheed Muhammad","Phife Dawg","J Dilla"],"count":5}
+{"type":"progress","phase":"extract","completed":5,"total":171}
 {"type":"extract","song":"Up All Night","album":"Thank Me Later","index":6}
-{"type":"no_friends","song":"Up All Night","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":6,"total":175}
+{"type":"friends","song":"Up All Night","album":"Thank Me Later","names":["Denzel Washington"],"count":1}
+{"type":"progress","phase":"extract","completed":6,"total":171}
 {"type":"extract","song":"Fancy","album":"Thank Me Later","index":7}
-{"type":"no_friends","song":"Fancy","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":7,"total":175}
+{"type":"friends","song":"Fancy","album":"Thank Me Later","names":["B.o.B"],"count":1}
+{"type":"progress","phase":"extract","completed":7,"total":171}
 {"type":"extract","song":"Shut It Down","album":"Thank Me Later","index":8}
-{"type":"no_friends","song":"Shut It Down","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":8,"total":175}
-{"type":"extract","song":"Unforgettable","album":"Thank Me Later","index":9}
-{"type":"no_friends","song":"Unforgettable","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":9,"total":175}
+{"type":"friends","song":"Shut It Down","album":"Thank Me Later","names":["Killa Beatz"],"count":1}
+{"type":"progress","phase":"extract","completed":8,"total":171}
 {"type":"extract","song":"Light Up","album":"Thank Me Later","index":10}
-{"type":"no_friends","song":"Light Up","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":10,"total":175}
+{"type":"friends","song":"Light Up","album":"Thank Me Later","names":["Fredro Starr","Kelsey Grammer","Floyd Mayweather Jr.","Jay-Z"],"count":4}
+{"type":"progress","phase":"extract","completed":9,"total":171}
 {"type":"extract","song":"Miss Me","album":"Thank Me Later","index":11}
-{"type":"no_friends","song":"Miss Me","album":"Thank Me Later"}
-{"type":"progress","phase":"extract","completed":11,"total":175}
-{"type":"extract","song":"Over My Dead Body","album":"Take Care","index":12}
-{"type":"friends","song":"Over My Dead Body","album":"Take Care","names":["Michael Jordan","Kevin Hart","Mac Dre"],"count":3}
-{"type":"progress","phase":"extract","completed":12,"total":175}
-{"type":"extract","song":"Shot for Me","album":"Take Care","index":13}
-{"type":"friends","song":"Shot for Me","album":"Take Care","names":["Alisha","Catya"],"count":2}
-{"type":"progress","phase":"extract","completed":13,"total":175}
+{"type":"friends","song":"Miss Me","album":"Thank Me Later","names":["Lil Wayne","Nicki Minaj","Snoop Dogg"],"count":4}
+{"type":"progress","phase":"extract","completed":10,"total":171}
 {"type":"extract","song":"Headlines","album":"Take Care","index":14}
 {"type":"no_friends","song":"Headlines","album":"Take Care"}
-{"type":"progress","phase":"extract","completed":14,"total":175}
-{"type":"extract","song":"Crew Love","album":"Take Care","index":15}
-{"type":"friends","song":"Crew Love","album":"Take Care","names":["The Weeknd"],"count":1}
-{"type":"progress","phase":"extract","completed":15,"total":175}
+{"type":"progress","phase":"extract","completed":11,"total":171}
 {"type":"extract","song":"Take Care","album":"Take Care","index":16}
 {"type":"no_friends","song":"Take Care","album":"Take Care"}
-{"type":"progress","phase":"extract","completed":16,"total":175}
+{"type":"progress","phase":"extract","completed":12,"total":171}
 {"type":"extract","song":"Marvins Room","album":"Take Care","index":17}
 {"type":"no_friends","song":"Marvins Room","album":"Take Care"}
-{"type":"progress","phase":"extract","completed":17,"total":175}
+{"type":"progress","phase":"extract","completed":13,"total":171}
 {"type":"extract","song":"Under Ground Kings","album":"Take Care","index":18}
 {"type":"friends","song":"Under Ground Kings","album":"Take Care","names":["Yo Gotti","E-Mack"],"count":2}
-{"type":"progress","phase":"extract","completed":18,"total":175}
+{"type":"progress","phase":"extract","completed":14,"total":171}
 {"type":"extract","song":"Make Me Proud","album":"Take Care","index":19}
 {"type":"friends","song":"Make Me Proud","album":"Take Care","names":["Nicki Minaj","Dolly Parton"],"count":2}
-{"type":"progress","phase":"extract","completed":19,"total":175}
+{"type":"progress","phase":"extract","completed":15,"total":171}
 {"type":"extract","song":"Lord Knows","album":"Take Care","index":20}
-{"type":"friends","song":"Lord Knows","album":"Take Care","names":["Just Blaze","Lil Wayne","Birdman","Chubbs","Jordan What's Good","Bob Marley","Jimi Hendrix","Snoop Dogg"],"count":8}
-{"type":"progress","phase":"extract","completed":20,"total":175}
+{"type":"friends","song":"Lord Knows","album":"Take Care","names":["Lil Wayne","Snoop Dogg","Birdman","Just Blaze","Michael Jordan","Bob Marley","Jimi Hendrix"],"count":7}
+{"type":"progress","phase":"extract","completed":16,"total":171}
 {"type":"extract","song":"Cameras","album":"Take Care","index":21}
-{"type":"friends","song":"Cameras","album":"Take Care","names":["Lil Wayne","Prince"],"count":2}
-{"type":"progress","phase":"extract","completed":21,"total":175}
+{"type":"no_friends","song":"Cameras","album":"Take Care"}
+{"type":"progress","phase":"extract","completed":17,"total":171}
 {"type":"extract","song":"Doing It Wrong","album":"Take Care","index":22}
 {"type":"no_friends","song":"Doing It Wrong","album":"Take Care"}
-{"type":"progress","phase":"extract","completed":22,"total":175}
+{"type":"progress","phase":"extract","completed":18,"total":171}
 {"type":"extract","song":"Look What You've Done","album":"Take Care","index":23}
 {"type":"friends","song":"Look What You've Done","album":"Take Care","names":["Lil Wayne"],"count":1}
-{"type":"progress","phase":"extract","completed":23,"total":175}
+{"type":"progress","phase":"extract","completed":19,"total":171}
 {"type":"extract","song":"Practice","album":"Take Care","index":24}
-{"type":"friends","song":"Practice","album":"Take Care","names":["Lil Wayne"],"count":1}
-{"type":"progress","phase":"extract","completed":24,"total":175}
+{"type":"no_friends","song":"Practice","album":"Take Care"}
+{"type":"progress","phase":"extract","completed":20,"total":171}
 {"type":"extract","song":"The Ride","album":"Take Care","index":25}
-{"type":"friends","song":"The Ride","album":"Take Care","names":["Lil Wayne"],"count":1}
-{"type":"progress","phase":"extract","completed":25,"total":175}
+{"type":"friends","song":"The Ride","album":"Take Care","names":["Young Money"],"count":1}
+{"type":"progress","phase":"extract","completed":21,"total":171}
 {"type":"extract","song":"Moment 4 Life","album":"Take Care","index":26}
-{"type":"friends","song":"Moment 4 Life","album":"Take Care","names":["Nicki Minaj","Lil Wayne","Noah '40' Shebib","Lil Cease","David Ortiz"],"count":5}
-{"type":"progress","phase":"extract","completed":26,"total":175}
+{"type":"friends","song":"Moment 4 Life","album":"Take Care","names":["Lil Wayne","Nicki Minaj","Noah '40' Shebib","Lil Cease","David Ortiz"],"count":5}
+{"type":"progress","phase":"extract","completed":22,"total":171}
 {"type":"extract","song":"Trust Issues","album":"Take Care","index":27}
-{"type":"friends","song":"Trust Issues","album":"Take Care","names":["Drizzy Drake"],"count":1}
-{"type":"progress","phase":"extract","completed":27,"total":175}
+{"type":"no_friends","song":"Trust Issues","album":"Take Care"}
+{"type":"progress","phase":"extract","completed":23,"total":171}
 {"type":"extract","song":"The Motto","album":"Take Care","index":28}
-{"type":"friends","song":"The Motto","album":"Take Care","names":["Mac Dre","Chubbs","Luke (Uncle Luke)","Lil Tune","Mally Mall","Niko"],"count":6}
-{"type":"progress","phase":"extract","completed":28,"total":175}
+{"type":"friends","song":"The Motto","album":"Take Care","names":["Lil Wayne","Mac Dre","Uncle Luke","Mally Mall","Niko","Chubbs"],"count":6}
+{"type":"progress","phase":"extract","completed":24,"total":171}
 {"type":"extract","song":"Tuscan Leather","album":"Nothing Was the Same","index":29}
-{"type":"no_friends","song":"Tuscan Leather","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":29,"total":175}
+{"type":"friends","song":"Tuscan Leather","album":"Nothing Was the Same","names":["Nicki Minaj","Dwight Howard","Prince Akeem","Ellen DeGeneres","Guy Pearce","Cappadonna","Will Smith","Tatyana Ali"],"count":8}
+{"type":"progress","phase":"extract","completed":25,"total":171}
 {"type":"extract","song":"Furthest Thing","album":"Nothing Was the Same","index":30}
-{"type":"no_friends","song":"Furthest Thing","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":30,"total":175}
+{"type":"friends","song":"Furthest Thing","album":"Nothing Was the Same","names":["Derrick Rose"],"count":1}
+{"type":"progress","phase":"extract","completed":26,"total":171}
 {"type":"extract","song":"Started from the Bottom","album":"Nothing Was the Same","index":31}
-{"type":"no_friends","song":"Started from the Bottom","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":31,"total":175}
+{"type":"friends","song":"Started from the Bottom","album":"Nothing Was the Same","names":["Noah '40' Shebib"],"count":1}
+{"type":"progress","phase":"extract","completed":27,"total":171}
 {"type":"extract","song":"Wu-Tang Forever","album":"Nothing Was the Same","index":32}
-{"type":"no_friends","song":"Wu-Tang Forever","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":32,"total":175}
+{"type":"friends","song":"Wu-Tang Forever","album":"Nothing Was the Same","names":["Mazin"],"count":1}
+{"type":"progress","phase":"extract","completed":28,"total":171}
 {"type":"extract","song":"Own It","album":"Nothing Was the Same","index":33}
 {"type":"no_friends","song":"Own It","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":33,"total":175}
+{"type":"progress","phase":"extract","completed":29,"total":171}
 {"type":"extract","song":"Worst Behavior","album":"Nothing Was the Same","index":34}
-{"type":"no_friends","song":"Worst Behavior","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":34,"total":175}
+{"type":"friends","song":"Worst Behavior","album":"Nothing Was the Same","names":["Serena Williams","O.D.B."],"count":2}
+{"type":"progress","phase":"extract","completed":30,"total":171}
 {"type":"extract","song":"From Time","album":"Nothing Was the Same","index":35}
-{"type":"no_friends","song":"From Time","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":35,"total":175}
+{"type":"friends","song":"From Time","album":"Nothing Was the Same","names":["Trey Songz"],"count":1}
+{"type":"progress","phase":"extract","completed":31,"total":171}
 {"type":"extract","song":"Hold On We're Going Home","album":"Nothing Was the Same","index":36}
 {"type":"no_friends","song":"Hold On We're Going Home","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":36,"total":175}
+{"type":"progress","phase":"extract","completed":32,"total":171}
 {"type":"extract","song":"Connect","album":"Nothing Was the Same","index":37}
-{"type":"no_friends","song":"Connect","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":37,"total":175}
+{"type":"friends","song":"Connect","album":"Nothing Was the Same","names":["Malcolm X"],"count":1}
+{"type":"progress","phase":"extract","completed":33,"total":171}
 {"type":"extract","song":"The Language","album":"Nothing Was the Same","index":38}
-{"type":"no_friends","song":"The Language","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":38,"total":175}
+{"type":"friends","song":"The Language","album":"Nothing Was the Same","names":["Birdman"],"count":2}
+{"type":"progress","phase":"extract","completed":34,"total":171}
 {"type":"extract","song":"Too Much","album":"Nothing Was the Same","index":39}
-{"type":"no_friends","song":"Too Much","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":39,"total":175}
+{"type":"friends","song":"Too Much","album":"Nothing Was the Same","names":["Paul Wall","Bun B"],"count":2}
+{"type":"progress","phase":"extract","completed":35,"total":171}
 {"type":"extract","song":"Pound Cake","album":"Nothing Was the Same","index":40}
 {"type":"no_friends","song":"Pound Cake","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":40,"total":175}
+{"type":"progress","phase":"extract","completed":36,"total":171}
 {"type":"extract","song":"Come Thru","album":"Nothing Was the Same","index":41}
-{"type":"no_friends","song":"Come Thru","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":41,"total":175}
+{"type":"friends","song":"Come Thru","album":"Nothing Was the Same","names":["DOA"],"count":1}
+{"type":"progress","phase":"extract","completed":37,"total":171}
 {"type":"extract","song":"All Me","album":"Nothing Was the Same","index":42}
-{"type":"no_friends","song":"All Me","album":"Nothing Was the Same"}
-{"type":"progress","phase":"extract","completed":42,"total":175}
+{"type":"friends","song":"All Me","album":"Nothing Was the Same","names":["2 Chainz","Damon Wayans","Keith Sweat"],"count":3}
+{"type":"progress","phase":"extract","completed":38,"total":171}
 {"type":"extract","song":"Legend","album":"If You're Reading This It's Too Late","index":43}
 {"type":"no_friends","song":"Legend","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":43,"total":175}
+{"type":"progress","phase":"extract","completed":39,"total":171}
 {"type":"extract","song":"Energy","album":"If You're Reading This It's Too Late","index":44}
-{"type":"no_friends","song":"Energy","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":44,"total":175}
+{"type":"friends","song":"Energy","album":"If You're Reading This It's Too Late","names":["50 Cent"],"count":1}
+{"type":"progress","phase":"extract","completed":40,"total":171}
 {"type":"extract","song":"10 Bands","album":"If You're Reading This It's Too Late","index":45}
-{"type":"no_friends","song":"10 Bands","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":45,"total":175}
+{"type":"friends","song":"10 Bands","album":"If You're Reading This It's Too Late","names":["Diana"],"count":1}
+{"type":"progress","phase":"extract","completed":41,"total":171}
 {"type":"extract","song":"Know Yourself","album":"If You're Reading This It's Too Late","index":46}
-{"type":"no_friends","song":"Know Yourself","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":46,"total":175}
+{"type":"friends","song":"Know Yourself","album":"If You're Reading This It's Too Late","names":["Noah '40' Shebib","Chubbs","Oliver El-Khatib","Niko Ioannides","Boi-1da","Kanye West","P Reign"],"count":7}
+{"type":"progress","phase":"extract","completed":42,"total":171}
 {"type":"extract","song":"No Tellin","album":"If You're Reading This It's Too Late","index":47}
-{"type":"no_friends","song":"No Tellin","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":47,"total":175}
+{"type":"friends","song":"No Tellin","album":"If You're Reading This It's Too Late","names":["Ricky Ross"],"count":1}
+{"type":"progress","phase":"extract","completed":43,"total":171}
 {"type":"extract","song":"Madonna","album":"If You're Reading This It's Too Late","index":48}
-{"type":"no_friends","song":"Madonna","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":48,"total":175}
+{"type":"friends","song":"Madonna","album":"If You're Reading This It's Too Late","names":["Madonna"],"count":2}
+{"type":"progress","phase":"extract","completed":44,"total":171}
 {"type":"extract","song":"Used To","album":"If You're Reading This It's Too Late","index":50}
-{"type":"no_friends","song":"Used To","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":49,"total":175}
+{"type":"friends","song":"Used To","album":"If You're Reading This It's Too Late","names":["Nick Cannon","Shaquille O'Neal","Katy Perry"],"count":3}
+{"type":"progress","phase":"extract","completed":45,"total":171}
 {"type":"extract","song":"6 God","album":"If You're Reading This It's Too Late","index":51}
-{"type":"no_friends","song":"6 God","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":50,"total":175}
+{"type":"friends","song":"6 God","album":"If You're Reading This It's Too Late","names":["Usher"],"count":1}
+{"type":"progress","phase":"extract","completed":46,"total":171}
 {"type":"extract","song":"Star67","album":"If You're Reading This It's Too Late","index":52}
-{"type":"no_friends","song":"Star67","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":51,"total":175}
+{"type":"friends","song":"Star67","album":"If You're Reading This It's Too Late","names":["Cam'ron","Biz"],"count":2}
+{"type":"progress","phase":"extract","completed":47,"total":171}
 {"type":"extract","song":"Preach","album":"If You're Reading This It's Too Late","index":53}
-{"type":"no_friends","song":"Preach","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":52,"total":175}
+{"type":"friends","song":"Preach","album":"If You're Reading This It's Too Late","names":["Cassidy","Jay Ray"],"count":2}
+{"type":"progress","phase":"extract","completed":48,"total":171}
 {"type":"extract","song":"6 Man","album":"If You're Reading This It's Too Late","index":54}
-{"type":"no_friends","song":"6 Man","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":53,"total":175}
+{"type":"friends","song":"6 Man","album":"If You're Reading This It's Too Late","names":["Lou Williams","Guy Fieri","Michael Myers","DeMarcus Cousins"],"count":6}
+{"type":"progress","phase":"extract","completed":49,"total":171}
 {"type":"extract","song":"Now & Forever","album":"If You're Reading This It's Too Late","index":55}
 {"type":"no_friends","song":"Now & Forever","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":54,"total":175}
+{"type":"progress","phase":"extract","completed":50,"total":171}
 {"type":"extract","song":"Company","album":"If You're Reading This It's Too Late","index":56}
 {"type":"no_friends","song":"Company","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":55,"total":175}
+{"type":"progress","phase":"extract","completed":51,"total":171}
 {"type":"extract","song":"You & The 6","album":"If You're Reading This It's Too Late","index":57}
-{"type":"no_friends","song":"You & The 6","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":56,"total":175}
+{"type":"friends","song":"You & The 6","album":"If You're Reading This It's Too Late","names":["Dennis Graham"],"count":1}
+{"type":"progress","phase":"extract","completed":52,"total":171}
 {"type":"extract","song":"Jungle","album":"If You're Reading This It's Too Late","index":58}
 {"type":"no_friends","song":"Jungle","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"extract","completed":57,"total":175}
+{"type":"progress","phase":"extract","completed":53,"total":171}
 {"type":"extract","song":"Keep the Family Close","album":"Views","index":59}
-{"type":"no_friends","song":"Keep the Family Close","album":"Views"}
-{"type":"progress","phase":"extract","completed":58,"total":175}
+{"type":"friends","song":"Keep the Family Close","album":"Views","names":["Chrysler"],"count":1}
+{"type":"progress","phase":"extract","completed":54,"total":171}
 {"type":"extract","song":"9","album":"Views","index":60}
-{"type":"no_friends","song":"9","album":"Views"}
-{"type":"progress","phase":"extract","completed":59,"total":175}
+{"type":"friends","song":"9","album":"Views","names":["Michael Jordan","Noah '40' Shebib"],"count":2}
+{"type":"progress","phase":"extract","completed":55,"total":171}
 {"type":"extract","song":"U With Me","album":"Views","index":61}
-{"type":"no_friends","song":"U With Me","album":"Views"}
-{"type":"progress","phase":"extract","completed":60,"total":175}
+{"type":"friends","song":"U With Me","album":"Views","names":["DMX","Marcus Houston"],"count":2}
+{"type":"progress","phase":"extract","completed":56,"total":171}
 {"type":"extract","song":"Feel No Ways","album":"Views","index":62}
 {"type":"no_friends","song":"Feel No Ways","album":"Views"}
-{"type":"progress","phase":"extract","completed":61,"total":175}
+{"type":"progress","phase":"extract","completed":57,"total":171}
 {"type":"extract","song":"Hype","album":"Views","index":63}
-{"type":"no_friends","song":"Hype","album":"Views"}
-{"type":"progress","phase":"extract","completed":62,"total":175}
+{"type":"friends","song":"Hype","album":"Views","names":["Rihanna","Juelz Santana"],"count":2}
+{"type":"progress","phase":"extract","completed":58,"total":171}
 {"type":"extract","song":"Weston Road Flows","album":"Views","index":64}
-{"type":"no_friends","song":"Weston Road Flows","album":"Views"}
-{"type":"progress","phase":"extract","completed":63,"total":175}
+{"type":"friends","song":"Weston Road Flows","album":"Views","names":["Noah '40' Shebib","Renny","Kevin Durant","Monique","T-Minus","Vince Carter","Glenn Lewis"],"count":7}
+{"type":"progress","phase":"extract","completed":59,"total":171}
 {"type":"extract","song":"Redemption","album":"Views","index":65}
-{"type":"no_friends","song":"Redemption","album":"Views"}
-{"type":"progress","phase":"extract","completed":64,"total":175}
+{"type":"friends","song":"Redemption","album":"Views","names":["Jessica","Kim","Sydney","Syd","Erica"],"count":5}
+{"type":"progress","phase":"extract","completed":60,"total":171}
 {"type":"extract","song":"Faithful","album":"Views","index":66}
-{"type":"no_friends","song":"Faithful","album":"Views"}
-{"type":"progress","phase":"extract","completed":65,"total":175}
+{"type":"friends","song":"Faithful","album":"Views","names":["Bun B"],"count":1}
+{"type":"progress","phase":"extract","completed":61,"total":171}
 {"type":"extract","song":"Controlla","album":"Views","index":67}
-{"type":"no_friends","song":"Controlla","album":"Views"}
-{"type":"progress","phase":"extract","completed":66,"total":175}
+{"type":"friends","song":"Controlla","album":"Views","names":["Jodeci","Beenie Man"],"count":2}
+{"type":"progress","phase":"extract","completed":62,"total":171}
 {"type":"extract","song":"One Dance","album":"Views","index":68}
 {"type":"no_friends","song":"One Dance","album":"Views"}
-{"type":"progress","phase":"extract","completed":67,"total":175}
+{"type":"progress","phase":"extract","completed":63,"total":171}
 {"type":"extract","song":"Child's Play","album":"Views","index":69}
-{"type":"no_friends","song":"Child's Play","album":"Views"}
-{"type":"progress","phase":"extract","completed":68,"total":175}
+{"type":"friends","song":"Child's Play","album":"Views","names":["Teddy Pendergrass"],"count":1}
+{"type":"progress","phase":"extract","completed":64,"total":171}
 {"type":"extract","song":"Pop Style","album":"Views","index":70}
-{"type":"no_friends","song":"Pop Style","album":"Views"}
-{"type":"progress","phase":"extract","completed":69,"total":175}
+{"type":"friends","song":"Pop Style","album":"Views","names":["Justin Timberlake"],"count":1}
+{"type":"progress","phase":"extract","completed":65,"total":171}
 {"type":"extract","song":"Too Good","album":"Views","index":71}
 {"type":"no_friends","song":"Too Good","album":"Views"}
-{"type":"progress","phase":"extract","completed":70,"total":175}
+{"type":"progress","phase":"extract","completed":66,"total":171}
 {"type":"extract","song":"Fire & Desire","album":"Views","index":72}
 {"type":"no_friends","song":"Fire & Desire","album":"Views"}
-{"type":"progress","phase":"extract","completed":71,"total":175}
+{"type":"progress","phase":"extract","completed":67,"total":171}
 {"type":"extract","song":"Views","album":"Views","index":73}
-{"type":"no_friends","song":"Views","album":"Views"}
-{"type":"progress","phase":"extract","completed":72,"total":175}
+{"type":"friends","song":"Views","album":"Views","names":["Oliver El-Khatib","David Beckham","Kobe Bryant","Christian Bale"],"count":4}
+{"type":"progress","phase":"extract","completed":68,"total":171}
 {"type":"extract","song":"Hotline Bling","album":"Views","index":74}
 {"type":"no_friends","song":"Hotline Bling","album":"Views"}
-{"type":"progress","phase":"extract","completed":73,"total":175}
+{"type":"progress","phase":"extract","completed":69,"total":171}
 {"type":"extract","song":"Free Smoke","album":"More Life","index":75}
-{"type":"no_friends","song":"Free Smoke","album":"More Life"}
-{"type":"progress","phase":"extract","completed":74,"total":175}
+{"type":"friends","song":"Free Smoke","album":"More Life","names":["Lil Wayne","Jay-Z","Boi-1da","Kanye West","J-Lo","Chef KD"],"count":6}
+{"type":"progress","phase":"extract","completed":70,"total":171}
 {"type":"extract","song":"Passionfruit","album":"More Life","index":76}
 {"type":"no_friends","song":"Passionfruit","album":"More Life"}
-{"type":"progress","phase":"extract","completed":75,"total":175}
+{"type":"progress","phase":"extract","completed":71,"total":171}
 {"type":"extract","song":"Get It Together","album":"More Life","index":77}
 {"type":"no_friends","song":"Get It Together","album":"More Life"}
-{"type":"progress","phase":"extract","completed":76,"total":175}
+{"type":"progress","phase":"extract","completed":72,"total":171}
 {"type":"extract","song":"Madiba Riddim","album":"More Life","index":78}
 {"type":"no_friends","song":"Madiba Riddim","album":"More Life"}
-{"type":"progress","phase":"extract","completed":77,"total":175}
+{"type":"progress","phase":"extract","completed":73,"total":171}
 {"type":"extract","song":"Blem","album":"More Life","index":79}
 {"type":"no_friends","song":"Blem","album":"More Life"}
-{"type":"progress","phase":"extract","completed":78,"total":175}
+{"type":"progress","phase":"extract","completed":74,"total":171}
 {"type":"extract","song":"Gyalchester","album":"More Life","index":80}
-{"type":"no_friends","song":"Gyalchester","album":"More Life"}
-{"type":"progress","phase":"extract","completed":79,"total":175}
+{"type":"friends","song":"Gyalchester","album":"More Life","names":["Virginia Black"],"count":1}
+{"type":"progress","phase":"extract","completed":75,"total":171}
 {"type":"extract","song":"Portland","album":"More Life","index":81}
-{"type":"no_friends","song":"Portland","album":"More Life"}
-{"type":"progress","phase":"extract","completed":80,"total":175}
+{"type":"friends","song":"Portland","album":"More Life","names":["Jay-Z","Michael Jordan","Quavo","Michael Phelps","Ike Turner","Griselda Blanco","The Undertaker","Kid 'n Play","Mason Betha"],"count":9}
+{"type":"progress","phase":"extract","completed":76,"total":171}
 {"type":"extract","song":"Sacrifices","album":"More Life","index":82}
-{"type":"no_friends","song":"Sacrifices","album":"More Life"}
-{"type":"progress","phase":"extract","completed":81,"total":175}
+{"type":"friends","song":"Sacrifices","album":"More Life","names":["Noah '40' Shebib","Derrick Rose","2 Chainz","Kendall Jenner","21 Savage","Lil Baby","Nate Dogg"],"count":7}
+{"type":"progress","phase":"extract","completed":77,"total":171}
 {"type":"extract","song":"Nothings Into Somethings","album":"More Life","index":83}
 {"type":"no_friends","song":"Nothings Into Somethings","album":"More Life"}
-{"type":"progress","phase":"extract","completed":82,"total":175}
+{"type":"progress","phase":"extract","completed":78,"total":171}
 {"type":"extract","song":"Teenage Fever","album":"More Life","index":84}
 {"type":"no_friends","song":"Teenage Fever","album":"More Life"}
-{"type":"progress","phase":"extract","completed":83,"total":175}
+{"type":"progress","phase":"extract","completed":79,"total":171}
 {"type":"extract","song":"KMT","album":"More Life","index":85}
-{"type":"no_friends","song":"KMT","album":"More Life"}
-{"type":"progress","phase":"extract","completed":84,"total":175}
+{"type":"friends","song":"KMT","album":"More Life","names":["Ness","Gustavo"],"count":2}
+{"type":"progress","phase":"extract","completed":80,"total":171}
 {"type":"extract","song":"Lose You","album":"More Life","index":86}
-{"type":"no_friends","song":"Lose You","album":"More Life"}
-{"type":"progress","phase":"extract","completed":85,"total":175}
+{"type":"friends","song":"Lose You","album":"More Life","names":["Oliver El-Khatib","Trick Daddy","Trina","The Weeknd","R. Kelly","Jerry Garcia","Bob Weir","Mickey Hart"],"count":8}
+{"type":"progress","phase":"extract","completed":81,"total":171}
 {"type":"extract","song":"Glow","album":"More Life","index":87}
 {"type":"no_friends","song":"Glow","album":"More Life"}
-{"type":"progress","phase":"extract","completed":86,"total":175}
+{"type":"progress","phase":"extract","completed":82,"total":171}
 {"type":"extract","song":"Fake Love","album":"More Life","index":88}
 {"type":"no_friends","song":"Fake Love","album":"More Life"}
-{"type":"progress","phase":"extract","completed":87,"total":175}
+{"type":"progress","phase":"extract","completed":83,"total":171}
 {"type":"extract","song":"Do Not Disturb","album":"More Life","index":89}
-{"type":"no_friends","song":"Do Not Disturb","album":"More Life"}
-{"type":"progress","phase":"extract","completed":88,"total":175}
+{"type":"friends","song":"Do Not Disturb","album":"More Life","names":["1da","Sealy"],"count":2}
+{"type":"progress","phase":"extract","completed":84,"total":171}
 {"type":"extract","song":"Survival","album":"Scorpion","index":90}
-{"type":"no_friends","song":"Survival","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":89,"total":175}
+{"type":"friends","song":"Survival","album":"Scorpion","names":["Bernie Mac"],"count":1}
+{"type":"progress","phase":"extract","completed":85,"total":171}
 {"type":"extract","song":"Nonstop","album":"Scorpion","index":91}
-{"type":"no_friends","song":"Nonstop","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":90,"total":175}
+{"type":"friends","song":"Nonstop","album":"Scorpion","names":["Mac Dre","Oliver El-Khatib","Tay Keith","LeBron James","Future","Al Haymon"],"count":6}
+{"type":"progress","phase":"extract","completed":86,"total":171}
 {"type":"extract","song":"Emotionless","album":"Scorpion","index":92}
 {"type":"no_friends","song":"Emotionless","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":91,"total":175}
+{"type":"progress","phase":"extract","completed":87,"total":171}
 {"type":"extract","song":"God's Plan","album":"Scorpion","index":93}
-{"type":"no_friends","song":"God's Plan","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":92,"total":175}
+{"type":"friends","song":"God's Plan","album":"Scorpion","names":["Noah '40' Shebib","Oliver El-Khatib"],"count":2}
+{"type":"progress","phase":"extract","completed":88,"total":171}
 {"type":"extract","song":"I'm Upset","album":"Scorpion","index":94}
-{"type":"no_friends","song":"I'm Upset","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":93,"total":175}
+{"type":"friends","song":"I'm Upset","album":"Scorpion","names":["A$AP Rocky"],"count":1}
+{"type":"progress","phase":"extract","completed":89,"total":171}
 {"type":"extract","song":"8 Out of 10","album":"Scorpion","index":95}
-{"type":"no_friends","song":"8 Out of 10","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":94,"total":175}
+{"type":"friends","song":"8 Out of 10","album":"Scorpion","names":["Will Smith","1da"],"count":2}
+{"type":"progress","phase":"extract","completed":90,"total":171}
 {"type":"extract","song":"Talk Up","album":"Scorpion","index":96}
-{"type":"no_friends","song":"Talk Up","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":95,"total":175}
+{"type":"friends","song":"Talk Up","album":"Scorpion","names":["Jay-Z","Rich Porter","Alpo Martinez","XXXTentacion","George Zimmerman"],"count":5}
+{"type":"progress","phase":"extract","completed":91,"total":171}
 {"type":"extract","song":"Peak","album":"Scorpion","index":97}
-{"type":"no_friends","song":"Peak","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":96,"total":175}
+{"type":"friends","song":"Peak","album":"Scorpion","names":["Princess Diana"],"count":1}
+{"type":"progress","phase":"extract","completed":92,"total":171}
 {"type":"extract","song":"Summer Games","album":"Scorpion","index":98}
 {"type":"no_friends","song":"Summer Games","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":97,"total":175}
+{"type":"progress","phase":"extract","completed":93,"total":171}
 {"type":"extract","song":"Jaded","album":"Scorpion","index":99}
 {"type":"no_friends","song":"Jaded","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":98,"total":175}
+{"type":"progress","phase":"extract","completed":94,"total":171}
 {"type":"extract","song":"Nice for What","album":"Scorpion","index":100}
-{"type":"no_friends","song":"Nice for What","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":99,"total":175}
+{"type":"friends","song":"Nice for What","album":"Scorpion","names":["Lil Wayne","Murda Beatz","Fabo"],"count":3}
+{"type":"progress","phase":"extract","completed":95,"total":171}
 {"type":"extract","song":"Finesse","album":"Scorpion","index":101}
 {"type":"no_friends","song":"Finesse","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":100,"total":175}
+{"type":"progress","phase":"extract","completed":96,"total":171}
 {"type":"extract","song":"In My Feelings","album":"Scorpion","index":102}
-{"type":"no_friends","song":"In My Feelings","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":101,"total":175}
+{"type":"friends","song":"In My Feelings","album":"Scorpion","names":["TrapMoneyBenny"],"count":1}
+{"type":"progress","phase":"extract","completed":97,"total":171}
 {"type":"extract","song":"Don't Matter to Me","album":"Scorpion","index":103}
 {"type":"no_friends","song":"Don't Matter to Me","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":102,"total":175}
+{"type":"progress","phase":"extract","completed":98,"total":171}
 {"type":"extract","song":"March 14","album":"Scorpion","index":104}
-{"type":"no_friends","song":"March 14","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":103,"total":175}
+{"type":"friends","song":"March 14","album":"Scorpion","names":["Michael Jackson","Sandi Graham","Gelo"],"count":3}
+{"type":"progress","phase":"extract","completed":99,"total":171}
 {"type":"extract","song":"Mob Ties","album":"Scorpion","index":105}
-{"type":"no_friends","song":"Mob Ties","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":104,"total":175}
+{"type":"friends","song":"Mob Ties","album":"Scorpion","names":["Future","Dave Chappelle"],"count":2}
+{"type":"progress","phase":"extract","completed":100,"total":171}
 {"type":"extract","song":"Sandra's Rose","album":"Scorpion","index":106}
-{"type":"no_friends","song":"Sandra's Rose","album":"Scorpion"}
-{"type":"progress","phase":"extract","completed":105,"total":175}
+{"type":"friends","song":"Sandra's Rose","album":"Scorpion","names":["Maverick Carter","Rick Pitino","DJ Premier","Amber Rose","Nipsey Hussle","Adele","Mohamed Hadid","Charlamagne tha God"],"count":8}
+{"type":"progress","phase":"extract","completed":101,"total":171}
 {"type":"extract","song":"Champagne Poetry","album":"Certified Lover Boy","index":107}
-{"type":"no_friends","song":"Champagne Poetry","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":106,"total":175}
+{"type":"friends","song":"Champagne Poetry","album":"Certified Lover Boy","names":["Oliver El-Khatib","Future","CJ"],"count":3}
+{"type":"progress","phase":"extract","completed":102,"total":171}
 {"type":"extract","song":"TSU","album":"Certified Lover Boy","index":108}
 {"type":"no_friends","song":"TSU","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":107,"total":175}
+{"type":"progress","phase":"extract","completed":103,"total":171}
 {"type":"extract","song":"Way 2 Sexy","album":"Certified Lover Boy","index":109}
 {"type":"no_friends","song":"Way 2 Sexy","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":108,"total":175}
+{"type":"progress","phase":"extract","completed":104,"total":171}
 {"type":"extract","song":"Race My Mind","album":"Certified Lover Boy","index":110}
-{"type":"no_friends","song":"Race My Mind","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":109,"total":175}
+{"type":"friends","song":"Race My Mind","album":"Certified Lover Boy","names":["Kelis","Ayesha Curry"],"count":2}
+{"type":"progress","phase":"extract","completed":105,"total":171}
 {"type":"extract","song":"Fountains","album":"Certified Lover Boy","index":111}
 {"type":"no_friends","song":"Fountains","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":110,"total":175}
+{"type":"progress","phase":"extract","completed":106,"total":171}
 {"type":"extract","song":"Knife Talk","album":"Certified Lover Boy","index":112}
-{"type":"no_friends","song":"Knife Talk","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":111,"total":175}
+{"type":"friends","song":"Knife Talk","album":"Certified Lover Boy","names":["Jacob","Metro Boomin"],"count":2}
+{"type":"progress","phase":"extract","completed":107,"total":171}
 {"type":"extract","song":"The Remorse","album":"Certified Lover Boy","index":113}
-{"type":"no_friends","song":"The Remorse","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":112,"total":175}
+{"type":"friends","song":"The Remorse","album":"Certified Lover Boy","names":["Noah '40' Shebib","Chubbs","Future","CJ","Noel Audigy","Niko Carlile","Mark","Irving Azoff","Kawhi Leonard"],"count":9}
+{"type":"progress","phase":"extract","completed":108,"total":171}
 {"type":"extract","song":"Papi's Home","album":"Certified Lover Boy","index":114}
-{"type":"no_friends","song":"Papi's Home","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":113,"total":175}
+{"type":"friends","song":"Papi's Home","album":"Certified Lover Boy","names":["Mario"],"count":1}
+{"type":"progress","phase":"extract","completed":109,"total":171}
 {"type":"extract","song":"Girls Want Girls","album":"Certified Lover Boy","index":115}
-{"type":"no_friends","song":"Girls Want Girls","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":114,"total":175}
+{"type":"friends","song":"Girls Want Girls","album":"Certified Lover Boy","names":["Drea"],"count":1}
+{"type":"progress","phase":"extract","completed":110,"total":171}
 {"type":"extract","song":"Love All","album":"Certified Lover Boy","index":116}
-{"type":"no_friends","song":"Love All","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":115,"total":175}
+{"type":"friends","song":"Love All","album":"Certified Lover Boy","names":["Biggie Smalls"],"count":1}
+{"type":"progress","phase":"extract","completed":111,"total":171}
 {"type":"extract","song":"No Friends in the Industry","album":"Certified Lover Boy","index":117}
-{"type":"no_friends","song":"No Friends in the Industry","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":116,"total":175}
+{"type":"friends","song":"No Friends in the Industry","album":"Certified Lover Boy","names":["Sha'Carri Richardson","Richard Pryor"],"count":2}
+{"type":"progress","phase":"extract","completed":112,"total":171}
 {"type":"extract","song":"IMY2","album":"Certified Lover Boy","index":118}
 {"type":"no_friends","song":"IMY2","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":117,"total":175}
+{"type":"progress","phase":"extract","completed":113,"total":171}
 {"type":"extract","song":"Pipe Down","album":"Certified Lover Boy","index":119}
-{"type":"no_friends","song":"Pipe Down","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":118,"total":175}
+{"type":"friends","song":"Pipe Down","album":"Certified Lover Boy","names":["Chanel"],"count":2}
+{"type":"progress","phase":"extract","completed":114,"total":171}
 {"type":"extract","song":"In the Bible","album":"Certified Lover Boy","index":120}
-{"type":"no_friends","song":"In the Bible","album":"Certified Lover Boy"}
-{"type":"progress","phase":"extract","completed":119,"total":175}
+{"type":"friends","song":"In the Bible","album":"Certified Lover Boy","names":["Tiger Woods","Virgil Abloh","India Royale","King Von"],"count":4}
+{"type":"progress","phase":"extract","completed":115,"total":171}
 {"type":"extract","song":"Falling Back","album":"Honestly Nevermind","index":121}
 {"type":"no_friends","song":"Falling Back","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":120,"total":175}
+{"type":"progress","phase":"extract","completed":116,"total":171}
 {"type":"extract","song":"Currents","album":"Honestly Nevermind","index":122}
 {"type":"no_friends","song":"Currents","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":121,"total":175}
+{"type":"progress","phase":"extract","completed":117,"total":171}
 {"type":"extract","song":"A Keeper","album":"Honestly Nevermind","index":123}
 {"type":"no_friends","song":"A Keeper","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":122,"total":175}
+{"type":"progress","phase":"extract","completed":118,"total":171}
 {"type":"extract","song":"Calling My Name","album":"Honestly Nevermind","index":124}
 {"type":"no_friends","song":"Calling My Name","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":123,"total":175}
+{"type":"progress","phase":"extract","completed":119,"total":171}
 {"type":"extract","song":"Sticky","album":"Honestly Nevermind","index":125}
-{"type":"no_friends","song":"Sticky","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":124,"total":175}
+{"type":"friends","song":"Sticky","album":"Honestly Nevermind","names":["Virgil Abloh","Eric","Gordo","Ant"],"count":4}
+{"type":"progress","phase":"extract","completed":120,"total":171}
 {"type":"extract","song":"Massive","album":"Honestly Nevermind","index":126}
 {"type":"no_friends","song":"Massive","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":125,"total":175}
+{"type":"progress","phase":"extract","completed":121,"total":171}
 {"type":"extract","song":"Flight's Booked","album":"Honestly Nevermind","index":127}
-{"type":"no_friends","song":"Flight's Booked","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":126,"total":175}
+{"type":"friends","song":"Flight's Booked","album":"Honestly Nevermind","names":["Lila"],"count":1}
+{"type":"progress","phase":"extract","completed":122,"total":171}
 {"type":"extract","song":"Down Hill","album":"Honestly Nevermind","index":129}
 {"type":"no_friends","song":"Down Hill","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":127,"total":175}
+{"type":"progress","phase":"extract","completed":123,"total":171}
 {"type":"extract","song":"Tie That Binds","album":"Honestly Nevermind","index":130}
 {"type":"no_friends","song":"Tie That Binds","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":128,"total":175}
+{"type":"progress","phase":"extract","completed":124,"total":171}
 {"type":"extract","song":"Liability","album":"Honestly Nevermind","index":131}
-{"type":"no_friends","song":"Liability","album":"Honestly Nevermind"}
-{"type":"progress","phase":"extract","completed":129,"total":175}
+{"type":"friends","song":"Liability","album":"Honestly Nevermind","names":["James Harden"],"count":1}
+{"type":"progress","phase":"extract","completed":125,"total":171}
 {"type":"extract","song":"Rich Flex","album":"Her Loss","index":132}
-{"type":"no_friends","song":"Rich Flex","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":130,"total":175}
+{"type":"friends","song":"Rich Flex","album":"Her Loss","names":["Kobe Bryant","21 Savage"],"count":3}
+{"type":"progress","phase":"extract","completed":126,"total":171}
 {"type":"extract","song":"Major Distribution","album":"Her Loss","index":133}
-{"type":"no_friends","song":"Major Distribution","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":131,"total":175}
+{"type":"friends","song":"Major Distribution","album":"Her Loss","names":["Macaulay Culkin","Mekhi Phifer","Bad Bunny","Steve Francis","The Rock","Harry Styles","Zayn"],"count":7}
+{"type":"progress","phase":"extract","completed":127,"total":171}
 {"type":"extract","song":"On BS","album":"Her Loss","index":134}
-{"type":"no_friends","song":"On BS","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":132,"total":175}
+{"type":"friends","song":"On BS","album":"Her Loss","names":["21 Savage"],"count":2}
+{"type":"progress","phase":"extract","completed":128,"total":171}
 {"type":"extract","song":"BackOutsideBoyz","album":"Her Loss","index":135}
-{"type":"no_friends","song":"BackOutsideBoyz","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":133,"total":175}
+{"type":"friends","song":"BackOutsideBoyz","album":"Her Loss","names":["Mike Tyson","Teanna Trump"],"count":2}
+{"type":"progress","phase":"extract","completed":129,"total":171}
 {"type":"extract","song":"Broke Boys","album":"Her Loss","index":136}
-{"type":"no_friends","song":"Broke Boys","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":134,"total":175}
+{"type":"friends","song":"Broke Boys","album":"Her Loss","names":["Pauleen","Noel","Justin Bieber","Coach K"],"count":4}
+{"type":"progress","phase":"extract","completed":130,"total":171}
 {"type":"extract","song":"Privileged Rappers","album":"Her Loss","index":137}
-{"type":"no_friends","song":"Privileged Rappers","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":135,"total":175}
+{"type":"friends","song":"Privileged Rappers","album":"Her Loss","names":["21 Savage"],"count":6}
+{"type":"progress","phase":"extract","completed":131,"total":171}
 {"type":"extract","song":"Jimmy Cooks","album":"Her Loss","index":138}
-{"type":"no_friends","song":"Jimmy Cooks","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":136,"total":175}
+{"type":"friends","song":"Jimmy Cooks","album":"Her Loss","names":["Will Smith","21 Savage","Lil Keed","J. Cole","Drama King","Rick Ross","Nadeska"],"count":7}
+{"type":"progress","phase":"extract","completed":132,"total":171}
 {"type":"extract","song":"Middle of the Ocean","album":"Her Loss","index":139}
-{"type":"no_friends","song":"Middle of the Ocean","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":137,"total":175}
+{"type":"friends","song":"Middle of the Ocean","album":"Her Loss","names":["Serena Williams","Aaliyah","Leonardo da Vinci","Emily Ratajkowski","Robert Kraft","Beyoncé"],"count":7}
+{"type":"progress","phase":"extract","completed":133,"total":171}
 {"type":"extract","song":"P Power","album":"Her Loss","index":140}
-{"type":"no_friends","song":"P Power","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":138,"total":175}
+{"type":"friends","song":"P Power","album":"Her Loss","names":["Metro Boomin"],"count":1}
+{"type":"progress","phase":"extract","completed":134,"total":171}
 {"type":"extract","song":"More M's","album":"Her Loss","index":141}
-{"type":"no_friends","song":"More M's","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":139,"total":175}
+{"type":"friends","song":"More M's","album":"Her Loss","names":["Metro Boomin","Kim Kardashian","Big Pun","Prince"],"count":4}
+{"type":"progress","phase":"extract","completed":135,"total":171}
 {"type":"extract","song":"Hours in Silence","album":"Her Loss","index":142}
-{"type":"no_friends","song":"Hours in Silence","album":"Her Loss"}
-{"type":"progress","phase":"extract","completed":140,"total":175}
+{"type":"friends","song":"Hours in Silence","album":"Her Loss","names":["21 Savage"],"count":1}
+{"type":"progress","phase":"extract","completed":136,"total":171}
 {"type":"extract","song":"Virginia Beach","album":"For All The Dogs","index":144}
 {"type":"no_friends","song":"Virginia Beach","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":141,"total":175}
+{"type":"progress","phase":"extract","completed":137,"total":171}
 {"type":"extract","song":"Amen","album":"For All The Dogs","index":145}
-{"type":"no_friends","song":"Amen","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":142,"total":175}
+{"type":"friends","song":"Amen","album":"For All The Dogs","names":["Ashton Kutcher"],"count":1}
+{"type":"progress","phase":"extract","completed":138,"total":171}
 {"type":"extract","song":"Calling for You","album":"For All The Dogs","index":146}
-{"type":"no_friends","song":"Calling for You","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":143,"total":175}
+{"type":"friends","song":"Calling for You","album":"For All The Dogs","names":["Mac Dre","21 Savage"],"count":5}
+{"type":"progress","phase":"extract","completed":139,"total":171}
 {"type":"extract","song":"Fear of Heights","album":"For All The Dogs","index":147}
 {"type":"no_friends","song":"Fear of Heights","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":144,"total":175}
+{"type":"progress","phase":"extract","completed":140,"total":171}
 {"type":"extract","song":"First Person Shooter","album":"For All The Dogs","index":148}
-{"type":"no_friends","song":"First Person Shooter","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":145,"total":175}
+{"type":"friends","song":"First Person Shooter","album":"For All The Dogs","names":["J. Cole","Kendrick Lamar","Muhammad Ali"],"count":3}
+{"type":"progress","phase":"extract","completed":141,"total":171}
 {"type":"extract","song":"7969 Santa","album":"For All The Dogs","index":149}
-{"type":"no_friends","song":"7969 Santa","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":146,"total":175}
+{"type":"friends","song":"7969 Santa","album":"For All The Dogs","names":["Zack","SZA","Teezo Touchdown"],"count":3}
+{"type":"progress","phase":"extract","completed":142,"total":171}
 {"type":"extract","song":"Daylight","album":"For All The Dogs","index":150}
-{"type":"no_friends","song":"Daylight","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":147,"total":175}
+{"type":"friends","song":"Daylight","album":"For All The Dogs","names":["Lenny Kravitz"],"count":1}
+{"type":"progress","phase":"extract","completed":143,"total":171}
 {"type":"extract","song":"Bahamas Promises","album":"For All The Dogs","index":151}
-{"type":"no_friends","song":"Bahamas Promises","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":148,"total":175}
+{"type":"friends","song":"Bahamas Promises","album":"For All The Dogs","names":["Hailey"],"count":4}
+{"type":"progress","phase":"extract","completed":144,"total":171}
 {"type":"extract","song":"How Bout Now","album":"For All The Dogs","index":153}
-{"type":"no_friends","song":"How Bout Now","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":149,"total":175}
+{"type":"friends","song":"How Bout Now","album":"For All The Dogs","names":["Ludacris"],"count":1}
+{"type":"progress","phase":"extract","completed":145,"total":171}
 {"type":"extract","song":"All The Parties","album":"For All The Dogs","index":154}
-{"type":"no_friends","song":"All The Parties","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":150,"total":175}
+{"type":"friends","song":"All The Parties","album":"For All The Dogs","names":["Noah '40' Shebib","Oliver El-Khatib","Kevin Durant","The Weeknd","Chief Keef"],"count":5}
+{"type":"progress","phase":"extract","completed":146,"total":171}
 {"type":"extract","song":"Members Only","album":"For All The Dogs","index":155}
-{"type":"no_friends","song":"Members Only","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":151,"total":175}
+{"type":"friends","song":"Members Only","album":"For All The Dogs","names":["Jahron B"],"count":1}
+{"type":"progress","phase":"extract","completed":147,"total":171}
 {"type":"extract","song":"IDGAF","album":"For All The Dogs","index":156}
-{"type":"no_friends","song":"IDGAF","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":152,"total":175}
+{"type":"friends","song":"IDGAF","album":"For All The Dogs","names":["Danny McBride"],"count":1}
+{"type":"progress","phase":"extract","completed":148,"total":171}
 {"type":"extract","song":"8AM in Charlotte","album":"For All The Dogs","index":157}
-{"type":"no_friends","song":"8AM in Charlotte","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":153,"total":175}
+{"type":"friends","song":"8AM in Charlotte","album":"For All The Dogs","names":["21 Savage","Orson Welles","Lauryn Hill","Jordan Peele","Oliver North","Jeremiah","Adel","Shania Twain","T.D. Jakes"],"count":9}
+{"type":"progress","phase":"extract","completed":149,"total":171}
 {"type":"extract","song":"Rich Baby Daddy","album":"For All The Dogs","index":158}
-{"type":"no_friends","song":"Rich Baby Daddy","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":154,"total":175}
+{"type":"friends","song":"Rich Baby Daddy","album":"For All The Dogs","names":["Red"],"count":1}
+{"type":"progress","phase":"extract","completed":150,"total":171}
 {"type":"extract","song":"Another Late Night","album":"For All The Dogs","index":159}
-{"type":"no_friends","song":"Another Late Night","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":155,"total":175}
+{"type":"friends","song":"Another Late Night","album":"For All The Dogs","names":["Lil Boat","Billie Eilish"],"count":2}
+{"type":"progress","phase":"extract","completed":151,"total":171}
 {"type":"extract","song":"Drew a Picasso","album":"For All The Dogs","index":160}
-{"type":"no_friends","song":"Drew a Picasso","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":156,"total":175}
+{"type":"friends","song":"Drew a Picasso","album":"For All The Dogs","names":["R. Kelly","Snoopy","Charlie Brown"],"count":3}
+{"type":"progress","phase":"extract","completed":152,"total":171}
 {"type":"extract","song":"Red Button","album":"For All The Dogs","index":161}
-{"type":"no_friends","song":"Red Button","album":"For All The Dogs"}
-{"type":"progress","phase":"extract","completed":157,"total":175}
+{"type":"friends","song":"Red Button","album":"For All The Dogs","names":["Kanye West","Taylor Swift","Larry David"],"count":3}
+{"type":"progress","phase":"extract","completed":153,"total":171}
 {"type":"extract","song":"Make Them Cry","album":"Iceman","index":162}
 {"type":"friends","song":"Make Them Cry","album":"Iceman","names":["Noah '40' Shebib"],"count":1}
-{"type":"progress","phase":"extract","completed":158,"total":175}
+{"type":"progress","phase":"extract","completed":154,"total":171}
 {"type":"extract","song":"Dust","album":"Iceman","index":163}
-{"type":"friends","song":"Dust","album":"Iceman","names":["Lionel Richie","Samuel Bankman-Fried","Future"],"count":3}
-{"type":"progress","phase":"extract","completed":159,"total":175}
+{"type":"friends","song":"Dust","album":"Iceman","names":["Future","Lionel Richie","Samuel Bankman-Fried"],"count":3}
+{"type":"progress","phase":"extract","completed":155,"total":171}
 {"type":"extract","song":"Whisper My Name","album":"Iceman","index":164}
 {"type":"friends","song":"Whisper My Name","album":"Iceman","names":["Louis Farrakhan"],"count":1}
-{"type":"progress","phase":"extract","completed":160,"total":175}
+{"type":"progress","phase":"extract","completed":156,"total":171}
 {"type":"extract","song":"Janice STFU","album":"Iceman","index":165}
 {"type":"friends","song":"Janice STFU","album":"Iceman","names":["Wilt Chamberlain"],"count":1}
-{"type":"progress","phase":"extract","completed":161,"total":175}
+{"type":"progress","phase":"extract","completed":157,"total":171}
 {"type":"extract","song":"Ran to Atlanta","album":"Iceman","index":166}
-{"type":"friends","song":"Ran to Atlanta","album":"Iceman","names":["Future","Gucci Mane","21 Savage"],"count":3}
-{"type":"progress","phase":"extract","completed":162,"total":175}
+{"type":"friends","song":"Ran to Atlanta","album":"Iceman","names":["21 Savage","Future","Gucci Mane"],"count":3}
+{"type":"progress","phase":"extract","completed":158,"total":171}
 {"type":"extract","song":"Shabang","album":"Iceman","index":167}
-{"type":"friends","song":"Shabang","album":"Iceman","names":["Noah '40' Shebib","Maneesh","Bryson Tiller"],"count":3}
-{"type":"progress","phase":"extract","completed":163,"total":175}
+{"type":"friends","song":"Shabang","album":"Iceman","names":["Noah '40' Shebib","Bryson Tiller"],"count":2}
+{"type":"progress","phase":"extract","completed":159,"total":171}
 {"type":"extract","song":"Make Them Pay","album":"Iceman","index":168}
-{"type":"friends","song":"Make Them Pay","album":"Iceman","names":["Gilbert Arenas","DJ Khaled","Adin Ross","Rick Ross","Cherokee D","Skyy Black"],"count":6}
-{"type":"progress","phase":"extract","completed":164,"total":175}
+{"type":"friends","song":"Make Them Pay","album":"Iceman","names":["Gilbert Arenas","DJ Khaled","Cherokee D","Skyy Black"],"count":4}
+{"type":"progress","phase":"extract","completed":160,"total":171}
 {"type":"extract","song":"Burning Bridges","album":"Iceman","index":169}
 {"type":"friends","song":"Burning Bridges","album":"Iceman","names":["Noel","Capo"],"count":4}
-{"type":"progress","phase":"extract","completed":165,"total":175}
+{"type":"progress","phase":"extract","completed":161,"total":171}
 {"type":"extract","song":"National Treasures","album":"Iceman","index":170}
 {"type":"friends","song":"National Treasures","album":"Iceman","names":["Kobe Bryant","Alex Moss"],"count":2}
-{"type":"progress","phase":"extract","completed":166,"total":175}
+{"type":"progress","phase":"extract","completed":162,"total":171}
 {"type":"extract","song":"B's on the Table","album":"Iceman","index":171}
 {"type":"friends","song":"B's on the Table","album":"Iceman","names":["Kevin Hart","Shane Coppin"],"count":2}
-{"type":"progress","phase":"extract","completed":167,"total":175}
+{"type":"progress","phase":"extract","completed":163,"total":171}
 {"type":"extract","song":"What Did I Miss?","album":"Iceman","index":172}
-{"type":"friends","song":"What Did I Miss?","album":"Iceman","names":["TLC"],"count":1}
-{"type":"progress","phase":"extract","completed":168,"total":175}
+{"type":"no_friends","song":"What Did I Miss?","album":"Iceman"}
+{"type":"progress","phase":"extract","completed":164,"total":171}
 {"type":"extract","song":"Plot Twist","album":"Iceman","index":173}
 {"type":"friends","song":"Plot Twist","album":"Iceman","names":["Styles P"],"count":1}
-{"type":"progress","phase":"extract","completed":169,"total":175}
+{"type":"progress","phase":"extract","completed":165,"total":171}
 {"type":"extract","song":"2 Hard 4 the Radio","album":"Iceman","index":174}
 {"type":"friends","song":"2 Hard 4 the Radio","album":"Iceman","names":["YG","Mustard"],"count":2}
-{"type":"progress","phase":"extract","completed":170,"total":175}
+{"type":"progress","phase":"extract","completed":166,"total":171}
 {"type":"extract","song":"Make Them Remember","album":"Iceman","index":175}
-{"type":"friends","song":"Make Them Remember","album":"Iceman","names":["Lil Wayne","Dean Martin","Steve Martin"],"count":3}
-{"type":"progress","phase":"extract","completed":171,"total":175}
+{"type":"friends","song":"Make Them Remember","album":"Iceman","names":["Lil Wayne","Steve Martin","Dean Martin"],"count":3}
+{"type":"progress","phase":"extract","completed":167,"total":171}
 {"type":"extract","song":"Little Birdie","album":"Iceman","index":176}
-{"type":"friends","song":"Little Birdie","album":"Iceman","names":["Alex Moss","Virgil Abloh","Lauryn Hill","DJ Frisco954"],"count":4}
-{"type":"progress","phase":"extract","completed":172,"total":175}
+{"type":"friends","song":"Little Birdie","album":"Iceman","names":["Virgil Abloh","Lauryn Hill","Alex Moss","DJ Frisco954"],"count":4}
+{"type":"progress","phase":"extract","completed":168,"total":171}
 {"type":"extract","song":"Don't Worry","album":"Iceman","index":177}
 {"type":"friends","song":"Don't Worry","album":"Iceman","names":["Nicki Minaj","Chubbs","Cardi B"],"count":3}
-{"type":"progress","phase":"extract","completed":173,"total":175}
+{"type":"progress","phase":"extract","completed":169,"total":171}
 {"type":"extract","song":"Firm Friends","album":"Iceman","index":178}
-{"type":"friends","song":"Firm Friends","album":"Iceman","names":["Noah '40' Shebib","Jackie Onassis","John F. Kennedy","Luis Enrique"],"count":4}
-{"type":"progress","phase":"extract","completed":174,"total":175}
+{"type":"friends","song":"Firm Friends","album":"Iceman","names":["Noah '40' Shebib","Jackie Kennedy Onassis","John F. Kennedy","Luis Enrique"],"count":4}
+{"type":"progress","phase":"extract","completed":170,"total":171}
 {"type":"extract","song":"Make Them Know","album":"Iceman","index":179}
 {"type":"friends","song":"Make Them Know","album":"Iceman","names":["Gucci Mane"],"count":1}
-{"type":"progress","phase":"extract","completed":175,"total":175}
-{"type":"done","job":"extract","friendCount":60,"songsProcessed":31,"scoped":false}
+{"type":"progress","phase":"extract","completed":171,"total":171}
+{"type":"done","job":"extract","friendCount":250,"songsProcessed":123,"scoped":false}

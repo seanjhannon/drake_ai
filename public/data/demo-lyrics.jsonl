@@ -16,19 +16,19 @@
 {"type":"progress","phase":"lyrics","completed":7,"total":179}
 {"type":"lyrics_ok","song":"Shut It Down","album":"Thank Me Later","lines":99}
 {"type":"progress","phase":"lyrics","completed":8,"total":179}
-{"type":"lyrics_ok","song":"Unforgettable","album":"Thank Me Later","lines":52}
+{"type":"lyrics_fail","song":"Unforgettable","album":"Thank Me Later"}
 {"type":"progress","phase":"lyrics","completed":9,"total":179}
 {"type":"lyrics_ok","song":"Light Up","album":"Thank Me Later","lines":87}
 {"type":"progress","phase":"lyrics","completed":10,"total":179}
 {"type":"lyrics_ok","song":"Miss Me","album":"Thank Me Later","lines":100}
 {"type":"progress","phase":"lyrics","completed":11,"total":179}
-{"type":"lyrics_ok","song":"Over My Dead Body","album":"Take Care","lines":79}
+{"type":"lyrics_fail","song":"Over My Dead Body","album":"Take Care"}
 {"type":"progress","phase":"lyrics","completed":12,"total":179}
-{"type":"lyrics_ok","song":"Shot for Me","album":"Take Care","lines":57}
+{"type":"lyrics_fail","song":"Shot for Me","album":"Take Care"}
 {"type":"progress","phase":"lyrics","completed":13,"total":179}
 {"type":"lyrics_ok","song":"Headlines","album":"Take Care","lines":66}
 {"type":"progress","phase":"lyrics","completed":14,"total":179}
-{"type":"lyrics_ok","song":"Crew Love","album":"Take Care","lines":63}
+{"type":"lyrics_fail","song":"Crew Love","album":"Take Care"}
 {"type":"progress","phase":"lyrics","completed":15,"total":179}
 {"type":"lyrics_ok","song":"Take Care","album":"Take Care","lines":67}
 {"type":"progress","phase":"lyrics","completed":16,"total":179}
@@ -324,7 +324,7 @@
 {"type":"progress","phase":"lyrics","completed":161,"total":179}
 {"type":"lyrics_ok","song":"Make Them Cry","album":"Iceman","lines":98}
 {"type":"progress","phase":"lyrics","completed":162,"total":179}
-{"type":"lyrics_ok","song":"Dust","album":"Iceman","lines":74}
+{"type":"lyrics_ok","song":"Dust","album":"Iceman","lines":61}
 {"type":"progress","phase":"lyrics","completed":163,"total":179}
 {"type":"lyrics_ok","song":"Whisper My Name","album":"Iceman","lines":86}
 {"type":"progress","phase":"lyrics","completed":164,"total":179}
@@ -358,4 +358,4 @@
 {"type":"progress","phase":"lyrics","completed":178,"total":179}
 {"type":"lyrics_ok","song":"Make Them Know","album":"Iceman","lines":65}
 {"type":"progress","phase":"lyrics","completed":179,"total":179}
-{"type":"done","job":"lyrics","parsed":175,"failed":4,"scoped":false}
+{"type":"done","job":"lyrics","parsed":171,"failed":8,"scoped":false}

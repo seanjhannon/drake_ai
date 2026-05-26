@@ -73,9 +73,10 @@ After lyrics + scan data are committed:
 
 ```bash
 npm run demo:replay
+git add public/data/demo-lyrics.jsonl public/data/demo-scan.jsonl
 ```
 
-This writes `public/data/demo-lyrics.jsonl` (all 179 songs) and `public/data/demo-scan.jsonl` (every song with lyrics). Re-run whenever lyrics or results change.
+Re-run whenever `data/lyrics.json` or `results.json` changes — the replay log on the live site reads these files, not your local scan.
 
 ### 3. Demo mode in the UI
 
