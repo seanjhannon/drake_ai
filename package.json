@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "demo:replay": "node scripts/generate-demo-replay.mjs"
+    "demo:replay": "node scripts/generate-demo-replay.mjs",
+    "reviews:seed-blob": "node scripts/seed-reviews-blob.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.97.1",
+    "@vercel/blob": "^2.4.0",
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"

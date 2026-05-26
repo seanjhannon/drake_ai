@@ -119,6 +119,8 @@ No API keys in Vercel env vars.
 
   Do **not** set `ANTHROPIC_API_KEY` or `OPENROUTER_API_KEY`.
 
+- [ ] **Blob store** for community reviews: Project → Storage → Create → Blob. This sets `BLOB_READ_WRITE_TOKEN` automatically. Friends’ review buttons write to `drake-reviews.json` in Blob (seeded from committed `data/reviews.json` on first save).
+
 - [ ] Deploy
 
 ### Phase 3 — Smoke test

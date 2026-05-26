@@ -1,6 +1,6 @@
 {
   "scannedAt": "2026-05-26T20:34:12.086Z",
-  "songsProcessed": 0,
+  "songsProcessed": 123,
   "mentions": {
     "Lil Wayne": [
       {
@@ -65,6 +65,20 @@
         "song": "Free Smoke",
         "album": "More Life",
         "year": 2017
+      },
+      {
+        "friend": "Lil Wayne",
+        "bar": "(Lil Weezyana shit)",
+        "song": "Nice for What",
+        "album": "Scorpion",
+        "year": 2018
+      },
+      {
+        "friend": "Lil Wayne",
+        "bar": "Me, Wayne, and Mack, the Three Amigos, I'm Steve Martin",
+        "song": "Make Them Remember",
+        "album": "Iceman",
+        "year": 2026
       }
     ],
     "Alyssa": [
@@ -203,6 +217,13 @@
         "song": "Portland",
         "album": "More Life",
         "year": 2017
+      },
+      {
+        "friend": "Jay-Z",
+        "bar": "Yo, get close enough to HOV, smell like a kilo still",
+        "song": "Talk Up",
+        "album": "Scorpion",
+        "year": 2018
       }
     ],
     "Nicki Minaj": [
@@ -233,6 +254,13 @@
         "song": "Tuscan Leather",
         "album": "Nothing Was the Same",
         "year": 2013
+      },
+      {
+        "friend": "Nicki Minaj",
+        "bar": "Ref1, he so drunk, he just played Nicki then some Cardi, I'm sorry",
+        "song": "Don't Worry",
+        "album": "Iceman",
+        "year": 2026
       }
     ],
     "Snoop Dogg": [
@@ -402,6 +430,48 @@
         "song": "Sacrifices",
         "album": "More Life",
         "year": 2017
+      },
+      {
+        "friend": "Noah '40' Shebib",
+        "bar": "Without 40, Oli', there'd be no me",
+        "song": "God's Plan",
+        "album": "Scorpion",
+        "year": 2018
+      },
+      {
+        "friend": "Noah '40' Shebib",
+        "bar": "Hard to pay 40, pay Noel, pay Niko back",
+        "song": "The Remorse",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      },
+      {
+        "friend": "Noah '40' Shebib",
+        "bar": "Forty deep in the East End",
+        "song": "All The Parties",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "Noah '40' Shebib",
+        "bar": "Feel like 40 won't even listen to my words when he knows I'm in a load of trouble",
+        "song": "Make Them Cry",
+        "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "Noah '40' Shebib",
+        "bar": "40, what's up? Shabang (Uh)",
+        "song": "Shabang",
+        "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "Noah '40' Shebib",
+        "bar": "I'm In The Stew With Noah",
+        "song": "Firm Friends",
+        "album": "Iceman",
+        "year": 2026
       }
     ],
     "Lil Cease": [
@@ -429,6 +499,20 @@
         "song": "The Motto",
         "album": "Take Care",
         "year": 2011
+      },
+      {
+        "friend": "Mac Dre",
+        "bar": "She just said I'm bae, I hit the thizzle dance (Mac Dre shit, damn)",
+        "song": "Nonstop",
+        "album": "Scorpion",
+        "year": 2018
+      },
+      {
+        "friend": "Mac Dre",
+        "bar": "Keep a .19 like I'm Mac Dre (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
       }
     ],
     "Uncle Luke": [
@@ -472,6 +556,20 @@
         "song": "Know Yourself",
         "album": "If You're Reading This It's Too Late",
         "year": 2015
+      },
+      {
+        "friend": "Chubbs",
+        "bar": "All the nights Chubbs was pulling up where I need him at",
+        "song": "The Remorse",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      },
+      {
+        "friend": "Chubbs",
+        "bar": "Poppin' out on Chubbs side, it's gonna be a party (yeah)",
+        "song": "Don't Worry",
+        "album": "Iceman",
+        "year": 2026
       }
     ],
     "Dwight Howard": [
@@ -526,6 +624,20 @@
         "song": "Tuscan Leather",
         "album": "Nothing Was the Same",
         "year": 2013
+      },
+      {
+        "friend": "Will Smith",
+        "bar": "Helipad from Will Smith crib straight to the stage",
+        "song": "8 Out of 10",
+        "album": "Scorpion",
+        "year": 2018
+      },
+      {
+        "friend": "Will Smith",
+        "bar": "If I was Will Smith, I would've slapped him with a stick",
+        "song": "Jimmy Cooks",
+        "album": "Her Loss",
+        "year": 2022
       }
     ],
     "Tatyana Ali": [
@@ -569,6 +681,13 @@
         "song": "Worst Behavior",
         "album": "Nothing Was the Same",
         "year": 2013
+      },
+      {
+        "friend": "Serena Williams",
+        "bar": "Sidebar, Serena, your husband a groupie",
+        "song": "Middle of the Ocean",
+        "album": "Her Loss",
+        "year": 2022
       }
     ],
     "O.D.B.": [
@@ -698,6 +817,41 @@
         "song": "Views",
         "album": "Views",
         "year": 2016
+      },
+      {
+        "friend": "Oliver El-Khatib",
+        "bar": "Oli North pull in, like, ten million a season",
+        "song": "Lose You",
+        "album": "More Life",
+        "year": 2017
+      },
+      {
+        "friend": "Oliver El-Khatib",
+        "bar": "I let Ollie take the owl, told him brand it for me",
+        "song": "Nonstop",
+        "album": "Scorpion",
+        "year": 2018
+      },
+      {
+        "friend": "Oliver El-Khatib",
+        "bar": "Without 40, Oli', there'd be no me",
+        "song": "God's Plan",
+        "album": "Scorpion",
+        "year": 2018
+      },
+      {
+        "friend": "Oliver El-Khatib",
+        "bar": "Oli got the first edition parked up roadside",
+        "song": "Champagne Poetry",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      },
+      {
+        "friend": "Oliver El-Khatib",
+        "bar": "Hit up the dawg like I'm OVO Mark",
+        "song": "All The Parties",
+        "album": "For All The Dogs",
+        "year": 2023
       }
     ],
     "Niko Ioannides": [
@@ -739,6 +893,13 @@
         "song": "Free Smoke",
         "album": "More Life",
         "year": 2017
+      },
+      {
+        "friend": "Kanye West",
+        "bar": "Every time that Yeezy called a truce, he had my head inflated",
+        "song": "Red Button",
+        "album": "For All The Dogs",
+        "year": 2023
       }
     ],
     "P Reign": [
@@ -967,6 +1128,13 @@
         "song": "Weston Road Flows",
         "album": "Views",
         "year": 2016
+      },
+      {
+        "friend": "Kevin Durant",
+        "bar": "Me and KD 'bout to turn up the art",
+        "song": "All The Parties",
+        "album": "For All The Dogs",
+        "year": 2023
       }
     ],
     "Monique": [
@@ -1102,6 +1270,20 @@
         "song": "Views",
         "album": "Views",
         "year": 2016
+      },
+      {
+        "friend": "Kobe Bryant",
+        "bar": "Ayy, I'm living every 24 like Kobe did",
+        "song": "Rich Flex",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "Kobe Bryant",
+        "bar": "R.I.P. Kobe, but y'all niggas brokie",
+        "song": "National Treasures",
+        "album": "Iceman",
+        "year": 2026
       }
     ],
     "Christian Bale": [
@@ -1219,6 +1401,132 @@
         "song": "Sacrifices",
         "album": "More Life",
         "year": 2017
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Yeah, 21, the biggest",
+        "song": "Rich Flex",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "21, can you do some' for me? (21)",
+        "song": "Rich Flex",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Savage said you pussy and he hit it on the nose",
+        "song": "On BS",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "The reason why we listen to 21 and The Boy",
+        "song": "On BS",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Look at me dead in my eyes, you see all the times that I had to go slide (21)",
+        "song": "Privileged Rappers",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Hol' up (21), hol' up (21), hol' up (21)",
+        "song": "Privileged Rappers",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Textin' emojis, tongue out, eggplant, must've went over her head (21)",
+        "song": "Privileged Rappers",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Yeah, yeah, let's have sex in the car (on God)\nThe Maybach came with a bar (21)",
+        "song": "Privileged Rappers",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "I'm wipin' my — with her bra (21, pew, pew, pew)",
+        "song": "Privileged Rappers",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Send me my whole fee, I don't do backends and fronts (21, 21)",
+        "song": "Privileged Rappers",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "If I let my nigga 21 tell it, you a pussy",
+        "song": "Jimmy Cooks",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "You know that Savage love you",
+        "song": "Hours in Silence",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Fuck nigga wanna get fired on (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Starch a nigga up, put the iron on him (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Plenty niggas dyin' over that way (yeah)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "21 gang 4L, these niggas gon' tell",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Savage got a green card straight out of the consulate",
+        "song": "8AM in Charlotte",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Ask Pluto, Bank, or 21, you know what I'm sayin'?",
+        "song": "Ran to Atlanta",
+        "album": "Iceman",
+        "year": 2026
       }
     ],
     "Lil Baby": [
@@ -1255,6 +1563,1414 @@
         "song": "KMT",
         "album": "More Life",
         "year": 2017
+      }
+    ],
+    "Trick Daddy": [
+      {
+        "friend": "Trick Daddy",
+        "bar": "No snow tires, the Range slip-slide like Trick Daddy and Trina",
+        "song": "Lose You",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "Trina": [
+      {
+        "friend": "Trina",
+        "bar": "No snow tires, the Range slip-slide like Trick Daddy and Trina",
+        "song": "Lose You",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "The Weeknd": [
+      {
+        "friend": "The Weeknd",
+        "bar": "52 consecutive weekends, shout out to Weeknd",
+        "song": "Lose You",
+        "album": "More Life",
+        "year": 2017
+      },
+      {
+        "friend": "The Weeknd",
+        "bar": "My bitches playin' PND and them / The shorties only listen to Weeknd",
+        "song": "All The Parties",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "R. Kelly": [
+      {
+        "friend": "R. Kelly",
+        "bar": "This the remix to \"Ignition,\" hot and fresh out the kitchen",
+        "song": "Lose You",
+        "album": "More Life",
+        "year": 2017
+      },
+      {
+        "friend": "R. Kelly",
+        "bar": "You still listenin' to R Kelly in the whip, baby girl, and I don't judge you",
+        "song": "Drew a Picasso",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Jerry Garcia": [
+      {
+        "friend": "Jerry Garcia",
+        "bar": "Grateful like Jerry, Bob and Mickey",
+        "song": "Lose You",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "Bob Weir": [
+      {
+        "friend": "Bob Weir",
+        "bar": "Grateful like Jerry, Bob and Mickey",
+        "song": "Lose You",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "Mickey Hart": [
+      {
+        "friend": "Mickey Hart",
+        "bar": "Grateful like Jerry, Bob and Mickey",
+        "song": "Lose You",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "1da": [
+      {
+        "friend": "1da",
+        "bar": "1da do the beat and I open up like a double click",
+        "song": "Do Not Disturb",
+        "album": "More Life",
+        "year": 2017
+      },
+      {
+        "friend": "1da",
+        "bar": "1da sent this in, I'm goin' up all the way",
+        "song": "8 Out of 10",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Sealy": [
+      {
+        "friend": "Sealy",
+        "bar": "Remember when I bought Sealy the fake Chanel wallet",
+        "song": "Do Not Disturb",
+        "album": "More Life",
+        "year": 2017
+      }
+    ],
+    "Bernie Mac": [
+      {
+        "friend": "Bernie Mac",
+        "bar": "Daddy got suits like Bernie Mac, he dresses himself",
+        "song": "Survival",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Tay Keith": [
+      {
+        "friend": "Tay Keith",
+        "bar": "Tay Keith, fuck these niggas up!",
+        "song": "Nonstop",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "LeBron James": [
+      {
+        "friend": "LeBron James",
+        "bar": "How I go from six to twenty-three like I'm LeBron?",
+        "song": "Nonstop",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Future": [
+      {
+        "friend": "Future",
+        "bar": "Future took the business and ran it for me",
+        "song": "Nonstop",
+        "album": "Scorpion",
+        "year": 2018
+      },
+      {
+        "friend": "Future",
+        "bar": "Yes I be with Future",
+        "song": "Mob Ties",
+        "album": "Scorpion",
+        "year": 2018
+      },
+      {
+        "friend": "Future",
+        "bar": "Future sign the contracts, he don't even show it to me",
+        "song": "Champagne Poetry",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      },
+      {
+        "friend": "Future",
+        "bar": "I'm taking heads off, Future out here like Irving Azoff",
+        "song": "The Remorse",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      },
+      {
+        "friend": "Future",
+        "bar": "Future the Prince is my trusted advisor",
+        "song": "Dust",
+        "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "Future",
+        "bar": "Me and Hendrix back by popular demand (Yeah)",
+        "song": "Ran to Atlanta",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Al Haymon": [
+      {
+        "friend": "Al Haymon",
+        "bar": "Al Haymon checks off of all of my events",
+        "song": "Nonstop",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "A$AP Rocky": [
+      {
+        "friend": "A$AP Rocky",
+        "bar": "Word to Flacko Jodye, he done seen us put it down",
+        "song": "I'm Upset",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Rich Porter": [
+      {
+        "friend": "Rich Porter",
+        "bar": "I'm what Meech shoulda been, I'm what Supreme didn't become",
+        "song": "Talk Up",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Alpo Martinez": [
+      {
+        "friend": "Alpo Martinez",
+        "bar": "If Alpo didn't snitch, niggas'd be like Young",
+        "song": "Talk Up",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "XXXTentacion": [
+      {
+        "friend": "XXXTentacion",
+        "bar": "Y'all killed X and let Zimmerman live, shhh, s-streets is done",
+        "song": "Talk Up",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "George Zimmerman": [
+      {
+        "friend": "George Zimmerman",
+        "bar": "Y'all killed X and let Zimmerman live, shhh, s-streets is done",
+        "song": "Talk Up",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Princess Diana": [
+      {
+        "friend": "Princess Diana",
+        "bar": "Rest in Heaven, Diana",
+        "song": "Peak",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Murda Beatz": [
+      {
+        "friend": "Murda Beatz",
+        "bar": "(Murda on the beat)",
+        "song": "Nice for What",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Fabo": [
+      {
+        "friend": "Fabo",
+        "bar": "With your phone out, snappin' like you Fabo",
+        "song": "Nice for What",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "TrapMoneyBenny": [
+      {
+        "friend": "TrapMoneyBenny",
+        "bar": "Trap, TrapMoneyBenny",
+        "song": "In My Feelings",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Michael Jackson": [
+      {
+        "friend": "Michael Jackson",
+        "bar": "She not my lover like \"Billie Jean\", but the kid is mine",
+        "song": "March 14",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Sandi Graham": [
+      {
+        "friend": "Sandi Graham",
+        "bar": "Sandi used to tell me all it takes is one time",
+        "song": "March 14",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Gelo": [
+      {
+        "friend": "Gelo",
+        "bar": "Tell Gelo bring some more Rosé and the Baccarats out",
+        "song": "March 14",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Dave Chappelle": [
+      {
+        "friend": "Dave Chappelle",
+        "bar": "I just gave 'em two for forty million like Chappelle",
+        "song": "Mob Ties",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Maverick Carter": [
+      {
+        "friend": "Maverick Carter",
+        "bar": "Maverick Carter couldn't even get the deal done",
+        "song": "Sandra's Rose",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Rick Pitino": [
+      {
+        "friend": "Rick Pitino",
+        "bar": "Rick Pitino, I take 'em to strip clubs and casinos",
+        "song": "Sandra's Rose",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "DJ Premier": [
+      {
+        "friend": "DJ Premier",
+        "bar": "Stack of C-notes get all you niggas scratched like Preemo",
+        "song": "Sandra's Rose",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Amber Rose": [
+      {
+        "friend": "Amber Rose",
+        "bar": "I make them hoes walk together like I'm Amber Rose",
+        "song": "Sandra's Rose",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Nipsey Hussle": [
+      {
+        "friend": "Nipsey Hussle",
+        "bar": "Had me all in Nipsey hood to go link up with Sammy",
+        "song": "Sandra's Rose",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Adele": [
+      {
+        "friend": "Adele",
+        "bar": "Every title doin' numbers like I'm Miss Adele",
+        "song": "Sandra's Rose",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Mohamed Hadid": [
+      {
+        "friend": "Mohamed Hadid",
+        "bar": "My house is full of supermodels just like Mohamed Hadid",
+        "song": "Sandra's Rose",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Charlamagne tha God": [
+      {
+        "friend": "Charlamagne tha God",
+        "bar": "Like Charlamagne, I see the light and see the darkest patches",
+        "song": "Sandra's Rose",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "CJ": [
+      {
+        "friend": "CJ",
+        "bar": "CJ grab racks out the bag and throw it to me",
+        "song": "Champagne Poetry",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      },
+      {
+        "friend": "CJ",
+        "bar": "All the nights I needed to vent to someone and CJ sat",
+        "song": "The Remorse",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Kelis": [
+      {
+        "friend": "Kelis",
+        "bar": "Them boys got no Kelis in they blood",
+        "song": "Race My Mind",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Ayesha Curry": [
+      {
+        "friend": "Ayesha Curry",
+        "bar": "How I'm supposed to wife it? You not Ayesha enough",
+        "song": "Race My Mind",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Jacob": [
+      {
+        "friend": "Jacob",
+        "bar": "Jacob charged me 450 for a tennis chain",
+        "song": "Knife Talk",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Metro Boomin": [
+      {
+        "friend": "Metro Boomin",
+        "bar": "If Young Metro don't trust you, I'm gon' shoot you",
+        "song": "Knife Talk",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      },
+      {
+        "friend": "Metro Boomin",
+        "bar": "If Young Metro don't trust you, I'm gon' shoot you",
+        "song": "P Power",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "Metro Boomin",
+        "bar": "Metro in this bitch goin' brazy",
+        "song": "More M's",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Noel Audigy": [
+      {
+        "friend": "Noel Audigy",
+        "bar": "Hard to pay 40, pay Noel, pay Niko back",
+        "song": "The Remorse",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Niko Carlile": [
+      {
+        "friend": "Niko Carlile",
+        "bar": "Hard to pay 40, pay Noel, pay Niko back",
+        "song": "The Remorse",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Mark": [
+      {
+        "friend": "Mark",
+        "bar": "All the times Mark was making sure that my luggage packed",
+        "song": "The Remorse",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Irving Azoff": [
+      {
+        "friend": "Irving Azoff",
+        "bar": "I'm taking heads off, Future out here like Irving Azoff",
+        "song": "The Remorse",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Kawhi Leonard": [
+      {
+        "friend": "Kawhi Leonard",
+        "bar": "Unless Kawhi wanna run it back",
+        "song": "The Remorse",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Mario": [
+      {
+        "friend": "Mario",
+        "bar": "Turn me up (Mario)",
+        "song": "Papi's Home",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Drea": [
+      {
+        "friend": "Drea",
+        "bar": "I grew up with Drea faith",
+        "song": "Girls Want Girls",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Biggie Smalls": [
+      {
+        "friend": "Biggie Smalls",
+        "bar": "Previously on Ready To Die",
+        "song": "Love All",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Sha'Carri Richardson": [
+      {
+        "friend": "Sha'Carri Richardson",
+        "bar": "And I'm like Sha'Carri, smoke 'em on and off the track (ayy)",
+        "song": "No Friends in the Industry",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Richard Pryor": [
+      {
+        "friend": "Richard Pryor",
+        "bar": "I had a Richard prior to these niggas, that's the joke",
+        "song": "No Friends in the Industry",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Chanel": [
+      {
+        "friend": "Chanel",
+        "bar": "And when you see Chanel, I wish that's how you saw me",
+        "song": "Pipe Down",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      },
+      {
+        "friend": "Chanel",
+        "bar": "That shit you tell Chanel, I wish that's how you called me",
+        "song": "Pipe Down",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Tiger Woods": [
+      {
+        "friend": "Tiger Woods",
+        "bar": "Think I'm Tiger Woods, the way I'm teed off the 17",
+        "song": "In the Bible",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Virgil Abloh": [
+      {
+        "friend": "Virgil Abloh",
+        "bar": "She hittin' up Virgil for Louis Vuitton",
+        "song": "In the Bible",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      },
+      {
+        "friend": "Virgil Abloh",
+        "bar": "Virgil came back through the boy, damn",
+        "song": "Sticky",
+        "album": "Honestly Nevermind",
+        "year": 2022
+      },
+      {
+        "friend": "Virgil Abloh",
+        "bar": "I don't like goin' to Vegas, I start missin' Virgil",
+        "song": "Little Birdie",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "India Royale": [
+      {
+        "friend": "India Royale",
+        "bar": "India Royale cosmetic, I'm just promotin' my bitch",
+        "song": "In the Bible",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "King Von": [
+      {
+        "friend": "King Von",
+        "bar": "She think I be mimickin' Von, grandson",
+        "song": "In the Bible",
+        "album": "Certified Lover Boy",
+        "year": 2021
+      }
+    ],
+    "Eric": [
+      {
+        "friend": "Eric",
+        "bar": "Ayo Eric, bring them girls to the stage",
+        "song": "Sticky",
+        "album": "Honestly Nevermind",
+        "year": 2022
+      }
+    ],
+    "Gordo": [
+      {
+        "friend": "Gordo",
+        "bar": "Gordo got me on the wave, ayy",
+        "song": "Sticky",
+        "album": "Honestly Nevermind",
+        "year": 2022
+      }
+    ],
+    "Ant": [
+      {
+        "friend": "Ant",
+        "bar": "Ant got me on the wave, ayy",
+        "song": "Sticky",
+        "album": "Honestly Nevermind",
+        "year": 2022
+      }
+    ],
+    "Lila": [
+      {
+        "friend": "Lila",
+        "bar": "Lila",
+        "song": "Flight's Booked",
+        "album": "Honestly Nevermind",
+        "year": 2022
+      }
+    ],
+    "James Harden": [
+      {
+        "friend": "James Harden",
+        "bar": "Then you stepped back on this shit, girl, you hit the Harden on me",
+        "song": "Liability",
+        "album": "Honestly Nevermind",
+        "year": 2022
+      }
+    ],
+    "Macaulay Culkin": [
+      {
+        "friend": "Macaulay Culkin",
+        "bar": "In this mansion, I'm Macaulay Culkin",
+        "song": "Major Distribution",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Mekhi Phifer": [
+      {
+        "friend": "Mekhi Phifer",
+        "bar": "Paid in full, I'm Mekhi Phifer",
+        "song": "Major Distribution",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Bad Bunny": [
+      {
+        "friend": "Bad Bunny",
+        "bar": "Bad Bunny numbers, it's a robbery",
+        "song": "Major Distribution",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Steve Francis": [
+      {
+        "friend": "Steve Francis",
+        "bar": "Stayed in Houston long as Steve Francis",
+        "song": "Major Distribution",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "The Rock": [
+      {
+        "friend": "The Rock",
+        "bar": "I ain't tryna wrestle like The Rock",
+        "song": "Major Distribution",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Harry Styles": [
+      {
+        "friend": "Harry Styles",
+        "bar": "Harry Styles numbers, it's a robbery",
+        "song": "Major Distribution",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Zayn": [
+      {
+        "friend": "Zayn",
+        "bar": "My niggas go in-Zayn to catch a body",
+        "song": "Major Distribution",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Mike Tyson": [
+      {
+        "friend": "Mike Tyson",
+        "bar": "Couple million on my cars, I went Tyson, I'm too nice (hey, hey)",
+        "song": "BackOutsideBoyz",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Teanna Trump": [
+      {
+        "friend": "Teanna Trump",
+        "bar": "If I did, I would vote Teanna Trump, ayy, yeah (hm, go)",
+        "song": "BackOutsideBoyz",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Pauleen": [
+      {
+        "friend": "Pauleen",
+        "bar": "I hit up Pauleen, the charter, the P",
+        "song": "Broke Boys",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Noel": [
+      {
+        "friend": "Noel",
+        "bar": "Shout out Noel for recordin' the V's",
+        "song": "Broke Boys",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "Noel",
+        "bar": "I'm with Noel like I'm Kris Kringle, yeah",
+        "song": "Burning Bridges",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Justin Bieber": [
+      {
+        "friend": "Justin Bieber",
+        "bar": "Hoes screamin' like I'm Justin Bieber, nigga",
+        "song": "Broke Boys",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Coach K": [
+      {
+        "friend": "Coach K",
+        "bar": "You must be Coach K 'cause you ain't P",
+        "song": "Broke Boys",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Lil Keed": [
+      {
+        "friend": "Lil Keed",
+        "bar": "Rest in peace to Lil Keed",
+        "song": "Jimmy Cooks",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "J. Cole": [
+      {
+        "friend": "J. Cole",
+        "bar": "Dread talkin' to you niggas like I'm J. Cole",
+        "song": "Jimmy Cooks",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "J. Cole",
+        "bar": "It's just you and Cole",
+        "song": "First Person Shooter",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Drama King": [
+      {
+        "friend": "Drama King",
+        "bar": "Rest in peace to Drama King, we was straight stuntin'",
+        "song": "Jimmy Cooks",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Rick Ross": [
+      {
+        "friend": "Rick Ross",
+        "bar": "I be with my gun like Rozay be with lemon pepper",
+        "song": "Jimmy Cooks",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Nadeska": [
+      {
+        "friend": "Nadeska",
+        "bar": "Askin' all these questions, bitch, you must think you Nadeska",
+        "song": "Jimmy Cooks",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Aaliyah": [
+      {
+        "friend": "Aaliyah",
+        "bar": "The boat was rockin' too much on some Aaliyah shit",
+        "song": "Middle of the Ocean",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Leonardo da Vinci": [
+      {
+        "friend": "Leonardo da Vinci",
+        "bar": "Me, Spider-Man, and Leonardo, I'm back tomorrow",
+        "song": "Middle of the Ocean",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Emily Ratajkowski": [
+      {
+        "friend": "Emily Ratajkowski",
+        "bar": "EmRata here fresh off divorce",
+        "song": "Middle of the Ocean",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Robert Kraft": [
+      {
+        "friend": "Robert Kraft",
+        "bar": "Robert Kraft sent the jet for us, that shit was patriotic",
+        "song": "Middle of the Ocean",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Beyoncé": [
+      {
+        "friend": "Beyoncé",
+        "bar": "Like the other two women standing next to Bey, that shit was just-",
+        "song": "Middle of the Ocean",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "Beyoncé",
+        "bar": "Matter of time before I go net a Bey like a Paris",
+        "song": "Middle of the Ocean",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Kim Kardashian": [
+      {
+        "friend": "Kim Kardashian",
+        "bar": "Put her Skims on, now she actin' like she Kim",
+        "song": "More M's",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Big Pun": [
+      {
+        "friend": "Big Pun",
+        "bar": "Big diamonds, Big Puns, VS1's",
+        "song": "More M's",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Prince": [
+      {
+        "friend": "Prince",
+        "bar": "Walk around like Prince 'cause I got a lot of lady friends",
+        "song": "More M's",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Ashton Kutcher": [
+      {
+        "friend": "Ashton Kutcher",
+        "bar": "Same neighborhood where Ashton Kutcher live",
+        "song": "Amen",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Kendrick Lamar": [
+      {
+        "friend": "Kendrick Lamar",
+        "bar": "Is it K-Dot? Is it Aubrey? Or me?",
+        "song": "First Person Shooter",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Muhammad Ali": [
+      {
+        "friend": "Muhammad Ali",
+        "bar": "I feel like Muhammed Ali",
+        "song": "First Person Shooter",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Zack": [
+      {
+        "friend": "Zack",
+        "bar": "Zack keep sayin', \"Meet at seven-nine\"",
+        "song": "7969 Santa",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "SZA": [
+      {
+        "friend": "SZA",
+        "bar": "We got some new Drake and SZA comin' up",
+        "song": "7969 Santa",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Teezo Touchdown": [
+      {
+        "friend": "Teezo Touchdown",
+        "bar": "That's that new Teezo Touchdown, straight",
+        "song": "7969 Santa",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Lenny Kravitz": [
+      {
+        "friend": "Lenny Kravitz",
+        "bar": "Like Lenny Kravitz show, we rockin' niggas",
+        "song": "Daylight",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Hailey": [
+      {
+        "friend": "Hailey",
+        "bar": "Hailey, it's sad that I know all the tea",
+        "song": "Bahamas Promises",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "Hailey",
+        "bar": "I know that you're not for me\nHailey",
+        "song": "Bahamas Promises",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "Hailey",
+        "bar": "I know that you're not for me, Hailey",
+        "song": "Bahamas Promises",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "Hailey",
+        "bar": "You're livin' in my mind for free\nAnd for someone you don't miss, I sure feel like somebody you need\nHailey",
+        "song": "Bahamas Promises",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Ludacris": [
+      {
+        "friend": "Ludacris",
+        "bar": "Then ask if we could listen to Ludacris",
+        "song": "How Bout Now",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Chief Keef": [
+      {
+        "friend": "Chief Keef",
+        "bar": "She in love with Sosa",
+        "song": "All The Parties",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Jahron B": [
+      {
+        "friend": "Jahron B",
+        "bar": "Comin' from Jahron B side",
+        "song": "Members Only",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Danny McBride": [
+      {
+        "friend": "Danny McBride",
+        "bar": "Whole gang fucked her eastbound and they down just like Danny McBride",
+        "song": "IDGAF",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Orson Welles": [
+      {
+        "friend": "Orson Welles",
+        "bar": "They think they Orson Welles",
+        "song": "8AM in Charlotte",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Lauryn Hill": [
+      {
+        "friend": "Lauryn Hill",
+        "bar": "The restaurant clears out, faint echoes of Lauryn Hill",
+        "song": "8AM in Charlotte",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "Lauryn Hill",
+        "bar": "Lauryn, why you actin' like I'm not important to you?",
+        "song": "Little Birdie",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Jordan Peele": [
+      {
+        "friend": "Jordan Peele",
+        "bar": "I say, \"We gotta talk about us,\" I feel like Jordan Peele",
+        "song": "8AM in Charlotte",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Oliver North": [
+      {
+        "friend": "Oliver North",
+        "bar": "Shout' to Oliver North, he out in Rome doin' Toronto shit",
+        "song": "8AM in Charlotte",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Jeremiah": [
+      {
+        "friend": "Jeremiah",
+        "bar": "And Jeremiah the watchdog, you niggas know what time it is",
+        "song": "8AM in Charlotte",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Adel": [
+      {
+        "friend": "Adel",
+        "bar": "Been talkin' to Adel like he majored in finance",
+        "song": "8AM in Charlotte",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Shania Twain": [
+      {
+        "friend": "Shania Twain",
+        "bar": "Shania Twain, notepad, I'm makin' it line-dance",
+        "song": "8AM in Charlotte",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "T.D. Jakes": [
+      {
+        "friend": "T.D. Jakes",
+        "bar": "I swear I'm like a young T.D. Jakes to my menaces",
+        "song": "8AM in Charlotte",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Red": [
+      {
+        "friend": "Red",
+        "bar": "I'm with Red like I'm at a Cincinnati game",
+        "song": "Rich Baby Daddy",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Lil Boat": [
+      {
+        "friend": "Lil Boat",
+        "bar": "It's Lil Boat, I'm practically now from the 6ix (Pssh, pssh)",
+        "song": "Another Late Night",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Billie Eilish": [
+      {
+        "friend": "Billie Eilish",
+        "bar": "She had big tits like Billie Eilish but she couldn't sing (Drip)",
+        "song": "Another Late Night",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Snoopy": [
+      {
+        "friend": "Snoopy",
+        "bar": "Movin' like Snoopy and Charlie Brown",
+        "song": "Drew a Picasso",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Charlie Brown": [
+      {
+        "friend": "Charlie Brown",
+        "bar": "Movin' like Snoopy and Charlie Brown",
+        "song": "Drew a Picasso",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Taylor Swift": [
+      {
+        "friend": "Taylor Swift",
+        "bar": "Taylor Swift the only nigga that I ever rated",
+        "song": "Red Button",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Larry David": [
+      {
+        "friend": "Larry David",
+        "bar": "Pull up, park my Phantom on the curb like I'm Larry David",
+        "song": "Red Button",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Lionel Richie": [
+      {
+        "friend": "Lionel Richie",
+        "bar": "Y'all 'bout to make me richie like Lionel, for real",
+        "song": "Dust",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Samuel Bankman-Fried": [
+      {
+        "friend": "Samuel Bankman-Fried",
+        "bar": "Samuel Bankman, free all my guys up, yeah",
+        "song": "Dust",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Louis Farrakhan": [
+      {
+        "friend": "Louis Farrakhan",
+        "bar": "This ain't fixable smoke when you see us, stop sittin' with Farrakhan, nigga",
+        "song": "Whisper My Name",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Wilt Chamberlain": [
+      {
+        "friend": "Wilt Chamberlain",
+        "bar": "Kept it a hundred on paper like Wilt",
+        "song": "Janice STFU",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Gucci Mane": [
+      {
+        "friend": "Gucci Mane",
+        "bar": "Ask Pluto, Bank, or 21, you know what I'm sayin'?",
+        "song": "Ran to Atlanta",
+        "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "Gucci Mane",
+        "bar": "Ayo, Gucci get back in the ride 'cause that's definitely not the guy",
+        "song": "Make Them Know",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Bryson Tiller": [
+      {
+        "friend": "Bryson Tiller",
+        "bar": "Thinkin' of tryin' me, do like Bryson",
+        "song": "Shabang",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Gilbert Arenas": [
+      {
+        "friend": "Gilbert Arenas",
+        "bar": "I done got my shit inside arenas like Gilbert Arenas",
+        "song": "Make Them Pay",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "DJ Khaled": [
+      {
+        "friend": "DJ Khaled",
+        "bar": "And, Khaled, you know what I mean",
+        "song": "Make Them Pay",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Cherokee D": [
+      {
+        "friend": "Cherokee D",
+        "bar": "Shout out to Cherokee D and Skyy Black",
+        "song": "Make Them Pay",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Skyy Black": [
+      {
+        "friend": "Skyy Black",
+        "bar": "Shout out to Cherokee D and Skyy Black",
+        "song": "Make Them Pay",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Capo": [
+      {
+        "friend": "Capo",
+        "bar": "So I told Capo we can't burn them bridges, yeah",
+        "song": "Burning Bridges",
+        "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "Capo",
+        "bar": "Capo got so many watches, he might clock a nigga",
+        "song": "Burning Bridges",
+        "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "Capo",
+        "bar": "Capo got so many watches, he need supervision",
+        "song": "Burning Bridges",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Alex Moss": [
+      {
+        "friend": "Alex Moss",
+        "bar": "Alex Moss tryna bring me back a hundred years from now, he got my body froze (okay)",
+        "song": "National Treasures",
+        "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "Alex Moss",
+        "bar": "I be tellin' Alex Moss, \"Fuck it, \"his-and-hers\" it\"",
+        "song": "Little Birdie",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Kevin Hart": [
+      {
+        "friend": "Kevin Hart",
+        "bar": "Kevin Hart liquor, he shook, I'ma put you in sticky predicaments",
+        "song": "B's on the Table",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Shane Coppin": [
+      {
+        "friend": "Shane Coppin",
+        "bar": "Better treat me like Shane Coppin'",
+        "song": "B's on the Table",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Styles P": [
+      {
+        "friend": "Styles P",
+        "bar": "Twistin' that R in his face like Styles and P",
+        "song": "Plot Twist",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "YG": [
+      {
+        "friend": "YG",
+        "bar": "You ain't had one since me and YG rapped",
+        "song": "2 Hard 4 the Radio",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Mustard": [
+      {
+        "friend": "Mustard",
+        "bar": "Mustard heard about us, gotta catch up to the slaps",
+        "song": "2 Hard 4 the Radio",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Steve Martin": [
+      {
+        "friend": "Steve Martin",
+        "bar": "Me, Wayne, and Mack, the Three Amigos, I'm Steve Martin",
+        "song": "Make Them Remember",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Dean Martin": [
+      {
+        "friend": "Dean Martin",
+        "bar": "You belong in the pack with some rats like Dean Martin",
+        "song": "Make Them Remember",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "DJ Frisco954": [
+      {
+        "friend": "DJ Frisco954",
+        "bar": "(D-D-DJ Frisco954, yeah)",
+        "song": "Little Birdie",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Cardi B": [
+      {
+        "friend": "Cardi B",
+        "bar": "Ref1, he so drunk, he just played Nicki then some Cardi, I'm sorry",
+        "song": "Don't Worry",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Jackie Kennedy Onassis": [
+      {
+        "friend": "Jackie Kennedy Onassis",
+        "bar": "Layin' In My Girl's Lap Like She Jackie Onassis",
+        "song": "Firm Friends",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "John F. Kennedy": [
+      {
+        "friend": "John F. Kennedy",
+        "bar": "And I'm John Kennedy",
+        "song": "Firm Friends",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Luis Enrique": [
+      {
+        "friend": "Luis Enrique",
+        "bar": "My Son Is Taking Corner Kicks In Front Of Luis Enrique At Psg",
+        "song": "Firm Friends",
+        "album": "Iceman",
+        "year": 2026
       }
     ]
   }

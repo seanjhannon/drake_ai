@@ -79,7 +79,9 @@ See [DEPLOY.md](./DEPLOY.md) for architecture and maintenance.
 
    Do **not** add `ANTHROPIC_API_KEY` or `OPENROUTER_API_KEY`.
 
-4. Deploy. Share the `*.vercel.app` URL.
+4. **Storage → Blob** — create a store so friends can save mention reviews (`BLOB_READ_WRITE_TOKEN` is set automatically).
+
+5. Deploy. Share the `*.vercel.app` URL.
 
 ### After changing the demo catalog
 

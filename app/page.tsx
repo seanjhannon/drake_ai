@@ -165,6 +165,7 @@ function MentionReviewRow({
   const [correctedBar, setCorrectedBar] = useState(mention.bar);
   const [notes, setNotes] = useState('');
   const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
 
   const color = ALBUM_COLORS[mention.album] || '#5A5A5A';
   const isFalsePositive = review?.status === 'false_positive';
@@ -173,6 +174,7 @@ function MentionReviewRow({
 
   const handleSave = async (status: ReviewStatus) => {
     setSaving(true);
+    setSaveError(null);
     try {
       await onSave({
         status,
@@ -185,6 +187,9 @@ function MentionReviewRow({
           : {}),
       });
       if (status !== 'incomplete') setEditingKey(null);
+    } catch (e: unknown) {
+      const message = e instanceof Error ? e.message : 'Could not save review';
+      setSaveError(message);
     } finally {
       setSaving(false);
     }
@@ -350,6 +355,11 @@ function MentionReviewRow({
           False positive
         </button>
       </div>
+      {saveError && (
+        <div style={{ color: '#cc4444', fontSize: 11, marginTop: 8, lineHeight: 1.4 }}>
+          {saveError}
+        </div>
+      )}
     </div>
   );
 }
@@ -431,6 +441,7 @@ export default function Home() {
   const [tab, setTab] = useState<Tab>('overview');
   const [selectedFriend, setSelectedFriend] = useState<string | null>(null);
   const [reviews, setReviews] = useState<Record<string, MentionReview>>({});
+  const [reviewsStorage, setReviewsStorage] = useState<'blob' | 'disk' | null>(null);
   const [editingReviewKey, setEditingReviewKey] = useState<string | null>(null);
   const [selectedTracks, setSelectedTracks] = useState<Set<string>>(new Set());
   const [expandedAlbums, setExpandedAlbums] = useState<Set<string>>(new Set());
@@ -469,6 +480,9 @@ export default function Home() {
       .then(data => {
         if (data.data?.reviews) setReviews(data.data.reviews);
         else setReviews({});
+        if (data.storage === 'blob' || data.storage === 'disk') {
+          setReviewsStorage(data.storage);
+        }
       })
       .catch(() => {});
   }, []);
@@ -500,7 +514,12 @@ export default function Home() {
           notes: payload.notes,
         }),
       });
-      if (!res.ok) return;
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(
+          typeof data.error === 'string' ? data.error : 'Could not save review',
+        );
+      }
       const data = await res.json();
       if (data.review) {
         setReviews(prev => ({ ...prev, [key]: data.review }));
@@ -979,6 +998,23 @@ export default function Home() {
               dev
             </Link>
           </div>
+          {isClientDemoMode && (
+            <div
+              style={{
+                color: reviewsStorage === 'disk' ? '#C9A84C' : '#6A8A6A',
+                fontSize: 10,
+                marginTop: 4,
+                maxWidth: 360,
+                lineHeight: 1.4,
+              }}
+            >
+              {reviewsStorage === 'blob'
+                ? 'Shared review storage connected — mark mentions and everyone will see your feedback.'
+                : reviewsStorage === 'disk'
+                  ? 'Redeploy after linking Blob so review buttons can save.'
+                  : 'Mark mentions correct, incomplete, or false positive — reviews improve future scans.'}
+            </div>
+          )}
         </div>
 
         <div style={{ flex: 1 }}>

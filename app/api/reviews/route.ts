@@ -1,22 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { demoModeJson, isDemoMode } from '@/lib/demo-mode';
 import { mentionKey } from '@/lib/mention-key';
 import {
+  hasRemoteReviewStore,
+  loadReviews,
+  ReviewsStorageError,
+} from '@/lib/reviews-storage';
+import {
   isValidReviewStatus,
-  readReviews,
-  upsertReview,
+  upsertReviewAsync,
   type MentionReview,
   type ReviewStatus,
 } from '@/lib/reviews';
 
 export async function GET() {
-  const data = readReviews();
+  const data = await loadReviews();
   const exists = Object.keys(data.reviews).length > 0 || data.updatedAt !== '';
-  return NextResponse.json({ exists, data });
+  return NextResponse.json({
+    exists,
+    data,
+    storage: hasRemoteReviewStore() ? 'blob' : 'disk',
+  });
 }
 
 export async function POST(request: NextRequest) {
-  if (isDemoMode()) return demoModeJson();
   let body: Record<string, unknown>;
   try {
     body = await request.json();
@@ -64,6 +70,14 @@ export async function POST(request: NextRequest) {
     review.notes = body.notes;
   }
 
-  const saved = upsertReview(review);
-  return NextResponse.json({ ok: true, review: saved });
+  try {
+    const saved = await upsertReviewAsync(review);
+    return NextResponse.json({ ok: true, review: saved });
+  } catch (e: unknown) {
+    if (e instanceof ReviewsStorageError) {
+      return NextResponse.json({ error: e.message }, { status: 503 });
+    }
+    const message = e instanceof Error ? e.message : 'Failed to save review';
+    return NextResponse.json({ error: message }, { status: 500 });
+  }
 }

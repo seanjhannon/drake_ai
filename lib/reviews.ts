@@ -1,27 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import { mentionKey } from '@/lib/mention-key';
+import { assertReviewsWritable, loadReviews, persistReviews } from '@/lib/reviews-storage';
+import type { MentionReview, ReviewsFile, ReviewStatus } from '@/lib/reviews-types';
 
-export type ReviewStatus = 'correct' | 'incomplete' | 'false_positive';
-
-export interface MentionReview {
-  mentionKey: string;
-  status: ReviewStatus;
-  friend: string;
-  bar: string;
-  song: string;
-  album: string;
-  year: number;
-  correctedFriend?: string;
-  correctedBar?: string;
-  notes?: string;
-  reviewedAt: string;
-}
-
-export interface ReviewsFile {
-  updatedAt: string;
-  reviews: Record<string, MentionReview>;
-}
+export type { MentionReview, ReviewsFile, ReviewStatus } from '@/lib/reviews-types';
 
 const REVIEWS_PATH = path.join(process.cwd(), 'data/reviews.json');
 
@@ -66,6 +49,21 @@ export function upsertReview(
   data.reviews[review.mentionKey] = review;
   data.updatedAt = review.reviewedAt;
   writeReviews(data);
+  return review;
+}
+
+export async function upsertReviewAsync(
+  input: Omit<MentionReview, 'reviewedAt'> & { reviewedAt?: string },
+): Promise<MentionReview> {
+  assertReviewsWritable();
+  const data = await loadReviews();
+  const review: MentionReview = {
+    ...input,
+    reviewedAt: input.reviewedAt ?? new Date().toISOString(),
+  };
+  data.reviews[review.mentionKey] = review;
+  data.updatedAt = review.reviewedAt;
+  await persistReviews(data);
   return review;
 }
 
