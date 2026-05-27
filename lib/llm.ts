@@ -9,10 +9,10 @@ function useOpenRouter(key: string): boolean {
   return key.startsWith('sk-or-');
 }
 
-let anthropicClient: Anthropic | null | undefined;
+let anthropicClient: Anthropic | undefined;
 
 function getAnthropicClient(apiKey: string): Anthropic {
-  if (anthropicClient === undefined) {
+  if (!anthropicClient) {
     anthropicClient = new Anthropic({ apiKey });
   }
   return anthropicClient;
