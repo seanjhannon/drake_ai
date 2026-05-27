@@ -11,6 +11,8 @@ export const ALBUM_COLORS: Record<string, string> = {
   "Her Loss": "#8B3030",
   "For All The Dogs": "#502A8B",
   "Iceman": "#4A9BB8",
+  "Habibti": "#B85A7A",
+  "Maid of Honour": "#7A5A9B",
 };
 
 export interface AlbumEntry {
@@ -32,6 +34,8 @@ export const DRAKE_DISCOGRAPHY: AlbumEntry[] = [
   { album: "Her Loss", year: 2022, songs: ["Rich Flex", "Major Distribution", "On BS", "BackOutsideBoyz", "Broke Boys", "Privileged Rappers", "Jimmy Cooks", "Middle of the Ocean", "P Power", "More M's", "Hours in Silence", "Just Like Rap"] },
   { album: "For All The Dogs", year: 2023, songs: ["Virginia Beach", "Amen", "Calling for You", "Fear of Heights", "First Person Shooter", "7969 Santa", "Daylight", "Bahamas Promises", "Polar Opposite", "How Bout Now", "All The Parties", "Members Only", "IDGAF", "8AM in Charlotte", "Rich Baby Daddy", "Another Late Night", "Drew a Picasso", "Red Button"] },
   { album: "Iceman", year: 2026, songs: ["Make Them Cry", "Dust", "Whisper My Name", "Janice STFU", "Ran to Atlanta", "Shabang", "Make Them Pay", "Burning Bridges", "National Treasures", "B's on the Table", "What Did I Miss?", "Plot Twist", "2 Hard 4 the Radio", "Make Them Remember", "Little Birdie", "Don't Worry", "Firm Friends", "Make Them Know"] },
+  { album: "Habibti", year: 2026, songs: ["Rusty Intro", "WNBA", "Slap the City", "High Fives", "Hurrr Nor Thurrr", "I'm Spent", "Classic", "Gen 5", "White Bone", "Fortworth", "Prioritizing"] },
+  { album: "Maid of Honour", year: 2026, songs: ["Hoe Phase", "Road Trips", "Outside Tweaking", "Cheetah Print", "Which One", "Amazing Shape", "BBW", "True Bestie", "Where's Your Stuff Interlude", "New Bestie", "Q&A", "Stuck", "Goose and the Juice", "Princess"] },
 ];
 
 export const TOTAL_SONGS = DRAKE_DISCOGRAPHY.reduce((sum, a) => sum + a.songs.length, 0);
