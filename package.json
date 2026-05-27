@@ -9,6 +9,7 @@
     "lint": "eslint",
     "demo:replay": "node scripts/generate-demo-replay.mjs",
     "sync:lyrics": "npx tsx scripts/sync-lyrics.ts",
+    "scan:mentions": "npx tsx scripts/scan-mentions.ts",
     "reviews:seed-blob": "node scripts/seed-reviews-blob.mjs"
   },
   "dependencies": {

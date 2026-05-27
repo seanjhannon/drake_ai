@@ -1,361 +1,453 @@
-{"type":"start","total":179,"job":"lyrics","scoped":false}
+{"type":"start","total":225,"job":"lyrics","scoped":false}
 {"type":"phase","phase":"lyrics","concurrency":15}
 {"type":"lyrics_ok","song":"Fireworks","album":"Thank Me Later","lines":72}
-{"type":"progress","phase":"lyrics","completed":1,"total":179}
+{"type":"progress","phase":"lyrics","completed":1,"total":225}
 {"type":"lyrics_ok","song":"Karaoke","album":"Thank Me Later","lines":42}
-{"type":"progress","phase":"lyrics","completed":2,"total":179}
+{"type":"progress","phase":"lyrics","completed":2,"total":225}
 {"type":"lyrics_ok","song":"The Resistance","album":"Thank Me Later","lines":72}
-{"type":"progress","phase":"lyrics","completed":3,"total":179}
+{"type":"progress","phase":"lyrics","completed":3,"total":225}
 {"type":"lyrics_ok","song":"Find Your Love","album":"Thank Me Later","lines":63}
-{"type":"progress","phase":"lyrics","completed":4,"total":179}
+{"type":"progress","phase":"lyrics","completed":4,"total":225}
 {"type":"lyrics_ok","song":"Show Me a Good Time","album":"Thank Me Later","lines":92}
-{"type":"progress","phase":"lyrics","completed":5,"total":179}
+{"type":"progress","phase":"lyrics","completed":5,"total":225}
 {"type":"lyrics_ok","song":"Up All Night","album":"Thank Me Later","lines":103}
-{"type":"progress","phase":"lyrics","completed":6,"total":179}
+{"type":"progress","phase":"lyrics","completed":6,"total":225}
 {"type":"lyrics_ok","song":"Fancy","album":"Thank Me Later","lines":131}
-{"type":"progress","phase":"lyrics","completed":7,"total":179}
+{"type":"progress","phase":"lyrics","completed":7,"total":225}
 {"type":"lyrics_ok","song":"Shut It Down","album":"Thank Me Later","lines":99}
-{"type":"progress","phase":"lyrics","completed":8,"total":179}
-{"type":"lyrics_fail","song":"Unforgettable","album":"Thank Me Later"}
-{"type":"progress","phase":"lyrics","completed":9,"total":179}
+{"type":"progress","phase":"lyrics","completed":8,"total":225}
+{"type":"lyrics_ok","song":"Unforgettable","album":"Thank Me Later","lines":52}
+{"type":"progress","phase":"lyrics","completed":9,"total":225}
 {"type":"lyrics_ok","song":"Light Up","album":"Thank Me Later","lines":87}
-{"type":"progress","phase":"lyrics","completed":10,"total":179}
+{"type":"progress","phase":"lyrics","completed":10,"total":225}
 {"type":"lyrics_ok","song":"Miss Me","album":"Thank Me Later","lines":100}
-{"type":"progress","phase":"lyrics","completed":11,"total":179}
-{"type":"lyrics_fail","song":"Over My Dead Body","album":"Take Care"}
-{"type":"progress","phase":"lyrics","completed":12,"total":179}
-{"type":"lyrics_fail","song":"Shot for Me","album":"Take Care"}
-{"type":"progress","phase":"lyrics","completed":13,"total":179}
+{"type":"progress","phase":"lyrics","completed":11,"total":225}
+{"type":"lyrics_ok","song":"Over My Dead Body","album":"Take Care","lines":79}
+{"type":"progress","phase":"lyrics","completed":12,"total":225}
+{"type":"lyrics_ok","song":"Shot for Me","album":"Take Care","lines":57}
+{"type":"progress","phase":"lyrics","completed":13,"total":225}
 {"type":"lyrics_ok","song":"Headlines","album":"Take Care","lines":66}
-{"type":"progress","phase":"lyrics","completed":14,"total":179}
-{"type":"lyrics_fail","song":"Crew Love","album":"Take Care"}
-{"type":"progress","phase":"lyrics","completed":15,"total":179}
+{"type":"progress","phase":"lyrics","completed":14,"total":225}
+{"type":"lyrics_ok","song":"Crew Love","album":"Take Care","lines":63}
+{"type":"progress","phase":"lyrics","completed":15,"total":225}
 {"type":"lyrics_ok","song":"Take Care","album":"Take Care","lines":67}
-{"type":"progress","phase":"lyrics","completed":16,"total":179}
+{"type":"progress","phase":"lyrics","completed":16,"total":225}
 {"type":"lyrics_ok","song":"Marvins Room","album":"Take Care","lines":93}
-{"type":"progress","phase":"lyrics","completed":17,"total":179}
+{"type":"progress","phase":"lyrics","completed":17,"total":225}
 {"type":"lyrics_ok","song":"Under Ground Kings","album":"Take Care","lines":67}
-{"type":"progress","phase":"lyrics","completed":18,"total":179}
+{"type":"progress","phase":"lyrics","completed":18,"total":225}
 {"type":"lyrics_ok","song":"Make Me Proud","album":"Take Care","lines":84}
-{"type":"progress","phase":"lyrics","completed":19,"total":179}
+{"type":"progress","phase":"lyrics","completed":19,"total":225}
 {"type":"lyrics_ok","song":"Lord Knows","album":"Take Care","lines":94}
-{"type":"progress","phase":"lyrics","completed":20,"total":179}
+{"type":"progress","phase":"lyrics","completed":20,"total":225}
 {"type":"lyrics_ok","song":"Cameras","album":"Take Care","lines":100}
-{"type":"progress","phase":"lyrics","completed":21,"total":179}
+{"type":"progress","phase":"lyrics","completed":21,"total":225}
 {"type":"lyrics_ok","song":"Doing It Wrong","album":"Take Care","lines":67}
-{"type":"progress","phase":"lyrics","completed":22,"total":179}
+{"type":"progress","phase":"lyrics","completed":22,"total":225}
 {"type":"lyrics_ok","song":"Look What You've Done","album":"Take Care","lines":82}
-{"type":"progress","phase":"lyrics","completed":23,"total":179}
+{"type":"progress","phase":"lyrics","completed":23,"total":225}
 {"type":"lyrics_ok","song":"Practice","album":"Take Care","lines":80}
-{"type":"progress","phase":"lyrics","completed":24,"total":179}
+{"type":"progress","phase":"lyrics","completed":24,"total":225}
 {"type":"lyrics_ok","song":"The Ride","album":"Take Care","lines":97}
-{"type":"progress","phase":"lyrics","completed":25,"total":179}
+{"type":"progress","phase":"lyrics","completed":25,"total":225}
 {"type":"lyrics_ok","song":"Moment 4 Life","album":"Take Care","lines":74}
-{"type":"progress","phase":"lyrics","completed":26,"total":179}
+{"type":"progress","phase":"lyrics","completed":26,"total":225}
 {"type":"lyrics_ok","song":"Trust Issues","album":"Take Care","lines":83}
-{"type":"progress","phase":"lyrics","completed":27,"total":179}
+{"type":"progress","phase":"lyrics","completed":27,"total":225}
 {"type":"lyrics_ok","song":"The Motto","album":"Take Care","lines":68}
-{"type":"progress","phase":"lyrics","completed":28,"total":179}
+{"type":"progress","phase":"lyrics","completed":28,"total":225}
 {"type":"lyrics_ok","song":"Tuscan Leather","album":"Nothing Was the Same","lines":145}
-{"type":"progress","phase":"lyrics","completed":29,"total":179}
+{"type":"progress","phase":"lyrics","completed":29,"total":225}
 {"type":"lyrics_ok","song":"Furthest Thing","album":"Nothing Was the Same","lines":99}
-{"type":"progress","phase":"lyrics","completed":30,"total":179}
+{"type":"progress","phase":"lyrics","completed":30,"total":225}
 {"type":"lyrics_ok","song":"Started from the Bottom","album":"Nothing Was the Same","lines":61}
-{"type":"progress","phase":"lyrics","completed":31,"total":179}
+{"type":"progress","phase":"lyrics","completed":31,"total":225}
 {"type":"lyrics_ok","song":"Wu-Tang Forever","album":"Nothing Was the Same","lines":92}
-{"type":"progress","phase":"lyrics","completed":32,"total":179}
+{"type":"progress","phase":"lyrics","completed":32,"total":225}
 {"type":"lyrics_ok","song":"Own It","album":"Nothing Was the Same","lines":78}
-{"type":"progress","phase":"lyrics","completed":33,"total":179}
+{"type":"progress","phase":"lyrics","completed":33,"total":225}
 {"type":"lyrics_ok","song":"Worst Behavior","album":"Nothing Was the Same","lines":91}
-{"type":"progress","phase":"lyrics","completed":34,"total":179}
+{"type":"progress","phase":"lyrics","completed":34,"total":225}
 {"type":"lyrics_ok","song":"From Time","album":"Nothing Was the Same","lines":96}
-{"type":"progress","phase":"lyrics","completed":35,"total":179}
+{"type":"progress","phase":"lyrics","completed":35,"total":225}
 {"type":"lyrics_ok","song":"Hold On We're Going Home","album":"Nothing Was the Same","lines":57}
-{"type":"progress","phase":"lyrics","completed":36,"total":179}
+{"type":"progress","phase":"lyrics","completed":36,"total":225}
 {"type":"lyrics_ok","song":"Connect","album":"Nothing Was the Same","lines":65}
-{"type":"progress","phase":"lyrics","completed":37,"total":179}
+{"type":"progress","phase":"lyrics","completed":37,"total":225}
 {"type":"lyrics_ok","song":"The Language","album":"Nothing Was the Same","lines":86}
-{"type":"progress","phase":"lyrics","completed":38,"total":179}
+{"type":"progress","phase":"lyrics","completed":38,"total":225}
 {"type":"lyrics_ok","song":"Too Much","album":"Nothing Was the Same","lines":71}
-{"type":"progress","phase":"lyrics","completed":39,"total":179}
+{"type":"progress","phase":"lyrics","completed":39,"total":225}
 {"type":"lyrics_ok","song":"Pound Cake","album":"Nothing Was the Same","lines":51}
-{"type":"progress","phase":"lyrics","completed":40,"total":179}
+{"type":"progress","phase":"lyrics","completed":40,"total":225}
 {"type":"lyrics_ok","song":"Come Thru","album":"Nothing Was the Same","lines":87}
-{"type":"progress","phase":"lyrics","completed":41,"total":179}
+{"type":"progress","phase":"lyrics","completed":41,"total":225}
 {"type":"lyrics_ok","song":"All Me","album":"Nothing Was the Same","lines":128}
-{"type":"progress","phase":"lyrics","completed":42,"total":179}
+{"type":"progress","phase":"lyrics","completed":42,"total":225}
 {"type":"lyrics_ok","song":"Legend","album":"If You're Reading This It's Too Late","lines":60}
-{"type":"progress","phase":"lyrics","completed":43,"total":179}
+{"type":"progress","phase":"lyrics","completed":43,"total":225}
 {"type":"lyrics_ok","song":"Energy","album":"If You're Reading This It's Too Late","lines":60}
-{"type":"progress","phase":"lyrics","completed":44,"total":179}
+{"type":"progress","phase":"lyrics","completed":44,"total":225}
 {"type":"lyrics_ok","song":"10 Bands","album":"If You're Reading This It's Too Late","lines":61}
-{"type":"progress","phase":"lyrics","completed":45,"total":179}
+{"type":"progress","phase":"lyrics","completed":45,"total":225}
 {"type":"lyrics_ok","song":"Know Yourself","album":"If You're Reading This It's Too Late","lines":77}
-{"type":"progress","phase":"lyrics","completed":46,"total":179}
+{"type":"progress","phase":"lyrics","completed":46,"total":225}
 {"type":"lyrics_ok","song":"No Tellin","album":"If You're Reading This It's Too Late","lines":84}
-{"type":"progress","phase":"lyrics","completed":47,"total":179}
+{"type":"progress","phase":"lyrics","completed":47,"total":225}
 {"type":"lyrics_ok","song":"Madonna","album":"If You're Reading This It's Too Late","lines":32}
-{"type":"progress","phase":"lyrics","completed":48,"total":179}
+{"type":"progress","phase":"lyrics","completed":48,"total":225}
 {"type":"lyrics_fail","song":"No Good","album":"If You're Reading This It's Too Late"}
-{"type":"progress","phase":"lyrics","completed":49,"total":179}
+{"type":"progress","phase":"lyrics","completed":49,"total":225}
 {"type":"lyrics_ok","song":"Used To","album":"If You're Reading This It's Too Late","lines":109}
-{"type":"progress","phase":"lyrics","completed":50,"total":179}
+{"type":"progress","phase":"lyrics","completed":50,"total":225}
 {"type":"lyrics_ok","song":"6 God","album":"If You're Reading This It's Too Late","lines":62}
-{"type":"progress","phase":"lyrics","completed":51,"total":179}
+{"type":"progress","phase":"lyrics","completed":51,"total":225}
 {"type":"lyrics_ok","song":"Star67","album":"If You're Reading This It's Too Late","lines":89}
-{"type":"progress","phase":"lyrics","completed":52,"total":179}
+{"type":"progress","phase":"lyrics","completed":52,"total":225}
 {"type":"lyrics_ok","song":"Preach","album":"If You're Reading This It's Too Late","lines":64}
-{"type":"progress","phase":"lyrics","completed":53,"total":179}
+{"type":"progress","phase":"lyrics","completed":53,"total":225}
 {"type":"lyrics_ok","song":"6 Man","album":"If You're Reading This It's Too Late","lines":44}
-{"type":"progress","phase":"lyrics","completed":54,"total":179}
+{"type":"progress","phase":"lyrics","completed":54,"total":225}
 {"type":"lyrics_ok","song":"Now & Forever","album":"If You're Reading This It's Too Late","lines":63}
-{"type":"progress","phase":"lyrics","completed":55,"total":179}
+{"type":"progress","phase":"lyrics","completed":55,"total":225}
 {"type":"lyrics_ok","song":"Company","album":"If You're Reading This It's Too Late","lines":65}
-{"type":"progress","phase":"lyrics","completed":56,"total":179}
+{"type":"progress","phase":"lyrics","completed":56,"total":225}
 {"type":"lyrics_ok","song":"You & The 6","album":"If You're Reading This It's Too Late","lines":72}
-{"type":"progress","phase":"lyrics","completed":57,"total":179}
+{"type":"progress","phase":"lyrics","completed":57,"total":225}
 {"type":"lyrics_ok","song":"Jungle","album":"If You're Reading This It's Too Late","lines":58}
-{"type":"progress","phase":"lyrics","completed":58,"total":179}
+{"type":"progress","phase":"lyrics","completed":58,"total":225}
 {"type":"lyrics_ok","song":"Keep the Family Close","album":"Views","lines":66}
-{"type":"progress","phase":"lyrics","completed":59,"total":179}
+{"type":"progress","phase":"lyrics","completed":59,"total":225}
 {"type":"lyrics_ok","song":"9","album":"Views","lines":51}
-{"type":"progress","phase":"lyrics","completed":60,"total":179}
+{"type":"progress","phase":"lyrics","completed":60,"total":225}
 {"type":"lyrics_ok","song":"U With Me","album":"Views","lines":81}
-{"type":"progress","phase":"lyrics","completed":61,"total":179}
+{"type":"progress","phase":"lyrics","completed":61,"total":225}
 {"type":"lyrics_ok","song":"Feel No Ways","album":"Views","lines":39}
-{"type":"progress","phase":"lyrics","completed":62,"total":179}
+{"type":"progress","phase":"lyrics","completed":62,"total":225}
 {"type":"lyrics_ok","song":"Hype","album":"Views","lines":83}
-{"type":"progress","phase":"lyrics","completed":63,"total":179}
+{"type":"progress","phase":"lyrics","completed":63,"total":225}
 {"type":"lyrics_ok","song":"Weston Road Flows","album":"Views","lines":85}
-{"type":"progress","phase":"lyrics","completed":64,"total":179}
+{"type":"progress","phase":"lyrics","completed":64,"total":225}
 {"type":"lyrics_ok","song":"Redemption","album":"Views","lines":91}
-{"type":"progress","phase":"lyrics","completed":65,"total":179}
+{"type":"progress","phase":"lyrics","completed":65,"total":225}
 {"type":"lyrics_ok","song":"Faithful","album":"Views","lines":44}
-{"type":"progress","phase":"lyrics","completed":66,"total":179}
+{"type":"progress","phase":"lyrics","completed":66,"total":225}
 {"type":"lyrics_ok","song":"Controlla","album":"Views","lines":63}
-{"type":"progress","phase":"lyrics","completed":67,"total":179}
+{"type":"progress","phase":"lyrics","completed":67,"total":225}
 {"type":"lyrics_ok","song":"One Dance","album":"Views","lines":73}
-{"type":"progress","phase":"lyrics","completed":68,"total":179}
+{"type":"progress","phase":"lyrics","completed":68,"total":225}
 {"type":"lyrics_ok","song":"Child's Play","album":"Views","lines":90}
-{"type":"progress","phase":"lyrics","completed":69,"total":179}
+{"type":"progress","phase":"lyrics","completed":69,"total":225}
 {"type":"lyrics_ok","song":"Pop Style","album":"Views","lines":48}
-{"type":"progress","phase":"lyrics","completed":70,"total":179}
+{"type":"progress","phase":"lyrics","completed":70,"total":225}
 {"type":"lyrics_ok","song":"Too Good","album":"Views","lines":78}
-{"type":"progress","phase":"lyrics","completed":71,"total":179}
+{"type":"progress","phase":"lyrics","completed":71,"total":225}
 {"type":"lyrics_ok","song":"Fire & Desire","album":"Views","lines":58}
-{"type":"progress","phase":"lyrics","completed":72,"total":179}
+{"type":"progress","phase":"lyrics","completed":72,"total":225}
 {"type":"lyrics_ok","song":"Views","album":"Views","lines":68}
-{"type":"progress","phase":"lyrics","completed":73,"total":179}
+{"type":"progress","phase":"lyrics","completed":73,"total":225}
 {"type":"lyrics_ok","song":"Hotline Bling","album":"Views","lines":72}
-{"type":"progress","phase":"lyrics","completed":74,"total":179}
+{"type":"progress","phase":"lyrics","completed":74,"total":225}
 {"type":"lyrics_ok","song":"Free Smoke","album":"More Life","lines":104}
-{"type":"progress","phase":"lyrics","completed":75,"total":179}
+{"type":"progress","phase":"lyrics","completed":75,"total":225}
 {"type":"lyrics_ok","song":"Passionfruit","album":"More Life","lines":42}
-{"type":"progress","phase":"lyrics","completed":76,"total":179}
+{"type":"progress","phase":"lyrics","completed":76,"total":225}
 {"type":"lyrics_ok","song":"Get It Together","album":"More Life","lines":34}
-{"type":"progress","phase":"lyrics","completed":77,"total":179}
+{"type":"progress","phase":"lyrics","completed":77,"total":225}
 {"type":"lyrics_ok","song":"Madiba Riddim","album":"More Life","lines":54}
-{"type":"progress","phase":"lyrics","completed":78,"total":179}
+{"type":"progress","phase":"lyrics","completed":78,"total":225}
 {"type":"lyrics_ok","song":"Blem","album":"More Life","lines":52}
-{"type":"progress","phase":"lyrics","completed":79,"total":179}
+{"type":"progress","phase":"lyrics","completed":79,"total":225}
 {"type":"lyrics_ok","song":"Gyalchester","album":"More Life","lines":44}
-{"type":"progress","phase":"lyrics","completed":80,"total":179}
+{"type":"progress","phase":"lyrics","completed":80,"total":225}
 {"type":"lyrics_ok","song":"Portland","album":"More Life","lines":78}
-{"type":"progress","phase":"lyrics","completed":81,"total":179}
+{"type":"progress","phase":"lyrics","completed":81,"total":225}
 {"type":"lyrics_ok","song":"Sacrifices","album":"More Life","lines":141}
-{"type":"progress","phase":"lyrics","completed":82,"total":179}
+{"type":"progress","phase":"lyrics","completed":82,"total":225}
 {"type":"lyrics_ok","song":"Nothings Into Somethings","album":"More Life","lines":22}
-{"type":"progress","phase":"lyrics","completed":83,"total":179}
+{"type":"progress","phase":"lyrics","completed":83,"total":225}
 {"type":"lyrics_ok","song":"Teenage Fever","album":"More Life","lines":51}
-{"type":"progress","phase":"lyrics","completed":84,"total":179}
+{"type":"progress","phase":"lyrics","completed":84,"total":225}
 {"type":"lyrics_ok","song":"KMT","album":"More Life","lines":50}
-{"type":"progress","phase":"lyrics","completed":85,"total":179}
+{"type":"progress","phase":"lyrics","completed":85,"total":225}
 {"type":"lyrics_ok","song":"Lose You","album":"More Life","lines":112}
-{"type":"progress","phase":"lyrics","completed":86,"total":179}
+{"type":"progress","phase":"lyrics","completed":86,"total":225}
 {"type":"lyrics_ok","song":"Glow","album":"More Life","lines":61}
-{"type":"progress","phase":"lyrics","completed":87,"total":179}
+{"type":"progress","phase":"lyrics","completed":87,"total":225}
 {"type":"lyrics_ok","song":"Fake Love","album":"More Life","lines":72}
-{"type":"progress","phase":"lyrics","completed":88,"total":179}
+{"type":"progress","phase":"lyrics","completed":88,"total":225}
 {"type":"lyrics_ok","song":"Do Not Disturb","album":"More Life","lines":92}
-{"type":"progress","phase":"lyrics","completed":89,"total":179}
+{"type":"progress","phase":"lyrics","completed":89,"total":225}
 {"type":"lyrics_ok","song":"Survival","album":"Scorpion","lines":43}
-{"type":"progress","phase":"lyrics","completed":90,"total":179}
+{"type":"progress","phase":"lyrics","completed":90,"total":225}
 {"type":"lyrics_ok","song":"Nonstop","album":"Scorpion","lines":86}
-{"type":"progress","phase":"lyrics","completed":91,"total":179}
+{"type":"progress","phase":"lyrics","completed":91,"total":225}
 {"type":"lyrics_ok","song":"Emotionless","album":"Scorpion","lines":83}
-{"type":"progress","phase":"lyrics","completed":92,"total":179}
+{"type":"progress","phase":"lyrics","completed":92,"total":225}
 {"type":"lyrics_ok","song":"God's Plan","album":"Scorpion","lines":53}
-{"type":"progress","phase":"lyrics","completed":93,"total":179}
+{"type":"progress","phase":"lyrics","completed":93,"total":225}
 {"type":"lyrics_ok","song":"I'm Upset","album":"Scorpion","lines":64}
-{"type":"progress","phase":"lyrics","completed":94,"total":179}
+{"type":"progress","phase":"lyrics","completed":94,"total":225}
 {"type":"lyrics_ok","song":"8 Out of 10","album":"Scorpion","lines":64}
-{"type":"progress","phase":"lyrics","completed":95,"total":179}
+{"type":"progress","phase":"lyrics","completed":95,"total":225}
 {"type":"lyrics_ok","song":"Talk Up","album":"Scorpion","lines":77}
-{"type":"progress","phase":"lyrics","completed":96,"total":179}
+{"type":"progress","phase":"lyrics","completed":96,"total":225}
 {"type":"lyrics_ok","song":"Peak","album":"Scorpion","lines":50}
-{"type":"progress","phase":"lyrics","completed":97,"total":179}
+{"type":"progress","phase":"lyrics","completed":97,"total":225}
 {"type":"lyrics_ok","song":"Summer Games","album":"Scorpion","lines":51}
-{"type":"progress","phase":"lyrics","completed":98,"total":179}
+{"type":"progress","phase":"lyrics","completed":98,"total":225}
 {"type":"lyrics_ok","song":"Jaded","album":"Scorpion","lines":67}
-{"type":"progress","phase":"lyrics","completed":99,"total":179}
+{"type":"progress","phase":"lyrics","completed":99,"total":225}
 {"type":"lyrics_ok","song":"Nice for What","album":"Scorpion","lines":101}
-{"type":"progress","phase":"lyrics","completed":100,"total":179}
+{"type":"progress","phase":"lyrics","completed":100,"total":225}
 {"type":"lyrics_ok","song":"Finesse","album":"Scorpion","lines":35}
-{"type":"progress","phase":"lyrics","completed":101,"total":179}
+{"type":"progress","phase":"lyrics","completed":101,"total":225}
 {"type":"lyrics_ok","song":"In My Feelings","album":"Scorpion","lines":75}
-{"type":"progress","phase":"lyrics","completed":102,"total":179}
+{"type":"progress","phase":"lyrics","completed":102,"total":225}
 {"type":"lyrics_ok","song":"Don't Matter to Me","album":"Scorpion","lines":50}
-{"type":"progress","phase":"lyrics","completed":103,"total":179}
+{"type":"progress","phase":"lyrics","completed":103,"total":225}
 {"type":"lyrics_ok","song":"March 14","album":"Scorpion","lines":72}
-{"type":"progress","phase":"lyrics","completed":104,"total":179}
+{"type":"progress","phase":"lyrics","completed":104,"total":225}
 {"type":"lyrics_ok","song":"Mob Ties","album":"Scorpion","lines":92}
-{"type":"progress","phase":"lyrics","completed":105,"total":179}
+{"type":"progress","phase":"lyrics","completed":105,"total":225}
 {"type":"lyrics_ok","song":"Sandra's Rose","album":"Scorpion","lines":71}
-{"type":"progress","phase":"lyrics","completed":106,"total":179}
+{"type":"progress","phase":"lyrics","completed":106,"total":225}
 {"type":"lyrics_ok","song":"Champagne Poetry","album":"Certified Lover Boy","lines":115}
-{"type":"progress","phase":"lyrics","completed":107,"total":179}
+{"type":"progress","phase":"lyrics","completed":107,"total":225}
 {"type":"lyrics_ok","song":"TSU","album":"Certified Lover Boy","lines":84}
-{"type":"progress","phase":"lyrics","completed":108,"total":179}
+{"type":"progress","phase":"lyrics","completed":108,"total":225}
 {"type":"lyrics_ok","song":"Way 2 Sexy","album":"Certified Lover Boy","lines":103}
-{"type":"progress","phase":"lyrics","completed":109,"total":179}
+{"type":"progress","phase":"lyrics","completed":109,"total":225}
 {"type":"lyrics_ok","song":"Race My Mind","album":"Certified Lover Boy","lines":66}
-{"type":"progress","phase":"lyrics","completed":110,"total":179}
+{"type":"progress","phase":"lyrics","completed":110,"total":225}
 {"type":"lyrics_ok","song":"Fountains","album":"Certified Lover Boy","lines":46}
-{"type":"progress","phase":"lyrics","completed":111,"total":179}
+{"type":"progress","phase":"lyrics","completed":111,"total":225}
 {"type":"lyrics_ok","song":"Knife Talk","album":"Certified Lover Boy","lines":77}
-{"type":"progress","phase":"lyrics","completed":112,"total":179}
+{"type":"progress","phase":"lyrics","completed":112,"total":225}
 {"type":"lyrics_ok","song":"The Remorse","album":"Certified Lover Boy","lines":100}
-{"type":"progress","phase":"lyrics","completed":113,"total":179}
+{"type":"progress","phase":"lyrics","completed":113,"total":225}
 {"type":"lyrics_ok","song":"Papi's Home","album":"Certified Lover Boy","lines":67}
-{"type":"progress","phase":"lyrics","completed":114,"total":179}
+{"type":"progress","phase":"lyrics","completed":114,"total":225}
 {"type":"lyrics_ok","song":"Girls Want Girls","album":"Certified Lover Boy","lines":89}
-{"type":"progress","phase":"lyrics","completed":115,"total":179}
+{"type":"progress","phase":"lyrics","completed":115,"total":225}
 {"type":"lyrics_ok","song":"Love All","album":"Certified Lover Boy","lines":74}
-{"type":"progress","phase":"lyrics","completed":116,"total":179}
+{"type":"progress","phase":"lyrics","completed":116,"total":225}
 {"type":"lyrics_ok","song":"No Friends in the Industry","album":"Certified Lover Boy","lines":77}
-{"type":"progress","phase":"lyrics","completed":117,"total":179}
+{"type":"progress","phase":"lyrics","completed":117,"total":225}
 {"type":"lyrics_ok","song":"IMY2","album":"Certified Lover Boy","lines":71}
-{"type":"progress","phase":"lyrics","completed":118,"total":179}
+{"type":"progress","phase":"lyrics","completed":118,"total":225}
 {"type":"lyrics_ok","song":"Pipe Down","album":"Certified Lover Boy","lines":64}
-{"type":"progress","phase":"lyrics","completed":119,"total":179}
+{"type":"progress","phase":"lyrics","completed":119,"total":225}
 {"type":"lyrics_ok","song":"In the Bible","album":"Certified Lover Boy","lines":73}
-{"type":"progress","phase":"lyrics","completed":120,"total":179}
+{"type":"progress","phase":"lyrics","completed":120,"total":225}
 {"type":"lyrics_ok","song":"Falling Back","album":"Honestly Nevermind","lines":49}
-{"type":"progress","phase":"lyrics","completed":121,"total":179}
+{"type":"progress","phase":"lyrics","completed":121,"total":225}
 {"type":"lyrics_ok","song":"Currents","album":"Honestly Nevermind","lines":29}
-{"type":"progress","phase":"lyrics","completed":122,"total":179}
+{"type":"progress","phase":"lyrics","completed":122,"total":225}
 {"type":"lyrics_ok","song":"A Keeper","album":"Honestly Nevermind","lines":57}
-{"type":"progress","phase":"lyrics","completed":123,"total":179}
+{"type":"progress","phase":"lyrics","completed":123,"total":225}
 {"type":"lyrics_ok","song":"Calling My Name","album":"Honestly Nevermind","lines":24}
-{"type":"progress","phase":"lyrics","completed":124,"total":179}
+{"type":"progress","phase":"lyrics","completed":124,"total":225}
 {"type":"lyrics_ok","song":"Sticky","album":"Honestly Nevermind","lines":72}
-{"type":"progress","phase":"lyrics","completed":125,"total":179}
+{"type":"progress","phase":"lyrics","completed":125,"total":225}
 {"type":"lyrics_ok","song":"Massive","album":"Honestly Nevermind","lines":39}
-{"type":"progress","phase":"lyrics","completed":126,"total":179}
+{"type":"progress","phase":"lyrics","completed":126,"total":225}
 {"type":"lyrics_ok","song":"Flight's Booked","album":"Honestly Nevermind","lines":50}
-{"type":"progress","phase":"lyrics","completed":127,"total":179}
+{"type":"progress","phase":"lyrics","completed":127,"total":225}
 {"type":"lyrics_fail","song":"Overdued","album":"Honestly Nevermind"}
-{"type":"progress","phase":"lyrics","completed":128,"total":179}
+{"type":"progress","phase":"lyrics","completed":128,"total":225}
 {"type":"lyrics_ok","song":"Down Hill","album":"Honestly Nevermind","lines":50}
-{"type":"progress","phase":"lyrics","completed":129,"total":179}
+{"type":"progress","phase":"lyrics","completed":129,"total":225}
 {"type":"lyrics_ok","song":"Tie That Binds","album":"Honestly Nevermind","lines":58}
-{"type":"progress","phase":"lyrics","completed":130,"total":179}
+{"type":"progress","phase":"lyrics","completed":130,"total":225}
 {"type":"lyrics_ok","song":"Liability","album":"Honestly Nevermind","lines":58}
-{"type":"progress","phase":"lyrics","completed":131,"total":179}
+{"type":"progress","phase":"lyrics","completed":131,"total":225}
 {"type":"lyrics_ok","song":"Rich Flex","album":"Her Loss","lines":88}
-{"type":"progress","phase":"lyrics","completed":132,"total":179}
+{"type":"progress","phase":"lyrics","completed":132,"total":225}
 {"type":"lyrics_ok","song":"Major Distribution","album":"Her Loss","lines":64}
-{"type":"progress","phase":"lyrics","completed":133,"total":179}
+{"type":"progress","phase":"lyrics","completed":133,"total":225}
 {"type":"lyrics_ok","song":"On BS","album":"Her Loss","lines":95}
-{"type":"progress","phase":"lyrics","completed":134,"total":179}
+{"type":"progress","phase":"lyrics","completed":134,"total":225}
 {"type":"lyrics_ok","song":"BackOutsideBoyz","album":"Her Loss","lines":42}
-{"type":"progress","phase":"lyrics","completed":135,"total":179}
+{"type":"progress","phase":"lyrics","completed":135,"total":225}
 {"type":"lyrics_ok","song":"Broke Boys","album":"Her Loss","lines":80}
-{"type":"progress","phase":"lyrics","completed":136,"total":179}
+{"type":"progress","phase":"lyrics","completed":136,"total":225}
 {"type":"lyrics_ok","song":"Privileged Rappers","album":"Her Loss","lines":47}
-{"type":"progress","phase":"lyrics","completed":137,"total":179}
+{"type":"progress","phase":"lyrics","completed":137,"total":225}
 {"type":"lyrics_ok","song":"Jimmy Cooks","album":"Her Loss","lines":79}
-{"type":"progress","phase":"lyrics","completed":138,"total":179}
+{"type":"progress","phase":"lyrics","completed":138,"total":225}
 {"type":"lyrics_ok","song":"Middle of the Ocean","album":"Her Loss","lines":135}
-{"type":"progress","phase":"lyrics","completed":139,"total":179}
+{"type":"progress","phase":"lyrics","completed":139,"total":225}
 {"type":"lyrics_ok","song":"P Power","album":"Her Loss","lines":67}
-{"type":"progress","phase":"lyrics","completed":140,"total":179}
+{"type":"progress","phase":"lyrics","completed":140,"total":225}
 {"type":"lyrics_ok","song":"More M's","album":"Her Loss","lines":82}
-{"type":"progress","phase":"lyrics","completed":141,"total":179}
+{"type":"progress","phase":"lyrics","completed":141,"total":225}
 {"type":"lyrics_ok","song":"Hours in Silence","album":"Her Loss","lines":123}
-{"type":"progress","phase":"lyrics","completed":142,"total":179}
+{"type":"progress","phase":"lyrics","completed":142,"total":225}
 {"type":"lyrics_fail","song":"Just Like Rap","album":"Her Loss"}
-{"type":"progress","phase":"lyrics","completed":143,"total":179}
+{"type":"progress","phase":"lyrics","completed":143,"total":225}
 {"type":"lyrics_ok","song":"Virginia Beach","album":"For All The Dogs","lines":58}
-{"type":"progress","phase":"lyrics","completed":144,"total":179}
+{"type":"progress","phase":"lyrics","completed":144,"total":225}
 {"type":"lyrics_ok","song":"Amen","album":"For All The Dogs","lines":56}
-{"type":"progress","phase":"lyrics","completed":145,"total":179}
+{"type":"progress","phase":"lyrics","completed":145,"total":225}
 {"type":"lyrics_ok","song":"Calling for You","album":"For All The Dogs","lines":101}
-{"type":"progress","phase":"lyrics","completed":146,"total":179}
+{"type":"progress","phase":"lyrics","completed":146,"total":225}
 {"type":"lyrics_ok","song":"Fear of Heights","album":"For All The Dogs","lines":68}
-{"type":"progress","phase":"lyrics","completed":147,"total":179}
+{"type":"progress","phase":"lyrics","completed":147,"total":225}
 {"type":"lyrics_ok","song":"First Person Shooter","album":"For All The Dogs","lines":100}
-{"type":"progress","phase":"lyrics","completed":148,"total":179}
+{"type":"progress","phase":"lyrics","completed":148,"total":225}
 {"type":"lyrics_ok","song":"7969 Santa","album":"For All The Dogs","lines":70}
-{"type":"progress","phase":"lyrics","completed":149,"total":179}
+{"type":"progress","phase":"lyrics","completed":149,"total":225}
 {"type":"lyrics_ok","song":"Daylight","album":"For All The Dogs","lines":79}
-{"type":"progress","phase":"lyrics","completed":150,"total":179}
+{"type":"progress","phase":"lyrics","completed":150,"total":225}
 {"type":"lyrics_ok","song":"Bahamas Promises","album":"For All The Dogs","lines":35}
-{"type":"progress","phase":"lyrics","completed":151,"total":179}
+{"type":"progress","phase":"lyrics","completed":151,"total":225}
 {"type":"lyrics_fail","song":"Polar Opposite","album":"For All The Dogs"}
-{"type":"progress","phase":"lyrics","completed":152,"total":179}
+{"type":"progress","phase":"lyrics","completed":152,"total":225}
 {"type":"lyrics_ok","song":"How Bout Now","album":"For All The Dogs","lines":64}
-{"type":"progress","phase":"lyrics","completed":153,"total":179}
+{"type":"progress","phase":"lyrics","completed":153,"total":225}
 {"type":"lyrics_ok","song":"All The Parties","album":"For All The Dogs","lines":78}
-{"type":"progress","phase":"lyrics","completed":154,"total":179}
+{"type":"progress","phase":"lyrics","completed":154,"total":225}
 {"type":"lyrics_ok","song":"Members Only","album":"For All The Dogs","lines":66}
-{"type":"progress","phase":"lyrics","completed":155,"total":179}
+{"type":"progress","phase":"lyrics","completed":155,"total":225}
 {"type":"lyrics_ok","song":"IDGAF","album":"For All The Dogs","lines":80}
-{"type":"progress","phase":"lyrics","completed":156,"total":179}
+{"type":"progress","phase":"lyrics","completed":156,"total":225}
 {"type":"lyrics_ok","song":"8AM in Charlotte","album":"For All The Dogs","lines":97}
-{"type":"progress","phase":"lyrics","completed":157,"total":179}
+{"type":"progress","phase":"lyrics","completed":157,"total":225}
 {"type":"lyrics_ok","song":"Rich Baby Daddy","album":"For All The Dogs","lines":94}
-{"type":"progress","phase":"lyrics","completed":158,"total":179}
+{"type":"progress","phase":"lyrics","completed":158,"total":225}
 {"type":"lyrics_ok","song":"Another Late Night","album":"For All The Dogs","lines":58}
-{"type":"progress","phase":"lyrics","completed":159,"total":179}
+{"type":"progress","phase":"lyrics","completed":159,"total":225}
 {"type":"lyrics_ok","song":"Drew a Picasso","album":"For All The Dogs","lines":72}
-{"type":"progress","phase":"lyrics","completed":160,"total":179}
+{"type":"progress","phase":"lyrics","completed":160,"total":225}
 {"type":"lyrics_ok","song":"Red Button","album":"For All The Dogs","lines":44}
-{"type":"progress","phase":"lyrics","completed":161,"total":179}
+{"type":"progress","phase":"lyrics","completed":161,"total":225}
+{"type":"lyrics_ok","song":"CN Tower","album":"$ome $exy $ongs 4 U","lines":72}
+{"type":"progress","phase":"lyrics","completed":162,"total":225}
+{"type":"lyrics_ok","song":"Moth Balls","album":"$ome $exy $ongs 4 U","lines":57}
+{"type":"progress","phase":"lyrics","completed":163,"total":225}
+{"type":"lyrics_ok","song":"Something About You","album":"$ome $exy $ongs 4 U","lines":73}
+{"type":"progress","phase":"lyrics","completed":164,"total":225}
+{"type":"lyrics_ok","song":"Crying in Chanel","album":"$ome $exy $ongs 4 U","lines":57}
+{"type":"progress","phase":"lyrics","completed":165,"total":225}
+{"type":"lyrics_ok","song":"Spider-Man Superman","album":"$ome $exy $ongs 4 U","lines":51}
+{"type":"progress","phase":"lyrics","completed":166,"total":225}
+{"type":"lyrics_ok","song":"Deeper","album":"$ome $exy $ongs 4 U","lines":40}
+{"type":"progress","phase":"lyrics","completed":167,"total":225}
+{"type":"lyrics_ok","song":"Small Town Fame","album":"$ome $exy $ongs 4 U","lines":46}
+{"type":"progress","phase":"lyrics","completed":168,"total":225}
+{"type":"lyrics_ok","song":"Pimmie's Dilemma","album":"$ome $exy $ongs 4 U","lines":26}
+{"type":"progress","phase":"lyrics","completed":169,"total":225}
+{"type":"lyrics_fail","song":"Brian Steel","album":"$ome $exy $ongs 4 U"}
+{"type":"progress","phase":"lyrics","completed":170,"total":225}
+{"type":"lyrics_ok","song":"Gimme a Hug","album":"$ome $exy $ongs 4 U","lines":64}
+{"type":"progress","phase":"lyrics","completed":171,"total":225}
+{"type":"lyrics_ok","song":"Raining in Houston","album":"$ome $exy $ongs 4 U","lines":57}
+{"type":"progress","phase":"lyrics","completed":172,"total":225}
+{"type":"lyrics_fail","song":"Lasers","album":"$ome $exy $ongs 4 U"}
+{"type":"progress","phase":"lyrics","completed":173,"total":225}
+{"type":"lyrics_ok","song":"Meet Your Padre","album":"$ome $exy $ongs 4 U","lines":66}
+{"type":"progress","phase":"lyrics","completed":174,"total":225}
+{"type":"lyrics_ok","song":"Nokia","album":"$ome $exy $ongs 4 U","lines":106}
+{"type":"progress","phase":"lyrics","completed":175,"total":225}
+{"type":"lyrics_ok","song":"Die Trying","album":"$ome $exy $ongs 4 U","lines":60}
+{"type":"progress","phase":"lyrics","completed":176,"total":225}
+{"type":"lyrics_ok","song":"Somebody Loves Me","album":"$ome $exy $ongs 4 U","lines":80}
+{"type":"progress","phase":"lyrics","completed":177,"total":225}
+{"type":"lyrics_ok","song":"Celibacy","album":"$ome $exy $ongs 4 U","lines":49}
+{"type":"progress","phase":"lyrics","completed":178,"total":225}
+{"type":"lyrics_fail","song":"OMW","album":"$ome $exy $ongs 4 U"}
+{"type":"progress","phase":"lyrics","completed":179,"total":225}
+{"type":"lyrics_fail","song":"Glorious","album":"$ome $exy $ongs 4 U"}
+{"type":"progress","phase":"lyrics","completed":180,"total":225}
+{"type":"lyrics_ok","song":"When He's Gone","album":"$ome $exy $ongs 4 U","lines":70}
+{"type":"progress","phase":"lyrics","completed":181,"total":225}
+{"type":"lyrics_ok","song":"Greedy","album":"$ome $exy $ongs 4 U","lines":76}
+{"type":"progress","phase":"lyrics","completed":182,"total":225}
 {"type":"lyrics_ok","song":"Make Them Cry","album":"Iceman","lines":98}
-{"type":"progress","phase":"lyrics","completed":162,"total":179}
+{"type":"progress","phase":"lyrics","completed":183,"total":225}
 {"type":"lyrics_ok","song":"Dust","album":"Iceman","lines":61}
-{"type":"progress","phase":"lyrics","completed":163,"total":179}
+{"type":"progress","phase":"lyrics","completed":184,"total":225}
 {"type":"lyrics_ok","song":"Whisper My Name","album":"Iceman","lines":86}
-{"type":"progress","phase":"lyrics","completed":164,"total":179}
+{"type":"progress","phase":"lyrics","completed":185,"total":225}
 {"type":"lyrics_ok","song":"Janice STFU","album":"Iceman","lines":74}
-{"type":"progress","phase":"lyrics","completed":165,"total":179}
+{"type":"progress","phase":"lyrics","completed":186,"total":225}
 {"type":"lyrics_ok","song":"Ran to Atlanta","album":"Iceman","lines":104}
-{"type":"progress","phase":"lyrics","completed":166,"total":179}
+{"type":"progress","phase":"lyrics","completed":187,"total":225}
 {"type":"lyrics_ok","song":"Shabang","album":"Iceman","lines":71}
-{"type":"progress","phase":"lyrics","completed":167,"total":179}
+{"type":"progress","phase":"lyrics","completed":188,"total":225}
 {"type":"lyrics_ok","song":"Make Them Pay","album":"Iceman","lines":88}
-{"type":"progress","phase":"lyrics","completed":168,"total":179}
+{"type":"progress","phase":"lyrics","completed":189,"total":225}
 {"type":"lyrics_ok","song":"Burning Bridges","album":"Iceman","lines":64}
-{"type":"progress","phase":"lyrics","completed":169,"total":179}
+{"type":"progress","phase":"lyrics","completed":190,"total":225}
 {"type":"lyrics_ok","song":"National Treasures","album":"Iceman","lines":81}
-{"type":"progress","phase":"lyrics","completed":170,"total":179}
+{"type":"progress","phase":"lyrics","completed":191,"total":225}
 {"type":"lyrics_ok","song":"B's on the Table","album":"Iceman","lines":53}
-{"type":"progress","phase":"lyrics","completed":171,"total":179}
+{"type":"progress","phase":"lyrics","completed":192,"total":225}
 {"type":"lyrics_ok","song":"What Did I Miss?","album":"Iceman","lines":64}
-{"type":"progress","phase":"lyrics","completed":172,"total":179}
+{"type":"progress","phase":"lyrics","completed":193,"total":225}
 {"type":"lyrics_ok","song":"Plot Twist","album":"Iceman","lines":153}
-{"type":"progress","phase":"lyrics","completed":173,"total":179}
+{"type":"progress","phase":"lyrics","completed":194,"total":225}
 {"type":"lyrics_ok","song":"2 Hard 4 the Radio","album":"Iceman","lines":75}
-{"type":"progress","phase":"lyrics","completed":174,"total":179}
+{"type":"progress","phase":"lyrics","completed":195,"total":225}
 {"type":"lyrics_ok","song":"Make Them Remember","album":"Iceman","lines":121}
-{"type":"progress","phase":"lyrics","completed":175,"total":179}
+{"type":"progress","phase":"lyrics","completed":196,"total":225}
 {"type":"lyrics_ok","song":"Little Birdie","album":"Iceman","lines":63}
-{"type":"progress","phase":"lyrics","completed":176,"total":179}
+{"type":"progress","phase":"lyrics","completed":197,"total":225}
 {"type":"lyrics_ok","song":"Don't Worry","album":"Iceman","lines":51}
-{"type":"progress","phase":"lyrics","completed":177,"total":179}
+{"type":"progress","phase":"lyrics","completed":198,"total":225}
 {"type":"lyrics_ok","song":"Firm Friends","album":"Iceman","lines":209}
-{"type":"progress","phase":"lyrics","completed":178,"total":179}
+{"type":"progress","phase":"lyrics","completed":199,"total":225}
 {"type":"lyrics_ok","song":"Make Them Know","album":"Iceman","lines":65}
-{"type":"progress","phase":"lyrics","completed":179,"total":179}
-{"type":"done","job":"lyrics","parsed":171,"failed":8,"scoped":false}
+{"type":"progress","phase":"lyrics","completed":200,"total":225}
+{"type":"lyrics_ok","song":"Rusty Intro","album":"Habibti","lines":17}
+{"type":"progress","phase":"lyrics","completed":201,"total":225}
+{"type":"lyrics_ok","song":"WNBA","album":"Habibti","lines":46}
+{"type":"progress","phase":"lyrics","completed":202,"total":225}
+{"type":"lyrics_ok","song":"Slap the City","album":"Habibti","lines":61}
+{"type":"progress","phase":"lyrics","completed":203,"total":225}
+{"type":"lyrics_ok","song":"High Fives","album":"Habibti","lines":71}
+{"type":"progress","phase":"lyrics","completed":204,"total":225}
+{"type":"lyrics_ok","song":"Hurrr Nor Thurrr","album":"Habibti","lines":58}
+{"type":"progress","phase":"lyrics","completed":205,"total":225}
+{"type":"lyrics_ok","song":"I'm Spent","album":"Habibti","lines":40}
+{"type":"progress","phase":"lyrics","completed":206,"total":225}
+{"type":"lyrics_fail","song":"Classic","album":"Habibti"}
+{"type":"progress","phase":"lyrics","completed":207,"total":225}
+{"type":"lyrics_ok","song":"Gen 5","album":"Habibti","lines":46}
+{"type":"progress","phase":"lyrics","completed":208,"total":225}
+{"type":"lyrics_ok","song":"White Bone","album":"Habibti","lines":75}
+{"type":"progress","phase":"lyrics","completed":209,"total":225}
+{"type":"lyrics_ok","song":"Fortworth","album":"Habibti","lines":48}
+{"type":"progress","phase":"lyrics","completed":210,"total":225}
+{"type":"lyrics_fail","song":"Prioritizing","album":"Habibti"}
+{"type":"progress","phase":"lyrics","completed":211,"total":225}
+{"type":"lyrics_ok","song":"Hoe Phase","album":"Maid of Honour","lines":79}
+{"type":"progress","phase":"lyrics","completed":212,"total":225}
+{"type":"lyrics_ok","song":"Road Trips","album":"Maid of Honour","lines":65}
+{"type":"progress","phase":"lyrics","completed":213,"total":225}
+{"type":"lyrics_ok","song":"Outside Tweaking","album":"Maid of Honour","lines":58}
+{"type":"progress","phase":"lyrics","completed":214,"total":225}
+{"type":"lyrics_ok","song":"Cheetah Print","album":"Maid of Honour","lines":66}
+{"type":"progress","phase":"lyrics","completed":215,"total":225}
+{"type":"lyrics_ok","song":"Which One","album":"Maid of Honour","lines":78}
+{"type":"progress","phase":"lyrics","completed":216,"total":225}
+{"type":"lyrics_ok","song":"Amazing Shape","album":"Maid of Honour","lines":63}
+{"type":"progress","phase":"lyrics","completed":217,"total":225}
+{"type":"lyrics_ok","song":"BBW","album":"Maid of Honour","lines":63}
+{"type":"progress","phase":"lyrics","completed":218,"total":225}
+{"type":"lyrics_ok","song":"True Bestie","album":"Maid of Honour","lines":53}
+{"type":"progress","phase":"lyrics","completed":219,"total":225}
+{"type":"lyrics_ok","song":"Where's Your Stuff Interlude","album":"Maid of Honour","lines":12}
+{"type":"progress","phase":"lyrics","completed":220,"total":225}
+{"type":"lyrics_ok","song":"New Bestie","album":"Maid of Honour","lines":97}
+{"type":"progress","phase":"lyrics","completed":221,"total":225}
+{"type":"lyrics_ok","song":"Q&A","album":"Maid of Honour","lines":30}
+{"type":"progress","phase":"lyrics","completed":222,"total":225}
+{"type":"lyrics_ok","song":"Stuck","album":"Maid of Honour","lines":56}
+{"type":"progress","phase":"lyrics","completed":223,"total":225}
+{"type":"lyrics_ok","song":"Goose and the Juice","album":"Maid of Honour","lines":51}
+{"type":"progress","phase":"lyrics","completed":224,"total":225}
+{"type":"lyrics_ok","song":"Princess","album":"Maid of Honour","lines":38}
+{"type":"progress","phase":"lyrics","completed":225,"total":225}
+{"type":"done","job":"lyrics","parsed":215,"failed":10,"scoped":false}

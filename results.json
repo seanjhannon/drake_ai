@@ -1,6 +1,6 @@
 {
-  "scannedAt": "2026-05-26T20:34:12.086Z",
-  "songsProcessed": 123,
+  "scannedAt": "2026-05-27T02:46:09.709Z",
+  "songsProcessed": 149,
   "mentions": {
     "Lil Wayne": [
       {
@@ -19,14 +19,14 @@
       },
       {
         "friend": "Lil Wayne",
-        "bar": "Yes I am Weezy, but I ain't asthmatic",
-        "song": "Miss Me",
+        "bar": "Young Money till the death of me",
+        "song": "Up All Night",
         "album": "Thank Me Later",
         "year": 2010
       },
       {
         "friend": "Lil Wayne",
-        "bar": "Weezy F baby and the \"F\" is for front door",
+        "bar": "Yes I am Weezy, but I ain't asthmatic",
         "song": "Miss Me",
         "album": "Thank Me Later",
         "year": 2010
@@ -47,15 +47,15 @@
       },
       {
         "friend": "Lil Wayne",
-        "bar": "Weezy on top, and that nigga ain't even home yet",
-        "song": "Moment 4 Life",
+        "bar": "Young money maker, season ticket holder",
+        "song": "The Ride",
         "album": "Take Care",
         "year": 2011
       },
       {
         "friend": "Lil Wayne",
-        "bar": "Tell Tune, \"Light one, pass it like a relay\"",
-        "song": "The Motto",
+        "bar": "Weezy on top, and that nigga ain't even home yet",
+        "song": "Moment 4 Life",
         "album": "Take Care",
         "year": 2011
       },
@@ -78,6 +78,13 @@
         "bar": "Me, Wayne, and Mack, the Three Amigos, I'm Steve Martin",
         "song": "Make Them Remember",
         "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "Lil Wayne",
+        "bar": "Tunechi got some drank and I might help myself",
+        "song": "Fortworth",
+        "album": "Habibti",
         "year": 2026
       }
     ],
@@ -160,11 +167,29 @@
         "year": 2010
       }
     ],
-    "Killa Beatz": [
+    "Ki-Killa": [
       {
-        "friend": "Killa Beatz",
+        "friend": "Ki-Killa",
         "bar": "Ki-Killa, Killa (hey)",
         "song": "Shut It Down",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Tupac Shakur": [
+      {
+        "friend": "Tupac Shakur",
+        "bar": "The closest you gonna get to this is a Pac t-shirt",
+        "song": "Unforgettable",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Chilli": [
+      {
+        "friend": "Chilli",
+        "bar": "And I've done everything in the A, but fuck Chilli",
+        "song": "Unforgettable",
         "album": "Thank Me Later",
         "year": 2010
       }
@@ -182,6 +207,15 @@
       {
         "friend": "Kelsey Grammer",
         "bar": "And I just say I wrote it for your girlfriends, Kelsey Grammar",
+        "song": "Light Up",
+        "album": "Thank Me Later",
+        "year": 2010
+      }
+    ],
+    "Guru": [
+      {
+        "friend": "Guru",
+        "bar": "(Hey, Guru, tell hom' to go to open that Ace right there)",
         "song": "Light Up",
         "album": "Thank Me Later",
         "year": 2010
@@ -279,6 +313,132 @@
         "year": 2011
       }
     ],
+    "Mac Dre": [
+      {
+        "friend": "Mac Dre",
+        "bar": "My city love me like Mac Dre in the Bay",
+        "song": "Over My Dead Body",
+        "album": "Take Care",
+        "year": 2011
+      },
+      {
+        "friend": "Mac Dre",
+        "bar": "Rest in peace, Mac Dre, I'm-a do it for the Bay",
+        "song": "The Motto",
+        "album": "Take Care",
+        "year": 2011
+      },
+      {
+        "friend": "Mac Dre",
+        "bar": "She just said I'm bae, I hit the thizzle dance (Mac Dre shit, damn)",
+        "song": "Nonstop",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Michael Jordan": [
+      {
+        "friend": "Michael Jordan",
+        "bar": "Don't Michael Jordan still got his hoop earring in?",
+        "song": "Over My Dead Body",
+        "album": "Take Care",
+        "year": 2011
+      },
+      {
+        "friend": "Michael Jordan",
+        "bar": "Haffa and Jordan my only role models",
+        "song": "Lord Knows",
+        "album": "Take Care",
+        "year": 2011
+      },
+      {
+        "friend": "Michael Jordan",
+        "bar": "MJ in every way, I just don't fade away",
+        "song": "9",
+        "album": "Views",
+        "year": 2016
+      },
+      {
+        "friend": "Michael Jordan",
+        "bar": "Michael Jordan with the tennis shoes (Skrrt, Skrrt)",
+        "song": "Portland",
+        "album": "More Life",
+        "year": 2017
+      },
+      {
+        "friend": "Michael Jordan",
+        "bar": "Why are you kicking your feet up with niggas? Are you Michael Jordan?",
+        "song": "Q&A",
+        "album": "Maid of Honour",
+        "year": 2026
+      }
+    ],
+    "Kevin Hart": [
+      {
+        "friend": "Kevin Hart",
+        "bar": "Don't make me break your Kevin Hart, boy",
+        "song": "Over My Dead Body",
+        "album": "Take Care",
+        "year": 2011
+      },
+      {
+        "friend": "Kevin Hart",
+        "bar": "Kevin Hart liquor, he shook, I'ma put you in sticky predicaments",
+        "song": "B's on the Table",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Seal": [
+      {
+        "friend": "Seal",
+        "bar": "They got me on these white women like Seal, nigga",
+        "song": "Over My Dead Body",
+        "album": "Take Care",
+        "year": 2011
+      }
+    ],
+    "Alisha": [
+      {
+        "friend": "Alisha",
+        "bar": "It's a shame you didn't keep it, Alisha, Catya",
+        "song": "Shot for Me",
+        "album": "Take Care",
+        "year": 2011
+      }
+    ],
+    "Catya": [
+      {
+        "friend": "Catya",
+        "bar": "It's a shame you didn't keep it, Alisha, Catya",
+        "song": "Shot for Me",
+        "album": "Take Care",
+        "year": 2011
+      }
+    ],
+    "The Weeknd": [
+      {
+        "friend": "The Weeknd",
+        "bar": "That OVO and that XO is everything you believe in, I know",
+        "song": "Crew Love",
+        "album": "Take Care",
+        "year": 2011
+      },
+      {
+        "friend": "The Weeknd",
+        "bar": "52 consecutive weekends, shout out to Weeknd",
+        "song": "Lose You",
+        "album": "More Life",
+        "year": 2017
+      },
+      {
+        "friend": "The Weeknd",
+        "bar": "My bitches playin' PND and them The shorties only listen to Weeknd",
+        "song": "All The Parties",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
     "Yo Gotti": [
       {
         "friend": "Yo Gotti",
@@ -327,6 +487,13 @@
         "song": "The Language",
         "album": "Nothing Was the Same",
         "year": 2013
+      },
+      {
+        "friend": "Birdman",
+        "bar": "Like Mannie, like Stunna, man, shit is big time now",
+        "song": "9",
+        "album": "Views",
+        "year": 2016
       }
     ],
     "Just Blaze": [
@@ -336,29 +503,6 @@
         "song": "Lord Knows",
         "album": "Take Care",
         "year": 2011
-      }
-    ],
-    "Michael Jordan": [
-      {
-        "friend": "Michael Jordan",
-        "bar": "Haffa and Jordan my only role models",
-        "song": "Lord Knows",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Michael Jordan",
-        "bar": "MJ in every way, I just don't fade away",
-        "song": "9",
-        "album": "Views",
-        "year": 2016
-      },
-      {
-        "friend": "Michael Jordan",
-        "bar": "Michael Jordan with the tennis shoes (Skrrt, Skrrt)",
-        "song": "Portland",
-        "album": "More Life",
-        "year": 2017
       }
     ],
     "Bob Marley": [
@@ -379,13 +523,20 @@
         "year": 2011
       }
     ],
-    "Young Money": [
+    "Prince": [
       {
-        "friend": "Young Money",
-        "bar": "Young money maker, season ticket holder",
-        "song": "The Ride",
+        "friend": "Prince",
+        "bar": "Girl, they love me like I'm Prince, like the new king with the crown",
+        "song": "Cameras",
         "album": "Take Care",
         "year": 2011
+      },
+      {
+        "friend": "Prince",
+        "bar": "Walk around like Prince 'cause I got a lot of lady friends",
+        "song": "More M's",
+        "album": "Her Loss",
+        "year": 2022
       }
     ],
     "Noah '40' Shebib": [
@@ -395,13 +546,6 @@
         "song": "Moment 4 Life",
         "album": "Take Care",
         "year": 2011
-      },
-      {
-        "friend": "Noah '40' Shebib",
-        "bar": "(Zombie on the track)",
-        "song": "Started from the Bottom",
-        "album": "Nothing Was the Same",
-        "year": 2013
       },
       {
         "friend": "Noah '40' Shebib",
@@ -447,7 +591,7 @@
       },
       {
         "friend": "Noah '40' Shebib",
-        "bar": "Forty deep in the East End",
+        "bar": "Hit up the dawg like I'm OVO Mark",
         "song": "All The Parties",
         "album": "For All The Dogs",
         "year": 2023
@@ -463,6 +607,13 @@
         "friend": "Noah '40' Shebib",
         "bar": "40, what's up? Shabang (Uh)",
         "song": "Shabang",
+        "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "Noah '40' Shebib",
+        "bar": "Fuck That, I'm In The Stew With Noah",
+        "song": "Firm Friends",
         "album": "Iceman",
         "year": 2026
       },
@@ -492,33 +643,19 @@
         "year": 2011
       }
     ],
-    "Mac Dre": [
-      {
-        "friend": "Mac Dre",
-        "bar": "Rest in peace, Mac Dre, I'm-a do it for the Bay",
-        "song": "The Motto",
-        "album": "Take Care",
-        "year": 2011
-      },
-      {
-        "friend": "Mac Dre",
-        "bar": "She just said I'm bae, I hit the thizzle dance (Mac Dre shit, damn)",
-        "song": "Nonstop",
-        "album": "Scorpion",
-        "year": 2018
-      },
-      {
-        "friend": "Mac Dre",
-        "bar": "Keep a .19 like I'm Mac Dre (21)",
-        "song": "Calling for You",
-        "album": "For All The Dogs",
-        "year": 2023
-      }
-    ],
     "Uncle Luke": [
       {
         "friend": "Uncle Luke",
         "bar": "Tell Uncle Luke I'm out in Miami, too",
+        "song": "The Motto",
+        "album": "Take Care",
+        "year": 2011
+      }
+    ],
+    "Lil Tune": [
+      {
+        "friend": "Lil Tune",
+        "bar": "Tell Tune, \"Light one, pass it like a relay\"",
         "song": "The Motto",
         "album": "Take Care",
         "year": 2011
@@ -540,6 +677,20 @@
         "song": "The Motto",
         "album": "Take Care",
         "year": 2011
+      },
+      {
+        "friend": "Niko",
+        "bar": "Yeah, this that Oliver, 40, Niko shit man",
+        "song": "Know Yourself",
+        "album": "If You're Reading This It's Too Late",
+        "year": 2015
+      },
+      {
+        "friend": "Niko",
+        "bar": "Me and Niko used to plot on how to make a change",
+        "song": "Views",
+        "album": "Views",
+        "year": 2016
       }
     ],
     "Chubbs": [
@@ -570,6 +721,15 @@
         "song": "Don't Worry",
         "album": "Iceman",
         "year": 2026
+      }
+    ],
+    "Gibbo": [
+      {
+        "friend": "Gibbo",
+        "bar": "Shout goes out to Niko, J and Chubbs, shouts to Gibbo",
+        "song": "The Motto",
+        "album": "Take Care",
+        "year": 2011
       }
     ],
     "Dwight Howard": [
@@ -665,6 +825,15 @@
         "year": 2017
       }
     ],
+    "Zombie": [
+      {
+        "friend": "Zombie",
+        "bar": "(Zombie on the track)",
+        "song": "Started from the Bottom",
+        "album": "Nothing Was the Same",
+        "year": 2013
+      }
+    ],
     "Mazin": [
       {
         "friend": "Mazin",
@@ -693,7 +862,7 @@
     "O.D.B.": [
       {
         "friend": "O.D.B.",
-        "bar": "When I come for that shit like O.D.B",
+        "bar": "Bitch you better have my money / When I come for that shit like O.D.B",
         "song": "Worst Behavior",
         "album": "Nothing Was the Same",
         "year": 2013
@@ -813,20 +982,6 @@
       },
       {
         "friend": "Oliver El-Khatib",
-        "bar": "Me and Niko used to plot on how to make a change",
-        "song": "Views",
-        "album": "Views",
-        "year": 2016
-      },
-      {
-        "friend": "Oliver El-Khatib",
-        "bar": "Oli North pull in, like, ten million a season",
-        "song": "Lose You",
-        "album": "More Life",
-        "year": 2017
-      },
-      {
-        "friend": "Oliver El-Khatib",
         "bar": "I let Ollie take the owl, told him brand it for me",
         "song": "Nonstop",
         "album": "Scorpion",
@@ -845,22 +1000,6 @@
         "song": "Champagne Poetry",
         "album": "Certified Lover Boy",
         "year": 2021
-      },
-      {
-        "friend": "Oliver El-Khatib",
-        "bar": "Hit up the dawg like I'm OVO Mark",
-        "song": "All The Parties",
-        "album": "For All The Dogs",
-        "year": 2023
-      }
-    ],
-    "Niko Ioannides": [
-      {
-        "friend": "Niko Ioannides",
-        "bar": "Yeah, this that Oliver, 40, Niko shit man",
-        "song": "Know Yourself",
-        "album": "If You're Reading This It's Too Late",
-        "year": 2015
       }
     ],
     "Boi-1da": [
@@ -911,13 +1050,20 @@
         "year": 2015
       }
     ],
-    "Ricky Ross": [
+    "Rick Ross": [
       {
-        "friend": "Ricky Ross",
+        "friend": "Rick Ross",
         "bar": "I mean besides Ricky Ross, Aubrey the biggest boss here",
         "song": "No Tellin",
         "album": "If You're Reading This It's Too Late",
         "year": 2015
+      },
+      {
+        "friend": "Rick Ross",
+        "bar": "I be with my gun like Rozay be with lemon pepper",
+        "song": "Jimmy Cooks",
+        "album": "Her Loss",
+        "year": 2022
       }
     ],
     "Madonna": [
@@ -1076,6 +1222,24 @@
         "year": 2016
       }
     ],
+    "Bentley": [
+      {
+        "friend": "Bentley",
+        "bar": "That looked just like the Bentley",
+        "song": "Keep the Family Close",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Mannie Fresh": [
+      {
+        "friend": "Mannie Fresh",
+        "bar": "Like Mannie, like Stunna, man, shit is big time now",
+        "song": "9",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
     "DMX": [
       {
         "friend": "DMX",
@@ -1135,24 +1299,13 @@
         "song": "All The Parties",
         "album": "For All The Dogs",
         "year": 2023
-      }
-    ],
-    "Monique": [
+      },
       {
-        "friend": "Monique",
-        "bar": "You wouldn't tell me you loved me, started seein' Monique",
-        "song": "Weston Road Flows",
-        "album": "Views",
-        "year": 2016
-      }
-    ],
-    "T-Minus": [
-      {
-        "friend": "T-Minus",
-        "bar": "Last time I heard from Monique, T-Minus was makin' beats",
-        "song": "Weston Road Flows",
-        "album": "Views",
-        "year": 2016
+        "friend": "Kevin Durant",
+        "bar": "Me and KD got way too much cheese, like the-, yeah, yeah",
+        "song": "Q&A",
+        "album": "Maid of Honour",
+        "year": 2026
       }
     ],
     "Vince Carter": [
@@ -1162,6 +1315,13 @@
         "song": "Weston Road Flows",
         "album": "Views",
         "year": 2016
+      },
+      {
+        "friend": "Vince Carter",
+        "bar": "Trap jumpin' like the Carter, we into jumpin' like Vince",
+        "song": "Sacrifices",
+        "album": "More Life",
+        "year": 2017
       }
     ],
     "Glenn Lewis": [
@@ -1213,6 +1373,15 @@
       {
         "friend": "Erica",
         "bar": "Erica sued me and opened a business",
+        "song": "Redemption",
+        "album": "Views",
+        "year": 2016
+      }
+    ],
+    "Tiffany": [
+      {
+        "friend": "Tiffany",
+        "bar": "Tiffany on you, you know you poppin'",
         "song": "Redemption",
         "album": "Views",
         "year": 2016
@@ -1273,7 +1442,14 @@
       },
       {
         "friend": "Kobe Bryant",
-        "bar": "Ayy, I'm living every 24 like Kobe did",
+        "bar": "I lay up with her for a couple days, then it's \"brb\"",
+        "song": "Rich Flex",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "Kobe Bryant",
+        "bar": "I'm living every 24 like Kobe did",
         "song": "Rich Flex",
         "album": "Her Loss",
         "year": 2022
@@ -1307,7 +1483,7 @@
     "Chef KD": [
       {
         "friend": "Chef KD",
-        "bar": "Used to chef KD",
+        "bar": "Mama never used to cook much / Used to chef KD",
         "song": "Free Smoke",
         "album": "More Life",
         "year": 2017
@@ -1322,19 +1498,19 @@
         "year": 2017
       }
     ],
-    "Quavo": [
+    "Michael Phelps": [
       {
-        "friend": "Quavo",
-        "bar": "(Quavo)",
+        "friend": "Michael Phelps",
+        "bar": "Michael Phelps with the swim moves (Skrrt, skrrt, oh)",
         "song": "Portland",
         "album": "More Life",
         "year": 2017
       }
     ],
-    "Michael Phelps": [
+    "Quavo": [
       {
-        "friend": "Michael Phelps",
-        "bar": "Michael Phelps with the swim moves (Skrrt, skrrt, oh)",
+        "friend": "Quavo",
+        "bar": "(Quavo)",
         "song": "Portland",
         "album": "More Life",
         "year": 2017
@@ -1358,9 +1534,9 @@
         "year": 2017
       }
     ],
-    "The Undertaker": [
+    "Undertaker": [
       {
-        "friend": "The Undertaker",
+        "friend": "Undertaker",
         "bar": "Undertaker with the tattoos",
         "song": "Portland",
         "album": "More Life",
@@ -1371,15 +1547,6 @@
       {
         "friend": "Kid 'n Play",
         "bar": "me and Drake kick like Kid N' Play",
-        "song": "Portland",
-        "album": "More Life",
-        "year": 2017
-      }
-    ],
-    "Mason Betha": [
-      {
-        "friend": "Mason Betha",
-        "bar": "Free Mase' me about the bracelets",
         "song": "Portland",
         "album": "More Life",
         "year": 2017
@@ -1453,7 +1620,14 @@
       },
       {
         "friend": "21 Savage",
-        "bar": "Yeah, yeah, let's have sex in the car (on God)\nThe Maybach came with a bar (21)",
+        "bar": "Yeah, yeah, let's have sex in the car (on God)",
+        "song": "Privileged Rappers",
+        "album": "Her Loss",
+        "year": 2022
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "The Maybach came with a bar (21)",
         "song": "Privileged Rappers",
         "album": "Her Loss",
         "year": 2022
@@ -1502,7 +1676,14 @@
       },
       {
         "friend": "21 Savage",
-        "bar": "Plenty niggas dyin' over that way (yeah)",
+        "bar": "Keep a .19 like I'm Mac Dre (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Make a nigga mama have a bad day (21)",
         "song": "Calling for You",
         "album": "For All The Dogs",
         "year": 2023
@@ -1516,6 +1697,62 @@
       },
       {
         "friend": "21 Savage",
+        "bar": "Put a college bitch in a Benz (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Put her in the Benz, no, no (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Hit 'em from the car, no scope (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Bitch, if you love me, then spoil me (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "I treat the rap game like a toilet (on God)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "All of my kids get left in her mouth, she say she don't believe in abortions (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "Oh, you ain't got you a boyfriend? (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
+        "bar": "I see he be on his dork shit (21)",
+        "song": "Calling for You",
+        "album": "For All The Dogs",
+        "year": 2023
+      },
+      {
+        "friend": "21 Savage",
         "bar": "Savage got a green card straight out of the consulate",
         "song": "8AM in Charlotte",
         "album": "For All The Dogs",
@@ -1523,19 +1760,17 @@
       },
       {
         "friend": "21 Savage",
+        "bar": "Savage, you the only nigga checkin' on me when we really in some shit, brother",
+        "song": "Gimme a Hug",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      },
+      {
+        "friend": "21 Savage",
         "bar": "Ask Pluto, Bank, or 21, you know what I'm sayin'?",
         "song": "Ran to Atlanta",
         "album": "Iceman",
         "year": 2026
-      }
-    ],
-    "Lil Baby": [
-      {
-        "friend": "Lil Baby",
-        "bar": "I'm talkin' Baby like Stunna, I'm talkin' Baby like Face",
-        "song": "Sacrifices",
-        "album": "More Life",
-        "year": 2017
       }
     ],
     "Nate Dogg": [
@@ -1583,38 +1818,6 @@
         "year": 2017
       }
     ],
-    "The Weeknd": [
-      {
-        "friend": "The Weeknd",
-        "bar": "52 consecutive weekends, shout out to Weeknd",
-        "song": "Lose You",
-        "album": "More Life",
-        "year": 2017
-      },
-      {
-        "friend": "The Weeknd",
-        "bar": "My bitches playin' PND and them / The shorties only listen to Weeknd",
-        "song": "All The Parties",
-        "album": "For All The Dogs",
-        "year": 2023
-      }
-    ],
-    "R. Kelly": [
-      {
-        "friend": "R. Kelly",
-        "bar": "This the remix to \"Ignition,\" hot and fresh out the kitchen",
-        "song": "Lose You",
-        "album": "More Life",
-        "year": 2017
-      },
-      {
-        "friend": "R. Kelly",
-        "bar": "You still listenin' to R Kelly in the whip, baby girl, and I don't judge you",
-        "song": "Drew a Picasso",
-        "album": "For All The Dogs",
-        "year": 2023
-      }
-    ],
     "Jerry Garcia": [
       {
         "friend": "Jerry Garcia",
@@ -1649,13 +1852,6 @@
         "song": "Do Not Disturb",
         "album": "More Life",
         "year": 2017
-      },
-      {
-        "friend": "1da",
-        "bar": "1da sent this in, I'm goin' up all the way",
-        "song": "8 Out of 10",
-        "album": "Scorpion",
-        "year": 2018
       }
     ],
     "Sealy": [
@@ -1718,13 +1914,6 @@
       },
       {
         "friend": "Future",
-        "bar": "I'm taking heads off, Future out here like Irving Azoff",
-        "song": "The Remorse",
-        "album": "Certified Lover Boy",
-        "year": 2021
-      },
-      {
-        "friend": "Future",
         "bar": "Future the Prince is my trusted advisor",
         "song": "Dust",
         "album": "Iceman",
@@ -1752,6 +1941,24 @@
         "friend": "A$AP Rocky",
         "bar": "Word to Flacko Jodye, he done seen us put it down",
         "song": "I'm Upset",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "1da (producer)": [
+      {
+        "friend": "1da (producer)",
+        "bar": "1da sent this in, I'm goin' up all the way",
+        "song": "8 Out of 10",
+        "album": "Scorpion",
+        "year": 2018
+      }
+    ],
+    "Max": [
+      {
+        "friend": "Max",
+        "bar": "Max said they only blessed when they attached to you",
+        "song": "8 Out of 10",
         "album": "Scorpion",
         "year": 2018
       }
@@ -1810,9 +2017,9 @@
         "year": 2018
       }
     ],
-    "Fabo": [
+    "Fabolous": [
       {
-        "friend": "Fabo",
+        "friend": "Fabolous",
         "bar": "With your phone out, snappin' like you Fabo",
         "song": "Nice for What",
         "album": "Scorpion",
@@ -1828,15 +2035,6 @@
         "year": 2018
       }
     ],
-    "Michael Jackson": [
-      {
-        "friend": "Michael Jackson",
-        "bar": "She not my lover like \"Billie Jean\", but the kid is mine",
-        "song": "March 14",
-        "album": "Scorpion",
-        "year": 2018
-      }
-    ],
     "Sandi Graham": [
       {
         "friend": "Sandi Graham",
@@ -1846,10 +2044,10 @@
         "year": 2018
       }
     ],
-    "Gelo": [
+    "Michael Jackson": [
       {
-        "friend": "Gelo",
-        "bar": "Tell Gelo bring some more Rosé and the Baccarats out",
+        "friend": "Michael Jackson",
+        "bar": "She not my lover like \"Billie Jean\", but the kid is mine",
         "song": "March 14",
         "album": "Scorpion",
         "year": 2018
@@ -1877,15 +2075,6 @@
       {
         "friend": "Rick Pitino",
         "bar": "Rick Pitino, I take 'em to strip clubs and casinos",
-        "song": "Sandra's Rose",
-        "album": "Scorpion",
-        "year": 2018
-      }
-    ],
-    "DJ Premier": [
-      {
-        "friend": "DJ Premier",
-        "bar": "Stack of C-notes get all you niggas scratched like Preemo",
         "song": "Sandra's Rose",
         "album": "Scorpion",
         "year": 2018
@@ -2002,18 +2191,18 @@
         "year": 2022
       }
     ],
-    "Noel Audigy": [
+    "Noel Desmond": [
       {
-        "friend": "Noel Audigy",
+        "friend": "Noel Desmond",
         "bar": "Hard to pay 40, pay Noel, pay Niko back",
         "song": "The Remorse",
         "album": "Certified Lover Boy",
         "year": 2021
       }
     ],
-    "Niko Carlile": [
+    "Niko Mowatt": [
       {
-        "friend": "Niko Carlile",
+        "friend": "Niko Mowatt",
         "bar": "Hard to pay 40, pay Noel, pay Niko back",
         "song": "The Remorse",
         "album": "Certified Lover Boy",
@@ -2113,7 +2302,7 @@
         "friend": "Tiger Woods",
         "bar": "Think I'm Tiger Woods, the way I'm teed off the 17",
         "song": "In the Bible",
-        "album": "Certified Lover Boy",
+        "album": "Certified Lover Board",
         "year": 2021
       }
     ],
@@ -2206,7 +2395,7 @@
     "Macaulay Culkin": [
       {
         "friend": "Macaulay Culkin",
-        "bar": "In this mansion, I'm Macaulay Culkin",
+        "bar": "in this mansion, I'm Macaulay Culkin",
         "song": "Major Distribution",
         "album": "Her Loss",
         "year": 2022
@@ -2307,24 +2496,29 @@
         "song": "Burning Bridges",
         "album": "Iceman",
         "year": 2026
+      },
+      {
+        "friend": "Noel",
+        "bar": "Ayo, Noel tek out the bass line",
+        "song": "New Bestie",
+        "album": "Maid of Honour",
+        "year": 2026
       }
     ],
-    "Justin Bieber": [
+    "Frank Ocean": [
       {
-        "friend": "Justin Bieber",
-        "bar": "Hoes screamin' like I'm Justin Bieber, nigga",
-        "song": "Broke Boys",
+        "friend": "Frank Ocean",
+        "bar": "The diamonds, they hit like a rainbow, that's 'cause the necklace a Frank (purr)",
+        "song": "Privileged Rappers",
         "album": "Her Loss",
         "year": 2022
-      }
-    ],
-    "Coach K": [
+      },
       {
-        "friend": "Coach K",
-        "bar": "You must be Coach K 'cause you ain't P",
-        "song": "Broke Boys",
-        "album": "Her Loss",
-        "year": 2022
+        "friend": "Frank Ocean",
+        "bar": "Frank Ocean, Fisha",
+        "song": "Outside Tweaking",
+        "album": "Maid of Honour",
+        "year": 2026
       }
     ],
     "Lil Keed": [
@@ -2361,15 +2555,6 @@
         "year": 2022
       }
     ],
-    "Rick Ross": [
-      {
-        "friend": "Rick Ross",
-        "bar": "I be with my gun like Rozay be with lemon pepper",
-        "song": "Jimmy Cooks",
-        "album": "Her Loss",
-        "year": 2022
-      }
-    ],
     "Nadeska": [
       {
         "friend": "Nadeska",
@@ -2392,6 +2577,15 @@
       {
         "friend": "Leonardo da Vinci",
         "bar": "Me, Spider-Man, and Leonardo, I'm back tomorrow",
+        "song": "Middle of the Ocean",
+        "album": "Her Loss",
+        "year": 2022
+      }
+    ],
+    "Elon Musk": [
+      {
+        "friend": "Elon Musk",
+        "bar": "Swedish jail cell smellin' like some Carby Musk",
         "song": "Middle of the Ocean",
         "album": "Her Loss",
         "year": 2022
@@ -2449,20 +2643,20 @@
         "year": 2022
       }
     ],
-    "Prince": [
-      {
-        "friend": "Prince",
-        "bar": "Walk around like Prince 'cause I got a lot of lady friends",
-        "song": "More M's",
-        "album": "Her Loss",
-        "year": 2022
-      }
-    ],
     "Ashton Kutcher": [
       {
         "friend": "Ashton Kutcher",
         "bar": "Same neighborhood where Ashton Kutcher live",
         "song": "Amen",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "YoungBoy Never Broke Again": [
+      {
+        "friend": "YoungBoy Never Broke Again",
+        "bar": "I still wanna get me a song with YB",
+        "song": "First Person Shooter",
         "album": "For All The Dogs",
         "year": 2023
       }
@@ -2503,15 +2697,6 @@
         "year": 2023
       }
     ],
-    "Teezo Touchdown": [
-      {
-        "friend": "Teezo Touchdown",
-        "bar": "That's that new Teezo Touchdown, straight",
-        "song": "7969 Santa",
-        "album": "For All The Dogs",
-        "year": 2023
-      }
-    ],
     "Lenny Kravitz": [
       {
         "friend": "Lenny Kravitz",
@@ -2525,27 +2710,6 @@
       {
         "friend": "Hailey",
         "bar": "Hailey, it's sad that I know all the tea",
-        "song": "Bahamas Promises",
-        "album": "For All The Dogs",
-        "year": 2023
-      },
-      {
-        "friend": "Hailey",
-        "bar": "I know that you're not for me\nHailey",
-        "song": "Bahamas Promises",
-        "album": "For All The Dogs",
-        "year": 2023
-      },
-      {
-        "friend": "Hailey",
-        "bar": "I know that you're not for me, Hailey",
-        "song": "Bahamas Promises",
-        "album": "For All The Dogs",
-        "year": 2023
-      },
-      {
-        "friend": "Hailey",
-        "bar": "You're livin' in my mind for free\nAnd for someone you don't miss, I sure feel like somebody you need\nHailey",
         "song": "Bahamas Promises",
         "album": "For All The Dogs",
         "year": 2023
@@ -2565,15 +2729,6 @@
         "friend": "Chief Keef",
         "bar": "She in love with Sosa",
         "song": "All The Parties",
-        "album": "For All The Dogs",
-        "year": 2023
-      }
-    ],
-    "Jahron B": [
-      {
-        "friend": "Jahron B",
-        "bar": "Comin' from Jahron B side",
-        "song": "Members Only",
         "album": "For All The Dogs",
         "year": 2023
       }
@@ -2684,6 +2839,15 @@
         "year": 2023
       }
     ],
+    "Dillon Brooks": [
+      {
+        "friend": "Dillon Brooks",
+        "bar": "Shawty ran some Dillon Brooks, can't believe this nigga talkin', damn",
+        "song": "Another Late Night",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
     "Billie Eilish": [
       {
         "friend": "Billie Eilish",
@@ -2711,10 +2875,28 @@
         "year": 2023
       }
     ],
+    "R Kelly": [
+      {
+        "friend": "R Kelly",
+        "bar": "You still listenin' to R Kelly in the whip, baby girl, and I don't judge you",
+        "song": "Drew a Picasso",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
     "Taylor Swift": [
       {
         "friend": "Taylor Swift",
         "bar": "Taylor Swift the only nigga that I ever rated",
+        "song": "Red Button",
+        "album": "For All The Dogs",
+        "year": 2023
+      }
+    ],
+    "Megan Thee Stallion": [
+      {
+        "friend": "Megan Thee Stallion",
+        "bar": "Word to M-Dolla, she the only one could maybe save it",
         "song": "Red Button",
         "album": "For All The Dogs",
         "year": 2023
@@ -2727,6 +2909,123 @@
         "song": "Red Button",
         "album": "For All The Dogs",
         "year": 2023
+      }
+    ],
+    "Neeks": [
+      {
+        "friend": "Neeks",
+        "bar": "This has to work, so I get Neeks off that stove",
+        "song": "Moth Balls",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Cartier": [
+      {
+        "friend": "Cartier",
+        "bar": "Bust down watches, Cuban links, Van Cleef necklace, Carti' bracelets",
+        "song": "Crying in Chanel",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Tate McRae": [
+      {
+        "friend": "Tate McRae",
+        "bar": "Poppin' out in Arizona, bitch, I feel like Tate McRae",
+        "song": "Small Town Fame",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Charli XCX": [
+      {
+        "friend": "Charli XCX",
+        "bar": "Puttin' Charli up her nose, X on her tongue",
+        "song": "Small Town Fame",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Fall Out Boy": [
+      {
+        "friend": "Fall Out Boy",
+        "bar": "I'm a fallout boy when they call our gang",
+        "song": "Small Town Fame",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Hulk Hogan": [
+      {
+        "friend": "Hulk Hogan",
+        "bar": "Niggas wanna see RIP me on a t-shirt like I'm Hulk Hogan",
+        "song": "Gimme a Hug",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Melyssa Ford": [
+      {
+        "friend": "Melyssa Ford",
+        "bar": "Melyssa Ford, you a legend from the six, hate to see you with a dick-sucker",
+        "song": "Gimme a Hug",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Lil Durk": [
+      {
+        "friend": "Lil Durk",
+        "bar": "Durk's boy told me Marvin's Room was his favorite song, he was drillin' to it",
+        "song": "Gimme a Hug",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "DJ Screw": [
+      {
+        "friend": "DJ Screw",
+        "bar": "Put your H's up one time to my brother, DJ Screw (ayy)",
+        "song": "Raining in Houston",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Maya Angelou": [
+      {
+        "friend": "Maya Angelou",
+        "bar": "Maya Angelou, '07, shots of '42",
+        "song": "Raining in Houston",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Chino Pacas": [
+      {
+        "friend": "Chino Pacas",
+        "bar": "My young carnal, his name is Chino Pacas (vámonos, chiquillo)",
+        "song": "Meet Your Padre",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Wayne Gretzky": [
+      {
+        "friend": "Wayne Gretzky",
+        "bar": "I'ma ice both of y'all like Gretzky",
+        "song": "Nokia",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
+      }
+    ],
+    "Raj": [
+      {
+        "friend": "Raj",
+        "bar": "Raj keeps on bringing that bottle and topping you up (Showtime)",
+        "song": "Celibacy",
+        "album": "$ome $exy $ongs 4 U",
+        "year": 2025
       }
     ],
     "Lionel Richie": [
@@ -2770,13 +3069,6 @@
         "friend": "Gucci Mane",
         "bar": "Ask Pluto, Bank, or 21, you know what I'm sayin'?",
         "song": "Ran to Atlanta",
-        "album": "Iceman",
-        "year": 2026
-      },
-      {
-        "friend": "Gucci Mane",
-        "bar": "Ayo, Gucci get back in the ride 'cause that's definitely not the guy",
-        "song": "Make Them Know",
         "album": "Iceman",
         "year": 2026
       }
@@ -2865,20 +3157,20 @@
         "year": 2026
       }
     ],
-    "Kevin Hart": [
-      {
-        "friend": "Kevin Hart",
-        "bar": "Kevin Hart liquor, he shook, I'ma put you in sticky predicaments",
-        "song": "B's on the Table",
-        "album": "Iceman",
-        "year": 2026
-      }
-    ],
     "Shane Coppin": [
       {
         "friend": "Shane Coppin",
         "bar": "Better treat me like Shane Coppin'",
         "song": "B's on the Table",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "TLC": [
+      {
+        "friend": "TLC",
+        "bar": "Niggas get punched in the face on some TLC shit, on the dead guys",
+        "song": "What Did I Miss?",
         "album": "Iceman",
         "year": 2026
       }
@@ -2922,7 +3214,7 @@
     "Dean Martin": [
       {
         "friend": "Dean Martin",
-        "bar": "You belong in the pack with some rats like Dean Martin",
+        "bar": "Me, Wayne, and Mack, the Three Amigos, I'm Steve Martin",
         "song": "Make Them Remember",
         "album": "Iceman",
         "year": 2026
@@ -2931,9 +3223,16 @@
     "DJ Frisco954": [
       {
         "friend": "DJ Frisco954",
-        "bar": "(D-D-DJ Frisco954, yeah)",
+        "bar": "D-D-DJ Frisco954, yeah",
         "song": "Little Birdie",
         "album": "Iceman",
+        "year": 2026
+      },
+      {
+        "friend": "DJ Frisco954",
+        "bar": "(D-D-DJ Frisco954, yo)",
+        "song": "Rusty Intro",
+        "album": "Habibti",
         "year": 2026
       }
     ],
@@ -2971,6 +3270,130 @@
         "song": "Firm Friends",
         "album": "Iceman",
         "year": 2026
+      }
+    ],
+    "Gucci": [
+      {
+        "friend": "Gucci",
+        "bar": "Ayo, Gucci get back in the ride 'cause that's definitely not the guy",
+        "song": "Make Them Know",
+        "album": "Iceman",
+        "year": 2026
+      }
+    ],
+    "Sydney Sweeney": [
+      {
+        "friend": "Sydney Sweeney",
+        "bar": "She a genie, Sydney Sweeney",
+        "song": "High Fives",
+        "album": "Habibti",
+        "year": 2026
+      }
+    ],
+    "Sexyy Red": [
+      {
+        "friend": "Sexyy Red",
+        "bar": "Sexyy said, \"What bitch is dissin'? Let me knock her off\"",
+        "song": "High Fives",
+        "album": "Habibti",
+        "year": 2026
+      },
+      {
+        "friend": "Sexyy Red",
+        "bar": "It's Sexyy Red (yeah), it's nice to meet ya (hey)",
+        "song": "Hurrr Nor Thurrr",
+        "album": "Habibti",
+        "year": 2026
+      }
+    ],
+    "Shai": [
+      {
+        "friend": "Shai",
+        "bar": "You flew out and Shai gave your boyfriend a 30-piece all in your face",
+        "song": "Hurrr Nor Thurrr",
+        "album": "Habibti",
+        "year": 2026
+      }
+    ],
+    "Dwayne Carter": [
+      {
+        "friend": "Dwayne Carter",
+        "bar": "Lick me like a lollipop, I'm Dwayne Carter",
+        "song": "I'm Spent",
+        "album": "Habibti",
+        "year": 2026
+      }
+    ],
+    "Julio": [
+      {
+        "friend": "Julio",
+        "bar": "I'm the only don you know other than Julio",
+        "song": "White Bone",
+        "album": "Habibti",
+        "year": 2026
+      }
+    ],
+    "Morgan": [
+      {
+        "friend": "Morgan",
+        "bar": "Goin' to see Morgan, cowboy boots, rhinestones",
+        "song": "White Bone",
+        "album": "Habibti",
+        "year": 2026
+      }
+    ],
+    "Van Gogh": [
+      {
+        "friend": "Van Gogh",
+        "bar": "What I charge for a show, they charge for Van Gogh",
+        "song": "White Bone",
+        "album": "Habibti",
+        "year": 2026
+      }
+    ],
+    "Melanie C": [
+      {
+        "friend": "Melanie C",
+        "bar": "Like I'm Scary Spice, girl, I'ma bring you to a balcony out in paradise",
+        "song": "Cheetah Print",
+        "album": "Maid of Honour",
+        "year": 2026
+      }
+    ],
+    "Cench": [
+      {
+        "friend": "Cench",
+        "bar": "You want Cench or your ex which one?",
+        "song": "Which One",
+        "album": "Maid of Honour",
+        "year": 2026
+      }
+    ],
+    "Chloe": [
+      {
+        "friend": "Chloe",
+        "bar": "Chloe, you dance like Cleo, champagne, sip in the tub",
+        "song": "True Bestie",
+        "album": "Maid of Honour",
+        "year": 2026
+      }
+    ],
+    "Karolina": [
+      {
+        "friend": "Karolina",
+        "bar": "I want a G like Karolina",
+        "song": "New Bestie",
+        "album": "Maid of Honour",
+        "year": 2026
+      }
+    ],
+    "Luke (Uncle Luke)": [
+      {
+        "friend": "Luke (Uncle Luke)",
+        "bar": "Tell Uncle Luke I'm out in Miami, too",
+        "song": "The Motto",
+        "album": "Take Care",
+        "year": 2011
       }
     ]
   }
