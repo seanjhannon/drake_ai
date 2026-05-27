@@ -1,4 +1,4 @@
-import { list, put } from '@vercel/blob';
+import { get, put } from '@vercel/blob';
 import fs from 'fs';
 import path from 'path';
 import { isDemoMode } from '@/lib/demo-mode';
@@ -42,18 +42,16 @@ function writeReviewsToDisk(data: ReviewsFile): void {
 }
 
 async function readReviewsFromBlob(): Promise<ReviewsFile | null> {
-  const { blobs } = await list({ prefix: BLOB_PATHNAME, limit: 10 });
-  const blob = blobs.find(b => b.pathname === BLOB_PATHNAME) ?? blobs[0];
-  if (!blob) return null;
+  const result = await get(BLOB_PATHNAME, { access: 'private', useCache: false });
+  if (!result || result.statusCode !== 200 || !result.stream) return null;
 
-  const res = await fetch(blob.url, { cache: 'no-store' });
-  if (!res.ok) return null;
-  return normalizeReviews(JSON.parse(await res.text()) as ReviewsFile);
+  const text = await new Response(result.stream).text();
+  return normalizeReviews(JSON.parse(text) as ReviewsFile);
 }
 
 async function writeReviewsToBlob(data: ReviewsFile): Promise<void> {
   await put(BLOB_PATHNAME, JSON.stringify(data, null, 2), {
-    access: 'public',
+    access: 'private',
     addRandomSuffix: false,
     allowOverwrite: true,
     cacheControlMaxAge: 60,

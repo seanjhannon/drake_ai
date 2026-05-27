@@ -25,7 +25,7 @@ const data = JSON.parse(raw);
 const count = Object.keys(data.reviews ?? {}).length;
 
 const blob = await put(BLOB_PATHNAME, raw, {
-  access: 'public',
+  access: 'private',
   addRandomSuffix: false,
   allowOverwrite: true,
   contentType: 'application/json',

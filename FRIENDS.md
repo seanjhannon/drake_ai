@@ -6,6 +6,7 @@ A common theme among artists like 21 Savage and Lil Wayne is self-reference in t
 
 # 21 Savage
 This artist uses "21" as an adlib when rapping - this does not count.
+This is almost always formatted as "(21)"
 
 # Chubbs
 "Chubbs" (Nessel Beezer) is Drake's head of security and one of his closest lifelong confidants. He is frequently mentioned.

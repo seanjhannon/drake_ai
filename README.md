@@ -79,7 +79,7 @@ See [DEPLOY.md](./DEPLOY.md) for architecture and maintenance.
 
    Do **not** add `ANTHROPIC_API_KEY` or `OPENROUTER_API_KEY`.
 
-4. **Storage → Blob** — create a store so friends can save mention reviews (`BLOB_READ_WRITE_TOKEN` is set automatically).
+4. **Storage → Blob** — create a store so friends can save mention reviews (`BLOB_READ_WRITE_TOKEN` is set automatically). Private stores are supported (default on Vercel); reads/writes use the server token, not public URLs.
 
 5. Deploy. Share the `*.vercel.app` URL.
 
